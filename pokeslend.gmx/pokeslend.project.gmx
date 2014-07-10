@@ -38,6 +38,7 @@
     <sprite>sprites\sprite23</sprite>
     <sprite>sprites\sprite24</sprite>
     <sprite>sprites\sprite25</sprite>
+    <sprite>sprites\spr_paper</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Base_Grass</background>
