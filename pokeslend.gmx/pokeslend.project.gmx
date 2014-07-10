@@ -88,6 +88,7 @@
       <object>objects\RockBig02</object>
       <object>objects\RockSmall01</object>
     </objects>
+    <object>objects\SeamObject</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room2</room>
