@@ -67,6 +67,9 @@
       <script>scripts\AStar_constructPath.gml</script>
     </scripts>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\ComicSans</font>
+  </fonts>
   <objects name="objects">
     <object>objects\Char</object>
     <object>objects\enemy</object>
@@ -94,10 +97,15 @@
       <object>objects\RockBig02</object>
       <object>objects\RockSmall01</object>
     </objects>
+<<<<<<< HEAD
     <objects name="Ground_Objects">
       <object>objects\SeamObject</object>
       <object>objects\Straw</object>
     </objects>
+=======
+    <object>objects\SeamObject</object>
+    <object>objects\obj_timer</object>
+>>>>>>> origin/master
   </objects>
   <rooms name="rooms">
     <room>rooms\room2</room>
