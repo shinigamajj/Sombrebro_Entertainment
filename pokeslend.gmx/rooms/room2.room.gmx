@@ -257,7 +257,7 @@
     <instance objName="RockSmall01" x="160" y="416" name="inst_419BD1DC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="RockBig02" x="352" y="496" name="inst_5CF39CE1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="RockBig02" x="192" y="416" name="inst_7ACEF75F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="TreeBig02" x="320" y="352" name="inst_9DEB2974" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TreeBig02" x="352" y="336" name="inst_045E2FF6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TreeSmall01" x="144" y="368" name="inst_2AC37D9A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TreeBig01" x="144" y="336" name="inst_16B90A8F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TreeBig02" x="176" y="352" name="inst_B021C49D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -282,6 +282,27 @@
     <instance objName="obj_movable" x="560" y="272" name="inst_1BB89654" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_movable" x="624" y="192" name="inst_BEA71F05" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_movable" x="608" y="192" name="inst_D61B629B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="GrassTallTest" x="160" y="304" name="inst_411B3E99" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="GrassTallTest" x="144" y="304" name="inst_415BBA4E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="GrassTallTest" x="128" y="304" name="inst_7AC3D32C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="GrassTallTest" x="112" y="304" name="inst_27DB22F9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="GrassTallTest" x="112" y="288" name="inst_CEEC2963" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="GrassTallTest" x="128" y="288" name="inst_E79F8C67" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="GrassTallTest" x="144" y="288" name="inst_953E67C8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="GrassTallTest" x="160" y="288" name="inst_BBA5C56E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="GrassTallTest" x="112" y="272" name="inst_CC52C200" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="GrassTallTest" x="128" y="272" name="inst_8094B123" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="GrassTallTest" x="144" y="272" name="inst_787751EF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="GrassTallTest" x="160" y="272" name="inst_7B4B0C01" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="GrassTallTest" x="176" y="272" name="inst_1A30D739" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="GrassTallTest" x="192" y="272" name="inst_2DDD53D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="GrassTallTest" x="96" y="272" name="inst_0AEB2C90" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="GrassTallTest" x="128" y="256" name="inst_7127214E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="GrassTallTest" x="112" y="256" name="inst_A9B7407D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="GrassTallTest" x="144" y="256" name="inst_C5A1C4AA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="GrassTallTest" x="160" y="256" name="inst_3D408495" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="GrassTallTest" x="176" y="256" name="inst_1561ADCB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="GrassTallTest" x="192" y="256" name="inst_6E0D1880" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="Base_Tileset01" x="304" y="352" w="16" h="16" xo="16" yo="32" id="10000001" name="inst_C543D27D" depth="900000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
