@@ -16,11 +16,16 @@ if(point_distance(Char.x, Char.y, HohesGras.x, HohesGras.y) < 16){
         grid = mp_grid_create(0, 0, room_width/16, room_height/16, 16, 16);
         path = path_add();
         
-        mp_grid_add_instances(grid, obj_tree_big_01_01, 0);
-        mp_grid_add_instances(grid, obj_tree_big_02_01, 0);
-        mp_grid_add_instances(grid, obj_tree_big_03_01, 0);
-        mp_grid_add_instances(grid, obj_tree_big_05_01, 0);
-        mp_grid_add_instances(grid, obj_movable, 0);
+        mp_grid_add_instances(grid, TreeBig01, 0);
+        mp_grid_add_instances(grid, TreeBig02, 0);
+        mp_grid_add_instances(grid, TreeSmall01, 0);
+        mp_grid_add_instances(grid, TreeDead01, 0);
+        mp_grid_add_instances(grid, TreeDead02, 0);
+        mp_grid_add_instances(grid, TreeDead03, 0);
+        mp_grid_add_instances(grid, RockBig01, 0);
+        mp_grid_add_instances(grid, RockBig02, 0);
+        mp_grid_add_instances(grid, RockSmall01, 0);
+        
         mp_grid_add_instances(grid, lookLeft, 1);
         mp_grid_add_instances(grid, lookRight, 1);
         mp_grid_add_instances(grid, lookUp, 1);

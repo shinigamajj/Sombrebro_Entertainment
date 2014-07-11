@@ -26,6 +26,7 @@
       <sprite>sprites\spr_right</sprite>
       <sprite>sprites\spr_left</sprite>
       <sprite>sprites\spr_sprint_down</sprite>
+      <sprite>sprites\GhostCollision</sprite>
     </sprites>
     <sprite>sprites\BigTreeCollision1</sprite>
     <sprite>sprites\sprite16</sprite>
@@ -39,6 +40,7 @@
     <sprite>sprites\sprite24</sprite>
     <sprite>sprites\sprite25</sprite>
     <sprite>sprites\spr_paper</sprite>
+    <sprite>sprites\GrassTallSprite</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Base_Grass</background>
@@ -94,6 +96,9 @@
     </objects>
     <object>objects\SeamObject</object>
     <object>objects\obj_timer</object>
+    <objects name="Ground_Objects">
+      <object>objects\TallGrass</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room2</room>
