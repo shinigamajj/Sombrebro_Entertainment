@@ -48,6 +48,7 @@
             <kind>1</kind>
             <string>AStar_init(50, 50, 16, 16, 0, 0, 0, 0, -2, -2, 0, 0)
 image_speed = 0.1;
+range = 120;
 AStar_setDirBlocked(x,y,1,1);
 AStar_setDirBlocked(x,y,3,1);
 AStar_setDirBlocked(x,y,5,1);
@@ -648,6 +649,27 @@ alarm[4] = 1;
     <event eventtype="2" enumb="3">
       <action>
         <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>range = 120;
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>301</id>
         <kind>0</kind>
         <userelative>-1</userelative>
@@ -1005,7 +1027,9 @@ alarm[0] = 8;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(distance_to_point(Char.x, Char.y) &lt; 100){
+            <string>if(Char.isInGrass == true){range = 150;}
+
+if(distance_to_point(Char.x, Char.y) &lt; range){
 sprite_index = spr_enemy1;
 if(Char.isInGrass == true){
     myPath = AStar_findPath(x, y, Char.grasID.x, Char.grasID.y, false);

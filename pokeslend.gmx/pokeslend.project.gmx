@@ -100,6 +100,7 @@
     <objects name="Ground_Objects">
       <object>objects\TallGrass</object>
     </objects>
+    <object>objects\Collider</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room2</room>
