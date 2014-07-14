@@ -8,42 +8,44 @@
     <sound>sound\sound0</sound>
   </sounds>
   <sprites name="sprites">
-    <sprite>sprites\spr_enemy1</sprite>
-    <sprite>sprites\spr_enemy2</sprite>
-    <sprite>sprites\spr_enemy3</sprite>
-    <sprite>sprites\spr_enemy4</sprite>
-    <sprite>sprites\spr_movable</sprite>
-    <sprites name="tree_big_sprites">
-      <sprite>sprites\tree_big_01_01</sprite>
-      <sprite>sprites\tree_big_02_01</sprite>
-      <sprite>sprites\tree_big_03_01</sprite>
-      <sprite>sprites\tree_big_05_01</sprite>
-    </sprites>
+    <sprite>sprites\spr_paper</sprite>
+    <sprite>sprites\GrassTallSprite</sprite>
+    <sprite>sprites\spr_beerenbusch</sprite>
     <sprites name="char_sprites">
       <sprite>sprites\spr_down</sprite>
       <sprite>sprites\spr_top</sprite>
       <sprite>sprites\spr_right</sprite>
       <sprite>sprites\spr_left</sprite>
       <sprite>sprites\spr_sprint_down</sprite>
+    </sprites>
+    <sprites name="enemy_sprites">
+      <sprite>sprites\spr_enemy1</sprite>
+      <sprite>sprites\spr_enemy2</sprite>
+      <sprite>sprites\spr_enemy3</sprite>
+      <sprite>sprites\spr_enemy4</sprite>
+    </sprites>
+    <sprites name="collision_sprites">
+      <sprite>sprites\SmallTreeCollision</sprite>
+      <sprite>sprites\collision_berry</sprite>
+      <sprite>sprites\spr_Collider</sprite>
+      <sprite>sprites\BigTreeCollision1</sprite>
       <sprite>sprites\GhostCollision</sprite>
     </sprites>
-    <sprite>sprites\BigTreeCollision1</sprite>
-    <sprite>sprites\sprite16</sprite>
-    <sprite>sprites\sprite17</sprite>
-    <sprite>sprites\sprite18</sprite>
-    <sprite>sprites\SmallTreeCollision</sprite>
-    <sprite>sprites\sprite20</sprite>
-    <sprite>sprites\sprite21</sprite>
-    <sprite>sprites\sprite22</sprite>
-    <sprite>sprites\sprite23</sprite>
-    <sprite>sprites\sprite24</sprite>
-    <sprite>sprites\sprite25</sprite>
-    <sprite>sprites\spr_paper</sprite>
-    <sprite>sprites\GrassTallSprite</sprite>
-    <sprite>sprites\spr_Collider</sprite>
-    <sprite>sprites\spr_apfelbaum</sprite>
-    <sprite>sprites\spr_beerenbusch</sprite>
-    <sprite>sprites\collision_berry</sprite>
+    <sprites name="tree_sprites">
+      <sprite>sprites\sprite16</sprite>
+      <sprite>sprites\sprite17</sprite>
+      <sprite>sprites\sprite18</sprite>
+      <sprite>sprites\sprite20</sprite>
+      <sprite>sprites\sprite21</sprite>
+      <sprite>sprites\sprite22</sprite>
+      <sprite>sprites\spr_apfelbaum</sprite>
+    </sprites>
+    <sprites name="rock_sprites">
+      <sprite>sprites\sprite25</sprite>
+      <sprite>sprites\spr_movable</sprite>
+      <sprite>sprites\sprite23</sprite>
+      <sprite>sprites\sprite24</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\Base_Grass</background>
