@@ -45,6 +45,7 @@
   <backgrounds name="background">
     <background>background\Base_Grass</background>
     <background>background\Base_Tileset01</background>
+    <background>background\Swamp_Test</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -102,6 +103,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\room2</room>
+    <room>rooms\room3</room>
     <room>rooms\room1</room>
   </rooms>
   <help>
