@@ -41,6 +41,7 @@
     <sprite>sprites\sprite25</sprite>
     <sprite>sprites\spr_paper</sprite>
     <sprite>sprites\GrassTallSprite</sprite>
+    <sprite>sprites\spr_Collider</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Base_Grass</background>
@@ -100,7 +101,7 @@
     <objects name="Ground_Objects">
       <object>objects\TallGrass</object>
     </objects>
-    <object>objects\Collider</object>
+    <object>objects\obj_Collider</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room2</room>
