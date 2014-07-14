@@ -222,7 +222,7 @@ image_speed = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>isDoing = false;
+            <string>if(TreeApple01.isEating == false){isDoing = false;}
 </string>
           </argument>
         </arguments>
@@ -435,7 +435,7 @@ grasID = instance_place(Char.x, Char.y, TallGrass);
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>sprite_index != spr_down &amp;&amp; sprite_index != spr_sprint_down</string>
+            <string>sprite_index != spr_down &amp;&amp; sprite_index != spr_sprint_down &amp;&amp; !isDoing</string>
           </argument>
         </arguments>
       </action>
@@ -1074,7 +1074,7 @@ grasID = instance_place(Char.x, Char.y, TallGrass);
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>sprite_index != spr_right</string>
+            <string>sprite_index != spr_right &amp;&amp; !isDoing</string>
           </argument>
         </arguments>
       </action>
@@ -1657,7 +1657,7 @@ grasID = instance_place(Char.x, Char.y, TallGrass);
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>sprite_index != spr_top</string>
+            <string>sprite_index != spr_top &amp;&amp; !isDoing</string>
           </argument>
         </arguments>
       </action>
@@ -2240,7 +2240,7 @@ grasID = instance_place(Char.x, Char.y, TallGrass);
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>sprite_index != spr_left</string>
+            <string>sprite_index != spr_left &amp;&amp; !isDoing</string>
           </argument>
         </arguments>
       </action>
