@@ -32,6 +32,8 @@ eatMinutes = 2;
 eatSeconds = 0;
 
 dead = false;
+
+pagesAmount = instance_number(obj_paper);
 </string>
           </argument>
         </arguments>
@@ -152,7 +154,7 @@ draw_text(view_xview[0],view_yview[0]+view_hview[0]-string_height(drawstring),dr
 
 show_eatSeconds=string_repeat("0", 2-string_length(string(eatSeconds)))+string(eatSeconds);
 var drawEatString;
-drawEatString = "" +string(eatMinutes) + ":" + string(show_eatSeconds);
+drawEatString = "" + string(eatMinutes) + ":" + string(show_eatSeconds);
 draw_text(view_xview[0]+view_wview[0]-27-string_length(drawEatString), view_yview[0], drawEatString);
 
 if(eatSeconds == 0 &amp;&amp; eatMinutes == 0){
@@ -160,6 +162,10 @@ if(eatSeconds == 0 &amp;&amp; eatMinutes == 0){
     diedText = "You died, NOOB!"
     draw_text(view_xview[0], view_yview[0], diedText);
 }
+
+var drawPages;
+drawPages = "" + string(Char.pagesCollected) + "/" + string(pagesAmount);
+draw_text(view_xview[0]+view_wview[0]-20-string_length(drawPages), view_yview[0]+20, drawPages);
 </string>
           </argument>
         </arguments>

@@ -52,6 +52,7 @@ isDoing = false;
 canmove = true;
 isInGrass = false;
 grasID = 0;
+pagesCollected = 0;
 
 image_speed = 0;
 </string>

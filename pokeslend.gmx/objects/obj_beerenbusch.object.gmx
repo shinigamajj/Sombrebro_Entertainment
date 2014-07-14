@@ -83,8 +83,8 @@ isEating  = false;
             <string>didEat = true;
 isEating = false;
 Char.isDoing = false;
-obj_timer.eatSeconds = 0;
-obj_timer.eatMinutes = 2;
+obj_GUI.eatSeconds = 0;
+obj_GUI.eatMinutes = 2;
 </string>
           </argument>
         </arguments>

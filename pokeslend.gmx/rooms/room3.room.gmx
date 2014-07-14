@@ -52,7 +52,7 @@
   </views>
   <instances>
     <instance objName="gameController" x="784" y="784" name="inst_DE059C87" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_timer" x="768" y="784" name="inst_8EA49BFD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_GUI" x="768" y="784" name="inst_8EA49BFD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="RockBig01" x="176" y="160" name="inst_F79B6576" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="RockBig01" x="304" y="160" name="inst_2DAC2C65" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="RockBig01" x="304" y="192" name="inst_163DC159" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

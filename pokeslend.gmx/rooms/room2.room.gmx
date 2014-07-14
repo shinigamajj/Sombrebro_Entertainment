@@ -265,7 +265,7 @@
     <instance objName="RockBig02" x="544" y="240" name="inst_6387E4DA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TreeDead03" x="656" y="256" name="inst_BCBEDC5B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TreeDead01" x="176" y="560" name="inst_9BA7FEC0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_timer" x="768" y="784" name="inst_3EF805DC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_GUI" x="768" y="784" name="inst_3EF805DC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="RockBig02" x="240" y="528" name="inst_96A5840C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_movable" x="624" y="224" name="inst_A0415987" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_movable" x="640" y="208" name="inst_20416B36" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -683,6 +683,11 @@
     <instance objName="obj_Collider" x="384" y="352" name="inst_FD1F0BF8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collider" x="368" y="352" name="inst_CBB0A11A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collider" x="384" y="368" name="inst_C464CB5D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_paper" x="576" y="560" name="inst_6B8A877E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_paper" x="560" y="192" name="inst_D0C0BD93" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_paper" x="272" y="560" name="inst_D596CB83" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_paper" x="208" y="176" name="inst_6A910A2B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_altar" x="416" y="320" name="inst_36CEEDE4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="Transparency_test" x="528" y="336" w="16" h="16" xo="48" yo="48" id="10000445" name="inst_271391DF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

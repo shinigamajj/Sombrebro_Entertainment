@@ -30,6 +30,7 @@
       <sprite>sprites\spr_Collider</sprite>
       <sprite>sprites\BigTreeCollision1</sprite>
       <sprite>sprites\GhostCollision</sprite>
+      <sprite>sprites\collision_altar</sprite>
     </sprites>
     <sprites name="tree_sprites">
       <sprite>sprites\sprite16</sprite>
@@ -45,6 +46,11 @@
       <sprite>sprites\spr_movable</sprite>
       <sprite>sprites\sprite23</sprite>
       <sprite>sprites\sprite24</sprite>
+    </sprites>
+    <sprites name="altar_sprites">
+      <sprite>sprites\spr_altar1</sprite>
+      <sprite>sprites\apr_altar2</sprite>
+      <sprite>sprites\spr_altar3</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -98,12 +104,14 @@
       <object>objects\RockSmall01</object>
     </objects>
     <object>objects\SeamObject</object>
-    <object>objects\obj_timer</object>
+    <object>objects\obj_GUI</object>
     <objects name="Ground_Objects">
       <object>objects\TallGrass</object>
     </objects>
     <object>objects\obj_Collider</object>
     <object>objects\obj_beerenbusch</object>
+    <object>objects\obj_paper</object>
+    <object>objects\obj_altar</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room2</room>
