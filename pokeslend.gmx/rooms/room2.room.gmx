@@ -472,7 +472,7 @@
     <instance objName="obj_Collider" x="544" y="400" name="inst_E7722952" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collider" x="560" y="400" name="inst_A7889822" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collider" x="576" y="400" name="inst_8271C1A2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Collider" x="592" y="400" name="inst_3B6A0C6E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Collider" x="576" y="416" name="inst_3B6A0C6E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collider" x="592" y="416" name="inst_02A55F75" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collider" x="592" y="432" name="inst_D6EB171C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collider" x="592" y="448" name="inst_E0DA10E6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
