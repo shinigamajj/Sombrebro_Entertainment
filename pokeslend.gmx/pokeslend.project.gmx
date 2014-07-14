@@ -48,6 +48,7 @@
     <background>background\Base_Grass</background>
     <background>background\Base_Tileset01</background>
     <background>background\Swamp_Test</background>
+    <background>background\Transparency_test</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
