@@ -159,7 +159,7 @@ draw_text(view_xview[0]+view_wview[0]-27-string_length(drawEatString), view_yvie
 
 if(eatSeconds == 0 &amp;&amp; eatMinutes == 0){
     var diedText;
-    diedText = "You died, NOOB!"
+    diedText = "You died of hunger!"
     draw_text(view_xview[0], view_yview[0], diedText);
 }
 
