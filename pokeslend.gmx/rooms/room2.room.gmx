@@ -514,6 +514,7 @@
     <instance objName="obj_Collider" x="320" y="624" name="inst_5BCB8AF0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collider" x="304" y="624" name="inst_05A4FE45" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TreeApple01" x="416" y="240" name="inst_13C299BB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_beerenbusch" x="496" y="336" name="inst_E7B8DE94" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="Transparency_test" x="528" y="336" w="16" h="16" xo="48" yo="48" id="10000445" name="inst_271391DF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

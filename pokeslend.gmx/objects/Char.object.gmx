@@ -222,7 +222,7 @@ image_speed = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(TreeApple01.isEating == false){isDoing = false;}
+            <string>if(TreeApple01.isEating == false &amp;&amp; obj_beerenbusch.isEating == false){isDoing = false;}
 </string>
           </argument>
         </arguments>

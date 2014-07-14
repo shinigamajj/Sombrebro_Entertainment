@@ -42,7 +42,9 @@
     <sprite>sprites\spr_paper</sprite>
     <sprite>sprites\GrassTallSprite</sprite>
     <sprite>sprites\spr_Collider</sprite>
-    <sprite>sprites\sprite30</sprite>
+    <sprite>sprites\spr_apfelbaum</sprite>
+    <sprite>sprites\spr_beerenbusch</sprite>
+    <sprite>sprites\collision_berry</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Base_Grass</background>
@@ -77,10 +79,6 @@
     <object>objects\Char</object>
     <object>objects\enemy</object>
     <object>objects\HohesGras</object>
-    <object>objects\obj_tree_big_01_01</object>
-    <object>objects\obj_tree_big_02_01</object>
-    <object>objects\obj_tree_big_03_01</object>
-    <object>objects\obj_tree_big_05_01</object>
     <object>objects\obj_movable</object>
     <object>objects\objPathFinder</object>
     <object>objects\gameController</object>
@@ -105,11 +103,11 @@
       <object>objects\TallGrass</object>
     </objects>
     <object>objects\obj_Collider</object>
+    <object>objects\obj_beerenbusch</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room2</room>
     <room>rooms\room3</room>
-    <room>rooms\room1</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
