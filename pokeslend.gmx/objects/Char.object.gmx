@@ -266,9 +266,9 @@ image_speed = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(distance_to_object(GrassTallSprite) == 0){
+            <string>if(distance_to_object(TallGrass) == 0){
 isInGrass = true;
-grasID = instance_place(Char.x, Char.y, HohesGras);
+grasID = instance_place(Char.x, Char.y, TallGrass);
 }
     else {isInGrass = false;}
 </string>
