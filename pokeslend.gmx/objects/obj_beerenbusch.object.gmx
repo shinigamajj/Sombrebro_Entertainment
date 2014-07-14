@@ -216,7 +216,7 @@ AStar_setBlocked(x,y,1);
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>Char.sprite_index == spr_left &amp;&amp; Char.x == x+32 &amp;&amp; Char.y-16 == y+16</string>
+            <string>Char.sprite_index == spr_left &amp;&amp; Char.x == x+32 &amp;&amp; Char.y == y+16</string>
           </argument>
         </arguments>
       </action>
@@ -338,7 +338,7 @@ isEating = true;
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>Char.sprite_index == spr_right &amp;&amp; Char.x == x-16 &amp;&amp; Char.y-16 == y+16</string>
+            <string>Char.sprite_index == spr_right &amp;&amp; Char.x == x-16 &amp;&amp; Char.y == y+16</string>
           </argument>
         </arguments>
       </action>
@@ -460,7 +460,7 @@ isEating = true;
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>Char.sprite_index == spr_top &amp;&amp; Char.y-16 == y+32 &amp;&amp; Char.x == x</string>
+            <string>Char.sprite_index == spr_top &amp;&amp; Char.y == y+32 &amp;&amp; Char.x == x</string>
           </argument>
         </arguments>
       </action>
@@ -582,7 +582,7 @@ isEating = true;
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>Char.sprite_index == spr_down &amp;&amp; Char.y-16 == y &amp;&amp; Char.x == x+16</string>
+            <string>Char.sprite_index == spr_down &amp;&amp; Char.y == y &amp;&amp; Char.x == x+16</string>
           </argument>
         </arguments>
       </action>
@@ -704,7 +704,7 @@ isEating = true;
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>Char.sprite_index == spr_down &amp;&amp; Char.y-16 == y &amp;&amp; Char.x == x</string>
+            <string>Char.sprite_index == spr_down &amp;&amp; Char.y == y &amp;&amp; Char.x == x</string>
           </argument>
         </arguments>
       </action>

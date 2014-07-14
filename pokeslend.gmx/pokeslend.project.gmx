@@ -12,7 +12,6 @@
     <sprite>sprites\spr_enemy2</sprite>
     <sprite>sprites\spr_enemy3</sprite>
     <sprite>sprites\spr_enemy4</sprite>
-    <sprite>sprites\sprite3</sprite>
     <sprite>sprites\spr_movable</sprite>
     <sprites name="tree_big_sprites">
       <sprite>sprites\tree_big_01_01</sprite>
@@ -78,7 +77,6 @@
   <objects name="objects">
     <object>objects\Char</object>
     <object>objects\enemy</object>
-    <object>objects\HohesGras</object>
     <object>objects\obj_movable</object>
     <object>objects\objPathFinder</object>
     <object>objects\gameController</object>
