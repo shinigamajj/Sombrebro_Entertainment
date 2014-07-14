@@ -48,6 +48,10 @@
             <kind>1</kind>
             <string>AStar_init(50, 50, 16, 16, 0, 0, 0, 0, -2, -2, 0, 0)
 image_speed = 0.1;
+AStar_setDirBlocked(x,y,1,1);
+AStar_setDirBlocked(x,y,3,1);
+AStar_setDirBlocked(x,y,5,1);
+AStar_setDirBlocked(x,y,7,1);
 alarm[0] = 8;
 alarm[4] = 1;
 </string>
