@@ -712,7 +712,7 @@ else{image_speed = 0;}
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>Char.sprite_index == spr_down &amp;&amp; Char.y == y-16 &amp;&amp; Char.x == x</string>
+            <string>(Char.sprite_index == spr_down || Char.sprite_index == spr_sprint_down) &amp;&amp; Char.y == y-16 &amp;&amp; Char.x == x</string>
           </argument>
         </arguments>
       </action>

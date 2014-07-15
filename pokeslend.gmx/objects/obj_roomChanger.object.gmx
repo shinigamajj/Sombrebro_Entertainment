@@ -95,6 +95,22 @@
             <kind>1</kind>
             <string>Char.y += 16
 Char.sprite_index = spr_down;
+running = false;
+isDoing = false;
+canmove = true;
+
+isInGrass = false;
+grasID = 0;
+
+isInSwamp = false;
+swampID = 0;
+swampSeconds = -1;
+isCheckingSwamp = false;
+
+image_speed = 0;
+
+char_speed = 2;
+char_speed_run = 4;
 </string>
           </argument>
         </arguments>
@@ -330,6 +346,22 @@ Char.sprite_index = spr_down;
             <kind>1</kind>
             <string>Char.y += 16
 Char.sprite_index = spr_down;
+running = false;
+isDoing = false;
+canmove = true;
+
+isInGrass = false;
+grasID = 0;
+
+isInSwamp = false;
+swampID = 0;
+swampSeconds = -1;
+isCheckingSwamp = false;
+
+image_speed = 0;
+
+char_speed = 2;
+char_speed_run = 4;
 </string>
           </argument>
         </arguments>
