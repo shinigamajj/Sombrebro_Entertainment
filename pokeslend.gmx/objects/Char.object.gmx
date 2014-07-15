@@ -393,11 +393,11 @@ alarm[4] = 1;
 /* Sets the Character Speed */
 
 if(isInSwamp &amp;&amp; obj_GUI.eatMinutes &gt;= 1){
-char_speed = 1.6;
-char_speed_run = 3.2;
-} else if(isInSwamp &amp;&amp; obj_GUI.eatMinutes &lt;= 0){ 
 char_speed = 1;
 char_speed_run = 2;
+} else if(isInSwamp &amp;&amp; obj_GUI.eatMinutes &lt;= 0){ 
+char_speed = 0.5;
+char_speed_run = 1;
 } else{
 char_speed = 2;
 char_speed_run = 4;
