@@ -44,6 +44,7 @@
     <sprites name="rock_sprites">
       <sprite>sprites\sprite25</sprite>
       <sprite>sprites\spr_movable</sprite>
+      <sprite>sprites\spr_resetter</sprite>
       <sprite>sprites\sprite23</sprite>
       <sprite>sprites\sprite24</sprite>
     </sprites>
@@ -96,6 +97,7 @@
     <object>objects\Char</object>
     <object>objects\enemy</object>
     <object>objects\obj_movable</object>
+    <object>objects\obj_resetter</object>
     <objects name="Trees">
       <object>objects\TreeBig01</object>
       <object>objects\TreeBig02</object>
