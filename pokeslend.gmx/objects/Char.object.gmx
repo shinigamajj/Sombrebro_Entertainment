@@ -90,9 +90,12 @@ char_speed_run = 4;
             <kind>1</kind>
             <string>if(isInSwamp){
     if(distance_to_object(swampID) == 0){
-        swampSeconds += 1;
+        if(obj_GUI.dead == false){
+            swampSeconds += 1;
+        }
         if(swampSeconds &gt;= 5){
             isDoing = true;
+            sprite_index = spr_grave;
         }
         alarm[4] = 30;
     }
@@ -2836,7 +2839,7 @@ char_speed_run = 4;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(!runningCooldown &amp;&amp; !running){
+            <string>if(!runningCooldown &amp;&amp; !running &amp;&amp; !isDoing){
     runningCooldown = true;
     running = true;
 

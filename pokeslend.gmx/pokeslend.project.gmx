@@ -62,6 +62,7 @@
     <sprite>sprites\sprite39</sprite>
     <sprite>sprites\sprite40</sprite>
     <sprite>sprites\sprite41</sprite>
+    <sprite>sprites\spr_grave</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Base_Grass</background>

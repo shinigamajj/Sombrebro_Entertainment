@@ -80,11 +80,13 @@ pagesAmount = instance_number(obj_paper);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>seconds += 1;
-if(seconds == 60)
-{
-    minutes += 1;
-    seconds = 0;
+            <string>if(!dead){
+    seconds += 1;
+    if(seconds == 60)
+    {
+        minutes += 1;
+        seconds = 0;
+    }
 }
 
 if(eatSeconds == 0 &amp;&amp; eatMinutes == 0){dead = true;}
@@ -158,6 +160,7 @@ drawEatString = "" + string(eatMinutes) + ":" + string(show_eatSeconds);
 draw_text(view_xview[0]+view_wview[0]-27-string_length(drawEatString), view_yview[0], drawEatString);
 
 if(eatSeconds == 0 &amp;&amp; eatMinutes == 0){
+    dead = true;
     var diedText;
     diedText = "You died of hunger!"
     draw_text(view_xview[0], view_yview[0], diedText);
@@ -168,7 +171,8 @@ drawPages = "" + string(Char.pagesCollected) + "/" + string(pagesAmount);
 draw_text(view_xview[0]+view_wview[0]-20-string_length(drawPages), view_yview[0]+20, drawPages);
 
 if(Char.swampSeconds &gt;= 5){
-        var diedSwamp;
+    dead = true;
+    var diedSwamp;
     diedSwamp = "You died in the swamp!"
     draw_text(view_xview[0], view_yview[0], diedSwamp);
 }
