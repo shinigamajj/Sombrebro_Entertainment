@@ -62,8 +62,6 @@
     <sprite>sprites\sprite39</sprite>
     <sprite>sprites\sprite40</sprite>
     <sprite>sprites\sprite41</sprite>
-    <sprite>sprites\sprite42</sprite>
-    <sprite>sprites\sprite43</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Base_Grass</background>
@@ -106,8 +104,6 @@
       <object>objects\TreeDead02</object>
       <object>objects\TreeDead03</object>
       <object>objects\TreeApple01</object>
-      <object>objects\TreeSwampBig01</object>
-      <object>objects\TreeSwampBig02</object>
     </objects>
     <objects name="Rocks">
       <object>objects\RockBig01</object>
