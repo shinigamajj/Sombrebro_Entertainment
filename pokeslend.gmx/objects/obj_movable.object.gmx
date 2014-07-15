@@ -26,6 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>depth = -((y*100)+x);
+
+mov_speed = 1;
 </string>
           </argument>
         </arguments>
@@ -95,6 +97,10 @@ AStar_setBlocked(x,y,1);
           <argument>
             <kind>1</kind>
             <string>depth = -((y*100)+x);
+
+if(obj_GUI.eatMinutes &lt;= 0){
+mov_speed = 0.5;
+} else { mov_speed = 1; }
 </string>
           </argument>
         </arguments>
@@ -408,7 +414,7 @@ else{image_speed = 0;}
           </argument>
           <argument>
             <kind>0</kind>
-            <string>1</string>
+            <string>mov_speed</string>
           </argument>
         </arguments>
       </action>
@@ -536,7 +542,7 @@ else{image_speed = 0;}
           </argument>
           <argument>
             <kind>0</kind>
-            <string>1</string>
+            <string>mov_speed</string>
           </argument>
         </arguments>
       </action>
@@ -664,7 +670,7 @@ else{image_speed = 0;}
           </argument>
           <argument>
             <kind>0</kind>
-            <string>1</string>
+            <string>mov_speed</string>
           </argument>
         </arguments>
       </action>
@@ -792,7 +798,7 @@ else{image_speed = 0;}
           </argument>
           <argument>
             <kind>0</kind>
-            <string>1</string>
+            <string>mov_speed</string>
           </argument>
         </arguments>
       </action>

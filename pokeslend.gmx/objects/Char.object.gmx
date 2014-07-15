@@ -48,6 +48,7 @@
             <kind>1</kind>
             <string>running = false;
 runningCooldown = false;
+canRun = true;
 
 isDoing = false;
 canmove = true;
@@ -338,9 +339,7 @@ swampID = instance_place(Char.x, Char.y, Swamp_Top_Left);
 isCheckingSwamp = true;
 alarm[4] = 1;
 }
-    else {isInSwamp = false;}
-    
-if(distance_to_object(Swamp_Top_Mid) == 0){
+else if(distance_to_object(Swamp_Top_Mid) == 0){
 isInSwamp = true;
 swampID = instance_place(Char.x, Char.y, Swamp_Top_Mid);
 isCheckingSwamp = true;
@@ -387,20 +386,29 @@ isInSwamp = true;
 swampID = instance_place(Char.x, Char.y, Swamp_Bot_Right);
 isCheckingSwamp = true;
 alarm[4] = 1;
-}
-else {isInSwamp = false;}
+} else {isInSwamp = false;}
 }
 
 
 /* Sets the Character Speed */
 
-if(isInSwamp){
+if(isInSwamp &amp;&amp; obj_GUI.eatMinutes &gt;= 1){
+char_speed = 1.6;
+char_speed_run = 3.2;
+} else if(isInSwamp &amp;&amp; obj_GUI.eatMinutes &lt;= 0){ 
 char_speed = 1;
 char_speed_run = 2;
 } else{
 char_speed = 2;
 char_speed_run = 4;
 }
+
+
+/* Checks if Character can run */
+
+if(obj_GUI.eatMinutes &lt;= 0){
+canRun = false;
+} else { canRun = true; }
 </string>
           </argument>
         </arguments>
@@ -2839,7 +2847,7 @@ char_speed_run = 4;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(!runningCooldown &amp;&amp; !running &amp;&amp; !isDoing){
+            <string>if(!runningCooldown &amp;&amp; !running &amp;&amp; !isDoing &amp;&amp; canRun){
     runningCooldown = true;
     running = true;
 
@@ -2875,6 +2883,106 @@ char_speed_run = 4;
       </action>
       <action>
         <libid>1</libid>
+        <id>408</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>-1</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_if</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>obj_movable.mov_speed == 0.5</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>422</id>
+        <kind>1</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>301</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_set_alarm</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>32</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>424</id>
+        <kind>2</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>421</id>
+        <kind>3</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>422</id>
+        <kind>1</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>301</id>
         <kind>0</kind>
         <userelative>-1</userelative>
@@ -2896,6 +3004,20 @@ char_speed_run = 4;
             <string>0</string>
           </argument>
         </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>424</id>
+        <kind>2</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
       </action>
     </event>
     <event eventtype="10" enumb="40">
