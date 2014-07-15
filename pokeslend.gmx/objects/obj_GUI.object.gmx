@@ -166,6 +166,12 @@ if(eatSeconds == 0 &amp;&amp; eatMinutes == 0){
 var drawPages;
 drawPages = "" + string(Char.pagesCollected) + "/" + string(pagesAmount);
 draw_text(view_xview[0]+view_wview[0]-20-string_length(drawPages), view_yview[0]+20, drawPages);
+
+if(Char.swampSeconds &gt;= 5){
+        var diedSwamp;
+    diedSwamp = "You died in the swamp!"
+    draw_text(view_xview[0], view_yview[0], diedSwamp);
+}
 </string>
           </argument>
         </arguments>
