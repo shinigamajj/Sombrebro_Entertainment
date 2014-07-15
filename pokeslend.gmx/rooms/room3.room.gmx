@@ -177,6 +177,9 @@
     <instance objName="Swamp_Mid" x="384" y="304" name="inst_C5A52593" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Swamp_Mid" x="368" y="304" name="inst_43502966" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Swamp_Mid" x="352" y="304" name="inst_1579E16E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TreeSwampBig02" x="416" y="144" name="inst_D1CE4A97" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TreeSwampBig01" x="464" y="176" name="inst_19BC98D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TreeSwampBig01" x="512" y="208" name="inst_673EBF81" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="Base_Tileset01" x="240" y="96" w="16" h="16" xo="16" yo="48" id="10000362" name="inst_CF3756A4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
