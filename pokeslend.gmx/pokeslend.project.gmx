@@ -53,6 +53,15 @@
       <sprite>sprites\spr_altar3</sprite>
     </sprites>
     <sprite>sprites\spr_roomChanger</sprite>
+    <sprite>sprites\sprite33</sprite>
+    <sprite>sprites\sprite34</sprite>
+    <sprite>sprites\sprite35</sprite>
+    <sprite>sprites\sprite36</sprite>
+    <sprite>sprites\sprite37</sprite>
+    <sprite>sprites\sprite38</sprite>
+    <sprite>sprites\sprite39</sprite>
+    <sprite>sprites\sprite40</sprite>
+    <sprite>sprites\sprite41</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Base_Grass</background>
@@ -103,6 +112,15 @@
     </objects>
     <objects name="Ground_Objects">
       <object>objects\TallGrass</object>
+      <object>objects\Swamp_Top_Left</object>
+      <object>objects\Swamp_Top_Mid</object>
+      <object>objects\Swamp_Top_Right</object>
+      <object>objects\Swamp_Mid_Left</object>
+      <object>objects\Swamp_Mid</object>
+      <object>objects\Swamp_Mid_Right</object>
+      <object>objects\Swamp_Bot_Left</object>
+      <object>objects\Swamp_Bot_Mid</object>
+      <object>objects\Swamp_Bot_Right</object>
     </objects>
     <object>objects\obj_beerenbusch</object>
     <object>objects\obj_paper</object>
