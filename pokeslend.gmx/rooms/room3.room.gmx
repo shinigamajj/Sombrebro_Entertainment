@@ -83,7 +83,7 @@
     <instance objName="TreeBig02" x="320" y="144" name="inst_810A5ED5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_movable" x="224" y="400" name="inst_AFDD3C74" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="RockSmall01" x="304" y="160" name="inst_58D58175" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Char" x="240" y="128" name="inst_C745534B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Char" x="208" y="96" name="inst_C745534B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TreeBig01" x="128" y="80" name="inst_D7F3A81D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TreeBig01" x="176" y="32" name="inst_B166F044" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TreeBig01" x="240" y="48" name="inst_5BC9D659" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -135,6 +135,9 @@
     <instance objName="obj_movable" x="304" y="448" name="inst_32CEE065" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_movable" x="256" y="448" name="inst_4F343EE3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_movable" x="288" y="448" name="inst_995B1180" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_roomChanger" x="208" y="80" name="inst_DB3BEA8D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TreeApple01" x="0" y="0" name="inst_D030E507" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_beerenbusch" x="0" y="96" name="inst_53E81E6D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="Base_Tileset01" x="240" y="96" w="16" h="16" xo="16" yo="48" id="10000362" name="inst_CF3756A4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

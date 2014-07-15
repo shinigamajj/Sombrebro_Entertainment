@@ -52,6 +52,7 @@
       <sprite>sprites\apr_altar2</sprite>
       <sprite>sprites\spr_altar3</sprite>
     </sprites>
+    <sprite>sprites\spr_roomChanger</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Base_Grass</background>
@@ -86,9 +87,6 @@
     <object>objects\Char</object>
     <object>objects\enemy</object>
     <object>objects\obj_movable</object>
-    <object>objects\objPathFinder</object>
-    <object>objects\gameController</object>
-    <object>objects\gamePause</object>
     <objects name="Trees">
       <object>objects\TreeBig01</object>
       <object>objects\TreeBig02</object>
@@ -103,15 +101,20 @@
       <object>objects\RockBig02</object>
       <object>objects\RockSmall01</object>
     </objects>
-    <object>objects\SeamObject</object>
-    <object>objects\obj_GUI</object>
     <objects name="Ground_Objects">
       <object>objects\TallGrass</object>
     </objects>
-    <object>objects\obj_Collider</object>
     <object>objects\obj_beerenbusch</object>
     <object>objects\obj_paper</object>
     <object>objects\obj_altar</object>
+    <objects name="invisible_objects">
+      <object>objects\obj_GUI</object>
+      <object>objects\obj_Collider</object>
+      <object>objects\gamePause</object>
+      <object>objects\gameController</object>
+      <object>objects\objPathFinder</object>
+    </objects>
+    <object>objects\obj_roomChanger</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room2</room>
