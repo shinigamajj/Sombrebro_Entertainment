@@ -1320,7 +1320,7 @@ if(TreeApple01.isEating == true || obj_beerenbusch.isEating == true){
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>sprite_index != spr_right &amp;&amp; !isDoing</string>
+            <string>sprite_index != spr_right &amp;&amp; sprite_index != spr_sprint_right &amp;&amp; !isDoing</string>
           </argument>
         </arguments>
       </action>
@@ -1455,7 +1455,7 @@ if(TreeApple01.isEating == true || obj_beerenbusch.isEating == true){
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>sprite_index == spr_right</string>
+            <string>sprite_index == spr_right || sprite_index == spr_sprint_right</string>
           </argument>
         </arguments>
       </action>
@@ -1661,7 +1661,7 @@ if(TreeApple01.isEating == true || obj_beerenbusch.isEating == true){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_speed = 0.40;
+            <string>image_speed = 0.45;
 </string>
           </argument>
         </arguments>
@@ -1959,7 +1959,7 @@ if(TreeApple01.isEating == true || obj_beerenbusch.isEating == true){
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>sprite_index != spr_top &amp;&amp; !isDoing</string>
+            <string>sprite_index != spr_top &amp;&amp; sprite_index != spr_sprint_top &amp;&amp; !isDoing</string>
           </argument>
         </arguments>
       </action>
@@ -2094,7 +2094,7 @@ if(TreeApple01.isEating == true || obj_beerenbusch.isEating == true){
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>sprite_index == spr_top</string>
+            <string>sprite_index == spr_top || sprite_index == spr_sprint_top</string>
           </argument>
         </arguments>
       </action>
@@ -2300,7 +2300,7 @@ if(TreeApple01.isEating == true || obj_beerenbusch.isEating == true){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_speed = 0.40;
+            <string>image_speed = 0.45;
 </string>
           </argument>
         </arguments>
@@ -2598,7 +2598,7 @@ if(TreeApple01.isEating == true || obj_beerenbusch.isEating == true){
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>sprite_index != spr_left &amp;&amp; !isDoing</string>
+            <string>sprite_index != spr_left &amp;&amp; sprite_index != spr_sprint_left &amp;&amp; !isDoing</string>
           </argument>
         </arguments>
       </action>
@@ -2733,7 +2733,7 @@ if(TreeApple01.isEating == true || obj_beerenbusch.isEating == true){
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>sprite_index == spr_left</string>
+            <string>sprite_index == spr_left || sprite_index == spr_sprint_left</string>
           </argument>
         </arguments>
       </action>
@@ -2905,7 +2905,7 @@ if(TreeApple01.isEating == true || obj_beerenbusch.isEating == true){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_speed = 0.40;
+            <string>image_speed = 0.45;
 </string>
           </argument>
         </arguments>
