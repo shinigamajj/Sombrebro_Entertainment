@@ -183,6 +183,12 @@
     <instance objName="message_erschoepft" x="752" y="784" name="inst_DC36F069" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="message_hunger1" x="736" y="784" name="inst_733AF1DE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="message_hunger2" x="720" y="784" name="inst_509DF060" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Bubble01" x="368" y="256" name="inst_9B67800B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Bubble04" x="400" y="288" name="inst_BF329F1D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ANM_TallGrass" x="480" y="320" name="inst_A2B0F66A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ANM_TallGrass" x="496" y="320" name="inst_12A1688C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ANM_TallGrass" x="512" y="320" name="inst_CA1D9F69" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ANM_TallGrass" x="528" y="320" name="inst_C85F7C00" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="Base_Tileset01" x="240" y="96" w="16" h="16" xo="16" yo="48" id="10000362" name="inst_CF3756A4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

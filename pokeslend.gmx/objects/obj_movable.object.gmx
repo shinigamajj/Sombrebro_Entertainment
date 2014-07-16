@@ -183,8 +183,8 @@ mov_speed = 0.5;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(distance_to_object(Char) &lt; 100){
-image_speed = 0.05;
+            <string>if(distance_to_object(Char) &lt; 32){
+image_speed = 0.03;
 }
 else{image_speed = 0;}
 </string>
