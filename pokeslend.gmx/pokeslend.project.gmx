@@ -68,6 +68,9 @@
     <sprite>sprites\spr_grave</sprite>
     <sprite>sprites\sprite44</sprite>
     <sprite>sprites\sprite45</sprite>
+    <sprite>sprites\spr_msg_erschoepft</sprite>
+    <sprite>sprites\spr_msg_hunger1</sprite>
+    <sprite>sprites\spr_msg_hunger2</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Base_Grass</background>
@@ -103,6 +106,7 @@
     <object>objects\Char</object>
     <object>objects\enemy</object>
     <object>objects\obj_movable</object>
+    <object>objects\obj_mov_baum</object>
     <object>objects\obj_resetter</object>
     <objects name="Trees">
       <object>objects\TreeBig01</object>
@@ -143,6 +147,9 @@
       <object>objects\objPathFinder</object>
     </objects>
     <object>objects\obj_roomChanger</object>
+    <object>objects\message_erschoepft</object>
+    <object>objects\message_hunger1</object>
+    <object>objects\message_hunger2</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room2</room>
