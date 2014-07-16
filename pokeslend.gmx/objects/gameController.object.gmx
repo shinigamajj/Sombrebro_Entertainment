@@ -50,6 +50,13 @@
             <kind>1</kind>
             <string>if(file_exists("save_room1")){file_delete("save_room1");}
 if(file_exists("save_room2")){file_delete("save_room2");}
+
+ini_open("variables.ini");
+    ini_write_real("timers","eatMin",2);
+    ini_write_real("timers","eatSec",0);
+    ini_write_real("timers","min",0);
+    ini_write_real("timers","secs",0);
+ini_close();
 </string>
           </argument>
         </arguments>

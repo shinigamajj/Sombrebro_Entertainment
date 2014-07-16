@@ -142,11 +142,11 @@ Char.isDoing = false;
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
-        <isnot>-1</isnot>
+        <isnot>0</isnot>
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>didDestroy</string>
+            <string>didDestroy == false &amp;&amp; Char.canDestroy == true</string>
           </argument>
         </arguments>
       </action>

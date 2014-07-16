@@ -25,11 +25,19 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>minutes = 0;
+            <string>/*minutes = 0;
 seconds = 0;
 
 eatMinutes = 2;
-eatSeconds = 0;
+eatSeconds = 0;*/
+
+ini_open("variables.ini");
+    minutes = ini_read_real("timers","min",0);
+    seconds = ini_read_real("timers","secs",0);
+    
+    eatMinutes = ini_read_real("timers","eatMin",2);
+    eatSeconds = ini_read_real("timers","eatSec",0);
+ini_close();
 
 dead = false;
 
@@ -126,6 +134,35 @@ if(TreeApple01.isEating == false &amp;&amp; obj_beerenbusch.isEating == false){
           <argument>
             <kind>4</kind>
             <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>ini_open("variables.ini");
+    minutes = ini_read_real("timers","min",0);
+    seconds = ini_read_real("timers","secs",0);
+    
+    eatMinutes = ini_read_real("timers","eatMin",2);
+    eatSeconds = ini_read_real("timers","eatSec",0);
+ini_close();
+</string>
           </argument>
         </arguments>
       </action>

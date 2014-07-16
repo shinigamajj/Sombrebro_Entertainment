@@ -111,6 +111,13 @@ image_speed = 0;
 
 char_speed = 2;
 char_speed_run = 4;
+
+ini_open("variables.ini");
+    ini_write_real("timers","eatMin",obj_GUI.eatMinutes);
+    ini_write_real("timers","eatSec",obj_GUI.eatSeconds);
+    ini_write_real("timers","min",obj_GUI.minutes);
+    ini_write_real("timers","secs",obj_GUI.seconds);
+ini_close();
 </string>
           </argument>
         </arguments>
@@ -247,7 +254,14 @@ char_speed_run = 4;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(room3);
+            <string>ini_open("variables.ini");
+    ini_write_real("timers","eatMin",obj_GUI.eatMinutes);
+    ini_write_real("timers","eatSec",obj_GUI.eatSeconds);
+    ini_write_real("timers","min",obj_GUI.minutes);
+    ini_write_real("timers","secs",obj_GUI.seconds);
+ini_close();
+
+room_goto(room3);
 </string>
           </argument>
         </arguments>
@@ -362,6 +376,13 @@ image_speed = 0;
 
 char_speed = 2;
 char_speed_run = 4;
+
+ini_open("variables.ini");
+    ini_write_real("timers","eatMin",obj_GUI.eatMinutes);
+    ini_write_real("timers","eatSec",obj_GUI.eatSeconds);
+    ini_write_real("timers","min",obj_GUI.minutes);
+    ini_write_real("timers","secs",obj_GUI.seconds);
+ini_close();
 </string>
           </argument>
         </arguments>
