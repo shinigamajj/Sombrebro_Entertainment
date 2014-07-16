@@ -74,6 +74,7 @@
     <sprite>sprites\spr_msg_erschoepft</sprite>
     <sprite>sprites\spr_msg_hunger1</sprite>
     <sprite>sprites\spr_msg_hunger2</sprite>
+    <sprite>sprites\spr_destroyable</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Base_Grass</background>
@@ -140,6 +141,7 @@
       <object>objects\Swamp_Bot_Right</object>
     </objects>
     <object>objects\obj_beerenbusch</object>
+    <object>objects\obj_destroyable</object>
     <object>objects\obj_paper</object>
     <object>objects\obj_altar</object>
     <objects name="invisible_objects">

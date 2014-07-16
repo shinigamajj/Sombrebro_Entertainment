@@ -71,6 +71,8 @@ char_speed = 2;
 char_speed_run = 4;
 
 isSendingMessage = false;
+
+canDestroy = true;
 </string>
           </argument>
         </arguments>
@@ -517,6 +519,13 @@ if(TreeApple01.isEating == true || obj_beerenbusch.isEating == true){
     message_hunger1.visible = false;
     message_hunger2.visible = false;
 }
+
+
+/* Checks if Player can Destroy trees */
+
+if(obj_GUI.eatMinutes &lt;= 0){
+    canDestroy = false;
+} else { canDestroy = true; }
 </string>
           </argument>
         </arguments>
