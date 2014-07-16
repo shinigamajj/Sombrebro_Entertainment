@@ -171,7 +171,6 @@
     <object>objects\message_erschoepft</object>
     <object>objects\message_hunger1</object>
     <object>objects\message_hunger2</object>
-    <object>objects\object46</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room2</room>

@@ -93,7 +93,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>Char.y += 16
+            <string>Char.y = 144;
+Char.x = 592;
 Char.sprite_index = spr_down;
 running = false;
 isDoing = false;
@@ -117,126 +118,16 @@ ini_open("variables.ini");
     ini_write_real("timers","eatSec",obj_GUI.eatSeconds);
     ini_write_real("timers","min",obj_GUI.minutes);
     ini_write_real("timers","secs",obj_GUI.seconds);
+    
+    ini_write_real("positions","room1_char_x",Char.x);
+    ini_write_real("positions","room1_char_y",Char.y);
+    
+    ini_write_real("pages","room1_pages_in_altar",obj_altar.pagesInAltar);
+    ini_write_real("pages","room1_pages_collected",Char.pagesCollected);
 ini_close();
 </string>
           </argument>
         </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>333</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_save_game</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>2</kind>
-            <string>save_room1</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>408</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>-1</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_if</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>file_exists("save_room2")</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>422</id>
-        <kind>1</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>334</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_load_game</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>2</kind>
-            <string>save_room2</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>424</id>
-        <kind>2</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>421</id>
-        <kind>3</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>422</id>
-        <kind>1</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
       </action>
       <action>
         <libid>1</libid>
@@ -254,31 +145,10 @@ ini_close();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>ini_open("variables.ini");
-    ini_write_real("timers","eatMin",obj_GUI.eatMinutes);
-    ini_write_real("timers","eatSec",obj_GUI.eatSeconds);
-    ini_write_real("timers","min",obj_GUI.minutes);
-    ini_write_real("timers","secs",obj_GUI.seconds);
-ini_close();
-
-room_goto(room3);
+            <string>room_goto(room3);
 </string>
           </argument>
         </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>424</id>
-        <kind>2</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
       </action>
       <action>
         <libid>1</libid>
@@ -358,7 +228,8 @@ room_goto(room3);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>Char.y += 16
+            <string>Char.y = 96;
+Char.x = 208;
 Char.sprite_index = spr_down;
 running = false;
 isDoing = false;
@@ -382,6 +253,12 @@ ini_open("variables.ini");
     ini_write_real("timers","eatSec",obj_GUI.eatSeconds);
     ini_write_real("timers","min",obj_GUI.minutes);
     ini_write_real("timers","secs",obj_GUI.seconds);
+    
+    ini_write_real("positions","room2_char_x",Char.x);
+    ini_write_real("positions","room2_char_y",Char.y);
+    
+    ini_write_real("pages","room2_pages_in_altar",obj_altar.pagesInAltar);
+    ini_write_real("pages","room2_pages_collected",Char.pagesCollected);
 ini_close();
 </string>
           </argument>
@@ -389,41 +266,22 @@ ini_close();
       </action>
       <action>
         <libid>1</libid>
-        <id>333</id>
-        <kind>0</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_save_game</functionname>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>2</kind>
-            <string>save_room2</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>334</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_load_game</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>2</kind>
-            <string>save_room1</string>
+            <kind>1</kind>
+            <string>room_goto(room2);
+</string>
           </argument>
         </arguments>
       </action>

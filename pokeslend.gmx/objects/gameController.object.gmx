@@ -56,6 +56,19 @@ ini_open("variables.ini");
     ini_write_real("timers","eatSec",0);
     ini_write_real("timers","min",0);
     ini_write_real("timers","secs",0);
+    
+    ini_write_real("positions","room1_char_x",464);
+    ini_write_real("positions","room1_char_y",304);
+    ini_write_real("positions","room2_char_x",208);
+    ini_write_real("positions","room2_char_y",96);
+    
+    ini_write_real("speeds","speed_char",2);
+    ini_write_real("speeds","speed_char_run",4);
+    
+    ini_write_real("pages","room1_pages_in_altar",0);
+    ini_write_real("pages","room2_pages_in_altar",0);
+    ini_write_real("pages","room1_pages_collected",0);
+    ini_write_real("pages","room2_pages_collected",0);
 ini_close();
 </string>
           </argument>
