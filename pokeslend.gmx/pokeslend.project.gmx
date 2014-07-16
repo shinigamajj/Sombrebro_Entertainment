@@ -17,6 +17,9 @@
       <sprite>sprites\spr_right</sprite>
       <sprite>sprites\spr_left</sprite>
       <sprite>sprites\spr_sprint_down</sprite>
+      <sprite>sprites\spr_sprint_top</sprite>
+      <sprite>sprites\spr_sprint_right</sprite>
+      <sprite>sprites\spr_sprint_left</sprite>
     </sprites>
     <sprites name="enemy_sprites">
       <sprite>sprites\spr_enemy1</sprite>

@@ -169,7 +169,7 @@ obj_GUI.eatMinutes = 2;
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>Char.sprite_index == spr_left &amp;&amp; Char.x == x+32 &amp;&amp; Char.y == y+48</string>
+            <string>(Char.sprite_index == spr_left || Char.sprite_index == spr_sprint_left) &amp;&amp; Char.x == x+32 &amp;&amp; Char.y == y+48</string>
           </argument>
         </arguments>
       </action>
@@ -291,7 +291,7 @@ isEating = true;
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>Char.sprite_index == spr_right &amp;&amp; Char.x == x &amp;&amp; Char.y == y+48</string>
+            <string>(Char.sprite_index == spr_right || Char.sprite_index == spr_sprint_right) &amp;&amp; Char.x == x &amp;&amp; Char.y == y+48</string>
           </argument>
         </arguments>
       </action>
@@ -413,7 +413,7 @@ isEating = true;
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>Char.sprite_index == spr_top &amp;&amp; Char.y == y+64 &amp;&amp; Char.x == x+16</string>
+            <string>(Char.sprite_index == spr_top || Char.sprite_index == spr_sprint_top) &amp;&amp; Char.y == y+64 &amp;&amp; Char.x == x+16</string>
           </argument>
         </arguments>
       </action>
