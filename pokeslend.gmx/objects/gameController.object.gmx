@@ -73,6 +73,11 @@ ini_open("variables.ini");
     ini_write_real("pages","room2_pages_in_altar",0);
     ini_write_real("pages","room1_pages_collected",0);
     ini_write_real("pages","room2_pages_collected",0);
+    
+    ini_write_real("controls","lp",0);
+    ini_write_real("controls","rp",0);
+    ini_write_real("controls","tp",0);
+    ini_write_real("controls","dp",0);
 ini_close();
 </string>
           </argument>
