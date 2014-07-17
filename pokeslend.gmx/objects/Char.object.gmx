@@ -3533,6 +3533,8 @@ ini_open("variables.ini");
     pagesCollected = ini_read_real("pages","room1_pages_collected",0);
     } else if(room_caption == "room3"){
     pagesCollected = ini_read_real("pages","room2_pages_collected",0);    
+    } else if(room_caption == "room4"){
+    pagesCollected = ini_read_real("pages","room2_pages_collected",0);    
     }
     
     leftPressed = ini_read_real("controls","lp",0);
