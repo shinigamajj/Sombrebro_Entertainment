@@ -127,7 +127,6 @@
     <object>objects\Char</object>
     <object>objects\enemy</object>
     <object>objects\obj_movable</object>
-    <object>objects\obj_mov_baum</object>
     <object>objects\obj_resetter</object>
     <objects name="Trees">
       <object>objects\TreeBig01</object>
