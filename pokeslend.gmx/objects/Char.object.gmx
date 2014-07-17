@@ -879,7 +879,7 @@ if(obj_GUI.eatMinutes &lt;= 0){
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>5</string>
+            <string>3</string>
           </argument>
           <argument>
             <kind>4</kind>
@@ -1518,7 +1518,7 @@ if(obj_GUI.eatMinutes &lt;= 0){
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>5</string>
+            <string>3</string>
           </argument>
           <argument>
             <kind>4</kind>
@@ -2157,7 +2157,7 @@ if(obj_GUI.eatMinutes &lt;= 0){
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>5</string>
+            <string>3</string>
           </argument>
           <argument>
             <kind>4</kind>
@@ -2796,7 +2796,7 @@ if(obj_GUI.eatMinutes &lt;= 0){
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>5</string>
+            <string>3</string>
           </argument>
           <argument>
             <kind>4</kind>
