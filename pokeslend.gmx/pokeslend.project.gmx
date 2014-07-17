@@ -58,6 +58,13 @@
       <sprite>sprites\spr_resetter</sprite>
       <sprite>sprites\sprite23</sprite>
       <sprite>sprites\sprite24</sprite>
+      <sprite>sprites\sprite63</sprite>
+      <sprite>sprites\sprite64</sprite>
+      <sprite>sprites\sprite67</sprite>
+      <sprite>sprites\sprite68</sprite>
+      <sprite>sprites\sprite69</sprite>
+      <sprite>sprites\sprite66</sprite>
+      <sprite>sprites\sprite70</sprite>
     </sprites>
     <sprites name="altar_sprites">
       <sprite>sprites\spr_altar1</sprite>
@@ -138,6 +145,13 @@
       <object>objects\RockBig01</object>
       <object>objects\RockBig02</object>
       <object>objects\RockSmall01</object>
+      <object>objects\RockCliff_CornerIn01</object>
+      <object>objects\RockCliff_CornerIn02</object>
+      <object>objects\RockCliff_CornerOut01</object>
+      <object>objects\RockCliff_CornerOut02</object>
+      <object>objects\RockCliff_WallVert01</object>
+      <object>objects\RockCliff_WallVert02</object>
+      <object>objects\RockCliff_WallHoriz01</object>
     </objects>
     <objects name="Ground_Objects">
       <object>objects\TallGrass</object>

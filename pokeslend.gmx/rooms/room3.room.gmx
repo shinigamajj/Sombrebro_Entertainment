@@ -190,6 +190,20 @@
     <instance objName="ANM_TallGrass" x="512" y="320" name="inst_CA1D9F69" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ANM_TallGrass" x="528" y="320" name="inst_C85F7C00" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_altar" x="208" y="272" name="inst_3CD56E77" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="RockCliff_CornerOut01" x="496" y="80" name="inst_A9F310A6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="RockCliff_WallHoriz01" x="512" y="80" name="inst_99FA0831" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="RockCliff_WallHoriz01" x="528" y="80" name="inst_6EE54427" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="RockCliff_CornerOut02" x="544" y="80" name="inst_3339F359" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="RockCliff_WallVert01" x="496" y="64" name="inst_9C586650" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="RockCliff_WallVert01" x="496" y="48" name="inst_2D193151" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="RockCliff_CornerIn01" x="496" y="32" name="inst_BE1B362B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="RockCliff_WallVert02" x="544" y="64" name="inst_71EDB7B2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="RockCliff_WallVert02" x="544" y="48" name="inst_541F28D5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="RockCliff_CornerIn02" x="544" y="32" name="inst_9404AA3E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="RockCliff_CornerIn02" x="480" y="32" name="inst_2BC9985D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="RockCliff_CornerIn01" x="560" y="32" name="inst_6A841BEE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="RockCliff_CornerOut02" x="480" y="48" name="inst_6F2489D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="RockCliff_CornerOut01" x="560" y="48" name="inst_72356026" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="Base_Tileset01" x="240" y="96" w="16" h="16" xo="16" yo="48" id="10000362" name="inst_CF3756A4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
