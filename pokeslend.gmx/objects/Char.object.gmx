@@ -114,25 +114,34 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(isInSwamp){
+            <string>steps += 1;
+
+if(distance_to_object(swampID) != 0){isInSwamp = false;}
+
+if(isInSwamp){
     if(distance_to_object(swampID) == 0){
         if(obj_GUI.dead == false){
-        swampSeconds += 1;
+            if(steps == 30){
+                swampSeconds += 1;
+                steps = 0;
+            }
         }
         if(swampSeconds &gt;= 5){
             isDoing = true;
             sprite_index = spr_grave;
         }
-        alarm[4] = 30;
+        alarm[4] = 1;
     }
     else {
         swampSeconds = -1;
         isCheckingSwamp = false;
+        steps = 0;
     }
 }
 else {
     swampSeconds = -1;
     isCheckingSwamp = false;
+    steps = 0;
 }
 </string>
           </argument>
@@ -3267,7 +3276,7 @@ swampSeconds = -1;
 isCheckingSwamp = false;
 
 image_speed = 0;
-
+steps = 0;
 
 isSendingMessage = false;
 
