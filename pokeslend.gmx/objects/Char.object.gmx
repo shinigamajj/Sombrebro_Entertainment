@@ -591,11 +591,15 @@ if(!isCheckingSwamp){
 /* Sets the Character Speed */
 
 if(isInSwamp &amp;&amp; obj_GUI.eatMinutes &gt;= 1){
-    char_speed = char_speed/2;
-    char_speed_run = char_speed_run/2;
+    ini_open("variables.ini");
+        char_speed = ini_read_real("speeds","speed_char_swamp",1);
+        char_speed_run = ini_read_real("speeds","speed_char_run_swamp",2);
+    ini_close();
 } else if(isInSwamp &amp;&amp; obj_GUI.eatMinutes &lt;= 0){ 
-    char_speed = char_speed/4;
-    char_speed_run = char_speed_run/4;
+    ini_open("variables.ini");
+        char_speed = ini_read_real("speeds","speed_char_hunger",0.5);
+        char_speed_run = ini_read_real("speeds","speed_char_run_hunger",1);
+    ini_close();
 } else{
     ini_open("variables.ini");
         char_speed = ini_read_real("speeds","speed_char",2);

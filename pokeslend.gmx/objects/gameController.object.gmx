@@ -63,6 +63,10 @@ ini_open("variables.ini");
     
     ini_write_real("speeds","speed_char",2);
     ini_write_real("speeds","speed_char_run",4);
+    ini_write_real("speeds","speed_char_swamp",1);
+    ini_write_real("speeds","speed_char_run_swamp",2);
+    ini_write_real("speeds","speed_char_hunger",0.5);
+    ini_write_real("speeds","speed_char_run_hunger",1);
     ini_write_real("speeds","speed_enemy",2);
     
     ini_write_real("pages","room1_pages_in_altar",0);
