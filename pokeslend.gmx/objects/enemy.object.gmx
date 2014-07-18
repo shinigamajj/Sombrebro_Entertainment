@@ -46,7 +46,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>AStar_init(50, 50, 16, 16, 0, 0, 0, 0, -2, -2, 0, 0)
+            <string>AStar_init(80, 80, 16, 16, 0, 0, 0, 0, -2, -2, 0, 0)
 image_speed = 0.1;
 range = 120;
 steps = 0;
