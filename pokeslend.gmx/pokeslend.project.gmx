@@ -85,6 +85,8 @@
       <sprite>sprites\sprite39</sprite>
       <sprite>sprites\sprite40</sprite>
       <sprite>sprites\sprite41</sprite>
+      <sprite>sprites\sprite71</sprite>
+      <sprite>sprites\sprite72</sprite>
     </sprites>
     <sprite>sprites\spr_roomChanger</sprite>
     <sprite>sprites\spr_grave</sprite>
@@ -168,6 +170,8 @@
       <object>objects\Bubble03</object>
       <object>objects\Bubble04</object>
       <object>objects\ANM_TallGrass</object>
+      <object>objects\reeds01</object>
+      <object>objects\Water</object>
     </objects>
     <object>objects\obj_beerenbusch</object>
     <object>objects\obj_destroyable</object>
