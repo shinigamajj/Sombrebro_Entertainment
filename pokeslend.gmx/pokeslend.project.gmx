@@ -94,6 +94,17 @@
     <sprite>sprites\spr_msg_hunger1</sprite>
     <sprite>sprites\spr_msg_hunger2</sprite>
     <sprite>sprites\spr_destroyable</sprite>
+    <sprites name="wate_sprites">
+      <sprite>sprites\sprite73</sprite>
+      <sprite>sprites\sprite74</sprite>
+      <sprite>sprites\sprite75</sprite>
+      <sprite>sprites\sprite76</sprite>
+      <sprite>sprites\sprite77</sprite>
+      <sprite>sprites\sprite78</sprite>
+      <sprite>sprites\sprite79</sprite>
+      <sprite>sprites\sprite80</sprite>
+      <sprite>sprites\sprite81</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\Base_Grass</background>
@@ -189,6 +200,17 @@
     <object>objects\message_erschoepft</object>
     <object>objects\message_hunger1</object>
     <object>objects\message_hunger2</object>
+    <objects name="Water_Objects">
+      <object>objects\Water01</object>
+      <object>objects\Water02</object>
+      <object>objects\Water03</object>
+      <object>objects\Water04</object>
+      <object>objects\Water05</object>
+      <object>objects\Water06</object>
+      <object>objects\Water07</object>
+      <object>objects\Water08</object>
+      <object>objects\Water09</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room4_swamptest</room>
