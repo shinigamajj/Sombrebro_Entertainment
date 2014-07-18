@@ -25,8 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>depth = -((y*100)+x);
-depth -= 3500;
+            <string>depth = -1;
 </string>
           </argument>
         </arguments>
