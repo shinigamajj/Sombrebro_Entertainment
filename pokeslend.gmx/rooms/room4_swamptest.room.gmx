@@ -737,6 +737,26 @@
     <instance objName="Water" x="272" y="672" name="inst_53C8E261" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TreeStump01" x="208" y="592" name="inst_DC60C399" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TreeStump02" x="160" y="624" name="inst_1BA884D1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_WaterCollider" x="208" y="624" name="inst_CD37F600" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_WaterCollider" x="208" y="640" name="inst_B3A31581" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_WaterCollider" x="208" y="656" name="inst_B57F6793" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_WaterCollider" x="208" y="672" name="inst_39F84040" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_WaterCollider" x="224" y="672" name="inst_D081C5EF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_WaterCollider" x="240" y="672" name="inst_F62CCCAE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_WaterCollider" x="256" y="672" name="inst_A592C6B3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_WaterCollider" x="272" y="672" name="inst_8C627BD6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_WaterCollider" x="272" y="656" name="inst_51EFAC47" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_WaterCollider" x="272" y="640" name="inst_2913A139" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_WaterCollider" x="272" y="624" name="inst_7D3D6F13" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_WaterCollider" x="256" y="624" name="inst_5438286B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_WaterCollider" x="240" y="624" name="inst_0273CD99" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_WaterCollider" x="224" y="624" name="inst_5CF4C1EF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_WaterCollider" x="224" y="640" name="inst_3BA2F25C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_WaterCollider" x="224" y="656" name="inst_899388E3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_WaterCollider" x="240" y="656" name="inst_3DD1ED14" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_WaterCollider" x="240" y="640" name="inst_AD13C709" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_WaterCollider" x="256" y="640" name="inst_F61C1335" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_WaterCollider" x="256" y="656" name="inst_279ACA2B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="Tileset_15072014" x="304" y="144" w="16" h="16" xo="64" yo="0" id="10000577" name="inst_6E49CE80" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

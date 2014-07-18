@@ -183,6 +183,7 @@
       <object>objects\gamePause</object>
       <object>objects\gameController</object>
       <object>objects\objPathFinder</object>
+      <object>objects\obj_WaterCollider</object>
     </objects>
     <object>objects\obj_roomChanger</object>
     <object>objects\message_erschoepft</object>
