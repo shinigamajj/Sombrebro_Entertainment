@@ -117,6 +117,9 @@
     <sprite>sprites\spr_msg_hunger2</sprite>
     <sprite>sprites\spr_destroyable</sprite>
     <sprite>sprites\sprite82</sprite>
+    <sprite>sprites\sprite94</sprite>
+    <sprite>sprites\sprite95</sprite>
+    <sprite>sprites\sprite96</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Base_Grass</background>
@@ -124,6 +127,8 @@
     <background>background\Swamp_Test</background>
     <background>background\Transparency_test</background>
     <background>background\Tileset_15072014</background>
+    <background>background\Base_Swamp</background>
+    <background>background\TilesetBase</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -177,6 +182,9 @@
       <object>objects\RockCliff_WallVert01</object>
       <object>objects\RockCliff_WallVert02</object>
       <object>objects\RockCliff_WallHoriz01</object>
+      <object>objects\RockMossyBig01</object>
+      <object>objects\RockMossBig02</object>
+      <object>objects\RockMossSmall01</object>
     </objects>
     <objects name="Ground_Objects">
       <object>objects\TallGrass</object>

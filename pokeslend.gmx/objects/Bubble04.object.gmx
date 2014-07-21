@@ -54,7 +54,7 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>0.05</string>
+            <string>random(0.05)</string>
           </argument>
         </arguments>
       </action>
