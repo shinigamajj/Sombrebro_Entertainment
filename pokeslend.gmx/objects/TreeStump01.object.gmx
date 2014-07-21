@@ -32,6 +32,9 @@ mov_speed = 1;
 isMovable = true;
 
 treeID = 0;
+
+posX = x;
+posY = y;
 </string>
           </argument>
         </arguments>
@@ -219,6 +222,28 @@ depth = -((y*100)+x);
       </action>
       <action>
         <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>posX = x;
+posY = y;
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>424</id>
         <kind>2</kind>
         <userelative>0</userelative>
@@ -371,6 +396,28 @@ depth = -((y*100)+x);
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>posX = x;
+posY = y;
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>if(distance_to_object(Char) &lt; 32){
 image_speed = 0.03;
 }
@@ -443,29 +490,21 @@ else{image_speed = 0;}
       </action>
       <action>
         <libid>1</libid>
-        <id>402</id>
+        <id>408</id>
         <kind>0</kind>
-        <userelative>-1</userelative>
+        <userelative>0</userelative>
         <isquestion>-1</isquestion>
         <useapplyto>-1</useapplyto>
         <exetype>1</exetype>
-        <functionname>action_if_collision</functionname>
+        <functionname>action_if</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
-        <relative>-1</relative>
-        <isnot>-1</isnot>
+        <relative>0</relative>
+        <isnot>0</isnot>
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>-32</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
+            <string>place_free(posX,posY-32) &amp;&amp; (place_meeting(x,y-16,TreeStump01) == false &amp;&amp; place_meeting(x,y-16,TreeStump02) == false)</string>
           </argument>
         </arguments>
       </action>
@@ -542,6 +581,28 @@ else{image_speed = 0;}
           <argument>
             <kind>0</kind>
             <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>posX = x;
+posY = y;
+</string>
           </argument>
         </arguments>
       </action>
@@ -670,6 +731,28 @@ else{image_speed = 0;}
           <argument>
             <kind>0</kind>
             <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>posX = x;
+posY = y;
+</string>
           </argument>
         </arguments>
       </action>
@@ -761,29 +844,21 @@ else{image_speed = 0;}
       </action>
       <action>
         <libid>1</libid>
-        <id>402</id>
+        <id>408</id>
         <kind>0</kind>
-        <userelative>-1</userelative>
+        <userelative>0</userelative>
         <isquestion>-1</isquestion>
         <useapplyto>-1</useapplyto>
         <exetype>1</exetype>
-        <functionname>action_if_collision</functionname>
+        <functionname>action_if</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
-        <relative>-1</relative>
-        <isnot>-1</isnot>
+        <relative>0</relative>
+        <isnot>0</isnot>
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>32</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
+            <string>place_free(posX,posY+32) &amp;&amp; (place_meeting(x,y+16,TreeStump01) == false &amp;&amp; place_meeting(x,y+16,TreeStump02) == false)</string>
           </argument>
         </arguments>
       </action>
@@ -860,6 +935,28 @@ else{image_speed = 0;}
           <argument>
             <kind>0</kind>
             <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>posX = x;
+posY = y;
+</string>
           </argument>
         </arguments>
       </action>
@@ -988,6 +1085,28 @@ else{image_speed = 0;}
           <argument>
             <kind>0</kind>
             <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>posX = x;
+posY = y;
+</string>
           </argument>
         </arguments>
       </action>
@@ -1191,7 +1310,7 @@ if(Char.sprite_index == spr_left || Char.sprite_index == spr_sprint_left){
             with(treeID){motion_set(180,mov_speed);}
         } else if(place_meeting(x-16,y,TreeStump01)){
             treeID = instance_place(x-16, y, TreeStump01);
-            with(treeID){motion_set(180,mov_speed);}
+            with(treeID){motion_set(180,mov_speed);} 
         }
     }
 }else if(Char.sprite_index == spr_right || Char.sprite_index == spr_sprint_right){
@@ -1265,29 +1384,21 @@ if(Char.sprite_index == spr_left || Char.sprite_index == spr_sprint_left){
       </action>
       <action>
         <libid>1</libid>
-        <id>402</id>
+        <id>408</id>
         <kind>0</kind>
-        <userelative>-1</userelative>
+        <userelative>0</userelative>
         <isquestion>-1</isquestion>
         <useapplyto>-1</useapplyto>
         <exetype>1</exetype>
-        <functionname>action_if_collision</functionname>
+        <functionname>action_if</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
-        <relative>-1</relative>
-        <isnot>-1</isnot>
+        <relative>0</relative>
+        <isnot>0</isnot>
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>-16</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
+            <string>place_free(posX-16,posY)</string>
           </argument>
         </arguments>
       </action>
@@ -1304,6 +1415,28 @@ if(Char.sprite_index == spr_left || Char.sprite_index == spr_sprint_left){
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>posX = x;
+posY = y;
+</string>
+          </argument>
+        </arguments>
       </action>
       <action>
         <libid>1</libid>
@@ -1393,29 +1526,21 @@ if(Char.sprite_index == spr_left || Char.sprite_index == spr_sprint_left){
       </action>
       <action>
         <libid>1</libid>
-        <id>402</id>
+        <id>408</id>
         <kind>0</kind>
-        <userelative>-1</userelative>
+        <userelative>0</userelative>
         <isquestion>-1</isquestion>
         <useapplyto>-1</useapplyto>
         <exetype>1</exetype>
-        <functionname>action_if_collision</functionname>
+        <functionname>action_if</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
-        <relative>-1</relative>
-        <isnot>-1</isnot>
+        <relative>0</relative>
+        <isnot>0</isnot>
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>16</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
+            <string>place_free(posX+16,posY)</string>
           </argument>
         </arguments>
       </action>
@@ -1432,6 +1557,28 @@ if(Char.sprite_index == spr_left || Char.sprite_index == spr_sprint_left){
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>posX = x;
+posY = y;
+</string>
+          </argument>
+        </arguments>
       </action>
       <action>
         <libid>1</libid>
@@ -1521,29 +1668,21 @@ if(Char.sprite_index == spr_left || Char.sprite_index == spr_sprint_left){
       </action>
       <action>
         <libid>1</libid>
-        <id>402</id>
+        <id>408</id>
         <kind>0</kind>
-        <userelative>-1</userelative>
+        <userelative>0</userelative>
         <isquestion>-1</isquestion>
         <useapplyto>-1</useapplyto>
         <exetype>1</exetype>
-        <functionname>action_if_collision</functionname>
+        <functionname>action_if</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
-        <relative>-1</relative>
-        <isnot>-1</isnot>
+        <relative>0</relative>
+        <isnot>0</isnot>
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>-16</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
+            <string>place_free(posX,posY-16)</string>
           </argument>
         </arguments>
       </action>
@@ -1560,6 +1699,28 @@ if(Char.sprite_index == spr_left || Char.sprite_index == spr_sprint_left){
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>posX = x;
+posY = y;
+</string>
+          </argument>
+        </arguments>
       </action>
       <action>
         <libid>1</libid>
@@ -1649,29 +1810,21 @@ if(Char.sprite_index == spr_left || Char.sprite_index == spr_sprint_left){
       </action>
       <action>
         <libid>1</libid>
-        <id>402</id>
+        <id>408</id>
         <kind>0</kind>
-        <userelative>-1</userelative>
+        <userelative>0</userelative>
         <isquestion>-1</isquestion>
         <useapplyto>-1</useapplyto>
         <exetype>1</exetype>
-        <functionname>action_if_collision</functionname>
+        <functionname>action_if</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
-        <relative>-1</relative>
-        <isnot>-1</isnot>
+        <relative>0</relative>
+        <isnot>0</isnot>
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>-16</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
+            <string>place_free(posX,posY-16)</string>
           </argument>
         </arguments>
       </action>
@@ -1688,6 +1841,28 @@ if(Char.sprite_index == spr_left || Char.sprite_index == spr_sprint_left){
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>posX = x;
+posY = y;
+</string>
+          </argument>
+        </arguments>
       </action>
       <action>
         <libid>1</libid>
@@ -1777,29 +1952,21 @@ if(Char.sprite_index == spr_left || Char.sprite_index == spr_sprint_left){
       </action>
       <action>
         <libid>1</libid>
-        <id>402</id>
+        <id>408</id>
         <kind>0</kind>
-        <userelative>-1</userelative>
+        <userelative>0</userelative>
         <isquestion>-1</isquestion>
         <useapplyto>-1</useapplyto>
         <exetype>1</exetype>
-        <functionname>action_if_collision</functionname>
+        <functionname>action_if</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
-        <relative>-1</relative>
-        <isnot>-1</isnot>
+        <relative>0</relative>
+        <isnot>0</isnot>
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>16</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
+            <string>place_free(posX,posY+16)</string>
           </argument>
         </arguments>
       </action>
@@ -1816,6 +1983,28 @@ if(Char.sprite_index == spr_left || Char.sprite_index == spr_sprint_left){
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>posX = x;
+posY = y;
+</string>
+          </argument>
+        </arguments>
       </action>
       <action>
         <libid>1</libid>
@@ -1905,29 +2094,21 @@ if(Char.sprite_index == spr_left || Char.sprite_index == spr_sprint_left){
       </action>
       <action>
         <libid>1</libid>
-        <id>402</id>
+        <id>408</id>
         <kind>0</kind>
-        <userelative>-1</userelative>
+        <userelative>0</userelative>
         <isquestion>-1</isquestion>
         <useapplyto>-1</useapplyto>
         <exetype>1</exetype>
-        <functionname>action_if_collision</functionname>
+        <functionname>action_if</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
-        <relative>-1</relative>
-        <isnot>-1</isnot>
+        <relative>0</relative>
+        <isnot>0</isnot>
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>16</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
+            <string>place_free(posX,posY+16)</string>
           </argument>
         </arguments>
       </action>
@@ -1944,6 +2125,28 @@ if(Char.sprite_index == spr_left || Char.sprite_index == spr_sprint_left){
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>posX = x;
+posY = y;
+</string>
+          </argument>
+        </arguments>
       </action>
       <action>
         <libid>1</libid>
@@ -2036,7 +2239,7 @@ if(Char.sprite_index == spr_left || Char.sprite_index == spr_sprint_left){
   </events>
   <PhysicsObject>0</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
-  <PhysicsObjectShape>0</PhysicsObjectShape>
+  <PhysicsObjectShape>1</PhysicsObjectShape>
   <PhysicsObjectDensity>0.5</PhysicsObjectDensity>
   <PhysicsObjectRestitution>0.100000001490116</PhysicsObjectRestitution>
   <PhysicsObjectGroup>0</PhysicsObjectGroup>
@@ -2046,7 +2249,9 @@ if(Char.sprite_index == spr_left || Char.sprite_index == spr_sprint_left){
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
   <PhysicsShapePoints>
-    <point>0,0</point>
-    <point>16,16</point>
+    <point>-16,-8</point>
+    <point>16,-8</point>
+    <point>16,8</point>
+    <point>-16,8</point>
   </PhysicsShapePoints>
 </object>

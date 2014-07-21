@@ -1096,7 +1096,7 @@
     <instance objName="TreeSwampBig01" x="688" y="96" name="inst_A0E9CAE0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TreeSwampBig01" x="720" y="112" name="inst_0BA76AD2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TreeSwampBig01" x="752" y="128" name="inst_531320A2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Char" x="560" y="352" name="inst_9C2EA4C4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Char" x="928" y="208" name="inst_9C2EA4C4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Bubble04" x="816" y="512" name="inst_BF58901C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Bubbble02" x="704" y="448" name="inst_1C134D2F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collider" x="704" y="608" name="inst_76613227" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
