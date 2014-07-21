@@ -132,6 +132,7 @@
     <script>scripts\move_right.gml</script>
     <script>scripts\move_down.gml</script>
     <script>scripts\move_up.gml</script>
+    <script>scripts\treeStump_Movement.gml</script>
     <scripts name="AStar">
       <script>scripts\AStar_init.gml</script>
       <script>scripts\AStar_free.gml</script>
