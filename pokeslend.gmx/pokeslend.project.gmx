@@ -98,6 +98,17 @@
       <sprite>sprites\sprite79</sprite>
       <sprite>sprites\sprite80</sprite>
       <sprite>sprites\sprite81</sprite>
+      <sprite>sprites\sprite83</sprite>
+      <sprite>sprites\sprite84</sprite>
+      <sprite>sprites\sprite85</sprite>
+      <sprite>sprites\sprite86</sprite>
+      <sprite>sprites\sprite87</sprite>
+      <sprite>sprites\sprite88</sprite>
+      <sprite>sprites\sprite89</sprite>
+      <sprite>sprites\sprite90</sprite>
+      <sprite>sprites\sprite91</sprite>
+      <sprite>sprites\sprite92</sprite>
+      <sprite>sprites\sprite93</sprite>
     </sprites>
     <sprite>sprites\spr_roomChanger</sprite>
     <sprite>sprites\spr_grave</sprite>
@@ -195,6 +206,17 @@
       <object>objects\Water07</object>
       <object>objects\Water08</object>
       <object>objects\Water09</object>
+      <object>objects\Swamp_Water01</object>
+      <object>objects\Swamp_Water02</object>
+      <object>objects\Swamp_Water03</object>
+      <object>objects\Swamp_Water04</object>
+      <object>objects\Swamp_Water05a</object>
+      <object>objects\Swamp_Water05b</object>
+      <object>objects\Swamp_Water05c</object>
+      <object>objects\Swamp_Water06</object>
+      <object>objects\Swamp_Water07</object>
+      <object>objects\Swamp_Water08</object>
+      <object>objects\Swamp_Water09</object>
     </objects>
     <objects name="invisible_objects">
       <object>objects\obj_GUI</object>
