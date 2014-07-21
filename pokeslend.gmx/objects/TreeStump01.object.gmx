@@ -30,6 +30,8 @@
 mov_speed = 1;
 
 isMovable = true;
+
+treeID = 0;
 </string>
           </argument>
         </arguments>
@@ -1266,6 +1268,33 @@ else{image_speed = 0;}
       </action>
       <action>
         <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(distance_to_object(TreeStump02) == 0){
+    treeID = instance_place(x, y, TreeStump02);
+    with(treeID){motion_set(180,mov_speed);}
+} else if(distance_to_object(TreeStump01) == 0){
+    treeID = instance_place(x, y, TreeStump01);
+    with(treeID){motion_set(180,mov_speed);}
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>424</id>
         <kind>2</kind>
         <userelative>0</userelative>
@@ -1389,6 +1418,33 @@ else{image_speed = 0;}
           <argument>
             <kind>0</kind>
             <string>mov_speed</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(distance_to_object(TreeStump02) == 0){
+    treeID = instance_place(x, y, TreeStump02);
+    with(treeID){motion_set(0,mov_speed);}
+} else if(distance_to_object(TreeStump01) == 0){
+    treeID = instance_place(x, y, TreeStump01);
+    with(treeID){motion_set(0,mov_speed);}
+}
+</string>
           </argument>
         </arguments>
       </action>
@@ -1522,6 +1578,33 @@ else{image_speed = 0;}
       </action>
       <action>
         <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(distance_to_object(TreeStump02) == 0){
+    treeID = instance_place(x, y, TreeStump02);
+    with(treeID){motion_set(90,mov_speed);}
+} else if(distance_to_object(TreeStump01) == 0){
+    treeID = instance_place(x, y, TreeStump01);
+    with(treeID){motion_set(90,mov_speed);}
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>424</id>
         <kind>2</kind>
         <userelative>0</userelative>
@@ -1645,6 +1728,33 @@ else{image_speed = 0;}
           <argument>
             <kind>0</kind>
             <string>mov_speed</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(distance_to_object(TreeStump02) == 0){
+    treeID = instance_place(x, y, TreeStump02);
+    with(treeID){motion_set(90,mov_speed);}
+} else if(distance_to_object(TreeStump01) == 0){
+    treeID = instance_place(x, y, TreeStump01);
+    with(treeID){motion_set(90,mov_speed);}
+}
+</string>
           </argument>
         </arguments>
       </action>
@@ -1778,6 +1888,33 @@ else{image_speed = 0;}
       </action>
       <action>
         <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(distance_to_object(TreeStump02) == 0){
+    treeID = instance_place(x, y, TreeStump02);
+    with(treeID){motion_set(270,mov_speed);}
+} else if(distance_to_object(TreeStump01) == 0){
+    treeID = instance_place(x, y, TreeStump01);
+    with(treeID){motion_set(270,mov_speed);}
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>424</id>
         <kind>2</kind>
         <userelative>0</userelative>
@@ -1901,6 +2038,33 @@ else{image_speed = 0;}
           <argument>
             <kind>0</kind>
             <string>mov_speed</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(distance_to_object(TreeStump02) == 0){
+    treeID = instance_place(x, y, TreeStump02);
+    with(treeID){motion_set(270,mov_speed);}
+} else if(distance_to_object(TreeStump01) == 0){
+    treeID = instance_place(x, y, TreeStump01);
+    with(treeID){motion_set(270,mov_speed);}
+}
+</string>
           </argument>
         </arguments>
       </action>

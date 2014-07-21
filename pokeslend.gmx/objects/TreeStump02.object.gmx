@@ -30,6 +30,8 @@
 mov_speed = 1;
 
 isMovable = true;
+
+treeID = 0;
 </string>
           </argument>
         </arguments>
