@@ -7,7 +7,88 @@
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
-  <events/>
+  <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>depth = 0
+
+spotID = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(spotID == 0){
+    if(distance_to_object(TreeStump01) == 0){
+        spotID = instance_place(x, y, TreeStump01);
+    } else if(distance_to_object(TreeStump02) == 0){
+        spotID = instance_place(x, y, TreeStump02);
+    }
+}
+else {
+    if(distance_to_object(TreeStump01) == 0){
+        if(spotID != instance_place(x,y,TreeStump01)){
+            spotID = instance_place(x,y,TreeStump01);
+            if(!place_meeting(x,y,obj_WaterCollider)){
+                instance_create(x,y,obj_WaterCollider);
+            }
+        }
+    } else if(distance_to_object(TreeStump02) == 0){
+        if(spotID != instance_place(x,y,TreeStump02)){
+            spotID = instance_place(x,y,TreeStump02);
+            if(!place_meeting(x,y,obj_WaterCollider)){
+                instance_create(x,y,obj_WaterCollider);
+            }
+        }
+    }
+}
+
+
+
+
+if((distance_to_object(TreeStump01) != 0 &amp;&amp; distance_to_object(TreeStump02) != 0)){
+    if(!place_meeting(x,y,obj_WaterCollider)){
+        instance_create(x,y,obj_WaterCollider);
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+  </events>
   <PhysicsObject>0</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
   <PhysicsObjectShape>0</PhysicsObjectShape>
