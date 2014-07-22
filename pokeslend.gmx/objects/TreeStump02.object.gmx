@@ -133,7 +133,10 @@ if(obj_GUI.eatMinutes &lt;= 0){
 mov_speed = 0.5;
 } else { mov_speed = 1; }
 
-if(distance_to_object(obj_WaterCollider)==0){
+if(distance_to_object(obj_WaterCollider)==0 &amp;&amp; (distance_to_object(Water04) == 0
+    || distance_to_object(Water06) == 0 || distance_to_object(Water05) == 0 || distance_to_object(Swamp_Water04) == 0
+    || distance_to_object(Swamp_Water06) == 0 || distance_to_object(Swamp_Water05a) == 0 || distance_to_object(Swamp_Water05b) == 0
+    || distance_to_object(Swamp_Water05c) == 0)){
     isMovable = false;
     if(obj_GUI.eatMinutes &lt;= 0){
         alarm[1] = 28;
@@ -169,7 +172,7 @@ depth = -((y*100)+x);
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>distance_to_object(obj_WaterCollider) == 0 || isMovable == false</string>
+            <string>isMovable == false</string>
           </argument>
         </arguments>
       </action>
@@ -1341,14 +1344,30 @@ if(Char.sprite_index == spr_left || Char.sprite_index == spr_sprint_left){
             treeID = instance_place(x-16, y, TreeStump01);
             with(treeID){treeStump_Movement(180);}
         }
+    }if(place_free(x-16,y+16)){
+        if(place_meeting(x-16,y+16,TreeStump02)){
+            treeID = instance_place(x-16, y+16, TreeStump02);
+            with(treeID){treeStump_Movement(180);}
+        } else if(place_meeting(x-16,y+16,TreeStump01)){
+            treeID = instance_place(x-16, y+16, TreeStump01);
+            with(treeID){treeStump_Movement(180);}
+        }
     }
 }else if(Char.sprite_index == spr_right || Char.sprite_index == spr_sprint_right){
     if(place_free(x+16,y)){    
         if(place_meeting(x+16,y,TreeStump02)){
             treeID = instance_place(x+16, y, TreeStump02);
             with(treeID){treeStump_Movement(0);}
-        } else if(place_meeting(x-16,y,TreeStump01)){
+        } else if(place_meeting(x+16,y,TreeStump01)){
             treeID = instance_place(x+16, y, TreeStump01);
+            with(treeID){treeStump_Movement(0);}
+        }
+    }if(place_free(x+16,y+16)){    
+        if(place_meeting(x+16,y+16,TreeStump02)){
+            treeID = instance_place(x+16, y+16, TreeStump02);
+            with(treeID){treeStump_Movement(0);}
+        } else if(place_meeting(x+16,y+16,TreeStump01)){
+            treeID = instance_place(x+16, y+16, TreeStump01);
             with(treeID){treeStump_Movement(0);}
         }
     }
