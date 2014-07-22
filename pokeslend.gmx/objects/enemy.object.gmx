@@ -26,6 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>depth = -(((y*100)+x)+1);
+
+isFollowing = false;
 </string>
           </argument>
         </arguments>
@@ -81,31 +83,15 @@ alarm[0] = 8;
           <argument>
             <kind>1</kind>
             <string>range = 120;
+
+if(Char.isInGrass == true){
+    myPath = AStar_findPath(x, y, Char.grasID.x, Char.grasID.y, false);
+    path_start(myPath,enemy_speed,0,0);
+    alarm[3] = 70;
+} else {
+    alarm[0] = 60;
+}
 </string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>301</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_set_alarm</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>35</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
           </argument>
         </arguments>
       </action>
@@ -579,9 +565,8 @@ alarm[0] = 8;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(Char.isInGrass == true){range = 150;}
-
-if(distance_to_point(Char.x, Char.y) &lt; range){
+            <string>if(distance_to_point(Char.x, Char.y) &lt; range){
+isFollowing = true;
 sprite_index = spr_enemy1;
 if(Char.isInGrass == true){
     myPath = AStar_findPath(x, y, Char.grasID.x, Char.grasID.y, false);
@@ -623,6 +608,12 @@ ystart = y;
           <argument>
             <kind>1</kind>
             <string>depth = -((y*100)+x);
+
+if(Char.isInGrass == true &amp;&amp; !isFollowing){
+    range = 0;
+} else if(Char.isInGrass == true &amp;&amp; isFollowing){
+    range = 150;
+} else { range = 120; }
 </string>
           </argument>
         </arguments>
