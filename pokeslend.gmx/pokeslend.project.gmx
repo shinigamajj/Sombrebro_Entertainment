@@ -44,13 +44,17 @@
       <sprite>sprites\sprite18</sprite>
       <sprite>sprites\sprite20</sprite>
       <sprite>sprites\spr_TreeStump01</sprite>
+      <sprite>sprites\spr_TreeStump02</sprite>
       <sprite>sprites\sprite22</sprite>
       <sprite>sprites\spr_apfelbaum</sprite>
-      <sprite>sprites\spr_TreeStump02</sprite>
       <sprite>sprites\sprite44</sprite>
       <sprite>sprites\sprite45</sprite>
       <sprite>sprites\spr_TreeStump01Water</sprite>
       <sprite>sprites\spr_TreeStump02Water</sprite>
+      <sprites name="TreeStump_Animations">
+        <sprite>sprites\TreeStumpVert_Anim</sprite>
+        <sprite>sprites\TreeStumpHoriz_Anim</sprite>
+      </sprites>
     </sprites>
     <sprites name="rock_sprites">
       <sprite>sprites\sprite25</sprite>
