@@ -56,10 +56,10 @@ ini_open("variables.ini");
     ini_write_real("timers","min",0);
     ini_write_real("timers","secs",0);
     
-    ini_write_real("positions","room1_char_x",464);
-    ini_write_real("positions","room1_char_y",304);
-    ini_write_real("positions","room2_char_x",208);
-    ini_write_real("positions","room2_char_y",96);
+    ini_write_real("positions","forest_room_char_x",464);
+    ini_write_real("positions","forest_room_char_y",304);
+    ini_write_real("positions","swamp_room_char_x",928);
+    ini_write_real("positions","swamp_room_char_y",352);
     
     ini_write_real("speeds","speed_char",2);
     ini_write_real("speeds","speed_char_run",4);
@@ -69,10 +69,10 @@ ini_open("variables.ini");
     ini_write_real("speeds","speed_char_run_hunger",1);
     ini_write_real("speeds","speed_enemy",2);
     
-    ini_write_real("pages","room1_pages_in_altar",0);
-    ini_write_real("pages","room2_pages_in_altar",0);
-    ini_write_real("pages","room1_pages_collected",0);
-    ini_write_real("pages","room2_pages_collected",0);
+    ini_write_real("pages","forest_room_pages_in_altar",0);
+    ini_write_real("pages","swamp_room_pages_in_altar",0);
+    ini_write_real("pages","forest_room_pages_collected",0);
+    ini_write_real("pages","swamp_room_pages_collected",0);
     
     ini_write_real("controls","lp",0);
     ini_write_real("controls","rp",0);

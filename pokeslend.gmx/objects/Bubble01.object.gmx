@@ -54,7 +54,7 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>random(0.05)</string>
+            <string>random_range(0.02,0.05)</string>
           </argument>
         </arguments>
       </action>

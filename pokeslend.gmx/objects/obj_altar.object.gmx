@@ -364,10 +364,10 @@
 depth -= 2000;
 
 ini_open("variables.ini");
-    if(room_caption == "room2"){
-    pagesInAltar = ini_read_real("pages","room1_pages_in_altar",0);
-    } else if(room_caption == "room3"){
-    pagesInAltar = ini_read_real("pages","room2_pages_in_altar",0);    
+    if(room_caption == "forest_room"){
+    pagesInAltar = ini_read_real("pages","forest_room_pages_in_altar",0);
+    } else if(room_caption == "swamp_room"){
+    pagesInAltar = ini_read_real("pages","swamp_room_pages_in_altar",0);    
     }
 ini_close();
 </string>

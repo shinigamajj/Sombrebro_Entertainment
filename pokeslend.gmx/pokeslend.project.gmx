@@ -246,9 +246,8 @@
     <object>objects\Sign</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room4_swamptest</room>
-    <room>rooms\room2</room>
-    <room>rooms\room3</room>
+    <room>rooms\forest_room</room>
+    <room>rooms\swamp_room</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

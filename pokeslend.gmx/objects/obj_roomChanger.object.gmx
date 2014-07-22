@@ -59,7 +59,7 @@
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>room = room2</string>
+            <string>room == forest_room</string>
           </argument>
         </arguments>
       </action>
@@ -119,11 +119,11 @@ ini_open("variables.ini");
     ini_write_real("timers","min",obj_GUI.minutes);
     ini_write_real("timers","secs",obj_GUI.seconds);
     
-    ini_write_real("positions","room1_char_x",Char.x);
-    ini_write_real("positions","room1_char_y",Char.y);
+    ini_write_real("positions","forest_room_char_x",Char.x);
+    ini_write_real("positions","forest_room_char_y",Char.y);
     
-    ini_write_real("pages","room1_pages_in_altar",obj_altar.pagesInAltar);
-    ini_write_real("pages","room1_pages_collected",Char.pagesCollected);
+    ini_write_real("pages","forest_room_pages_in_altar",obj_altar.pagesInAltar);
+    ini_write_real("pages","forest_room_pages_collected",Char.pagesCollected);
 ini_close();
 </string>
           </argument>
@@ -145,7 +145,7 @@ ini_close();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(room3);
+            <string>room_goto(swamp_room);
 </string>
           </argument>
         </arguments>
@@ -194,7 +194,7 @@ ini_close();
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>room == room3</string>
+            <string>room == swamp_room</string>
           </argument>
         </arguments>
       </action>
@@ -228,9 +228,9 @@ ini_close();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>Char.y = 96;
-Char.x = 208;
-Char.sprite_index = spr_down;
+            <string>Char.y = 352;
+Char.x = 928;
+Char.sprite_index = spr_right;
 running = false;
 isDoing = false;
 canmove = true;
@@ -254,11 +254,11 @@ ini_open("variables.ini");
     ini_write_real("timers","min",obj_GUI.minutes);
     ini_write_real("timers","secs",obj_GUI.seconds);
     
-    ini_write_real("positions","room2_char_x",Char.x);
-    ini_write_real("positions","room2_char_y",Char.y);
+    ini_write_real("positions","swamp_room_char_x",Char.x);
+    ini_write_real("positions","swamp_room_char_y",Char.y);
     
-    ini_write_real("pages","room2_pages_in_altar",obj_altar.pagesInAltar);
-    ini_write_real("pages","room2_pages_collected",Char.pagesCollected);
+    ini_write_real("pages","swamp_room_pages_in_altar",obj_altar.pagesInAltar);
+    ini_write_real("pages","swamp_room_pages_collected",Char.pagesCollected);
 ini_close();
 </string>
           </argument>
@@ -280,7 +280,7 @@ ini_close();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(room2);
+            <string>room_goto(forest_room);
 </string>
           </argument>
         </arguments>
