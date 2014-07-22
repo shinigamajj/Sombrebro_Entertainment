@@ -3742,6 +3742,7 @@ if(obj_GUI.eatMinutes &lt;= 0){
           <argument>
             <kind>1</kind>
             <string>/* Character Variables */
+
 ini_open("variables.ini");
     if(room_caption == "forest_room"){
         x = ini_read_real("positions","forest_room_char_x", 464);
@@ -3752,6 +3753,8 @@ ini_open("variables.ini");
     }
     char_speed = ini_read_real("speeds","speed_char",2);
     char_speed_run = ini_read_real("speeds","speed_char_run",4);
+    
+    hasAxe = ini_read_real("char","char_has_axe",0);
     
     if(room_caption == "forest_room"){
     pagesCollected = ini_read_real("pages","forest_room_pages_collected",0);

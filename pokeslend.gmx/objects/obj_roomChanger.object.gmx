@@ -122,6 +122,8 @@ ini_open("variables.ini");
     ini_write_real("positions","forest_room_char_x",Char.x);
     ini_write_real("positions","forest_room_char_y",Char.y);
     
+    ini_write_real("char","char_has_axe",Char.hasAxe);
+    
     ini_write_real("pages","forest_room_pages_in_altar",obj_altar.pagesInAltar);
     ini_write_real("pages","forest_room_pages_collected",Char.pagesCollected);
 ini_close();
@@ -256,6 +258,8 @@ ini_open("variables.ini");
     
     ini_write_real("positions","swamp_room_char_x",Char.x);
     ini_write_real("positions","swamp_room_char_y",Char.y);
+    
+    ini_write_real("char","char_has_axe",Char.hasAxe);
     
     ini_write_real("pages","swamp_room_pages_in_altar",obj_altar.pagesInAltar);
     ini_write_real("pages","swamp_room_pages_collected",Char.pagesCollected);

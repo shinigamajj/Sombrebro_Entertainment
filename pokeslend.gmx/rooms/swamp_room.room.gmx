@@ -1635,6 +1635,7 @@
     <instance objName="obj_Collider" x="960" y="416" name="inst_712362DF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collider" x="976" y="416" name="inst_1CB9886F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_roomChanger" x="912" y="352" name="inst_2D69EAB8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_destroyable" x="960" y="368" name="inst_8728BD4A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="TilesetBase" x="544" y="256" w="16" h="16" xo="16" yo="96" id="10000768" name="inst_2BC86457" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

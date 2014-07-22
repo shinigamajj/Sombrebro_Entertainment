@@ -124,6 +124,7 @@
     <sprite>sprites\sprite94</sprite>
     <sprite>sprites\sprite95</sprite>
     <sprite>sprites\sprite96</sprite>
+    <sprite>sprites\spr_axe</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Base_Grass</background>
@@ -241,6 +242,7 @@
     </objects>
     <object>objects\obj_beerenbusch</object>
     <object>objects\obj_destroyable</object>
+    <object>objects\obj_axe</object>
     <object>objects\obj_paper</object>
     <object>objects\obj_altar</object>
     <object>objects\obj_roomChanger</object>
