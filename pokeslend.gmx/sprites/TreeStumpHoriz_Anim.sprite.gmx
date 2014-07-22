@@ -24,5 +24,7 @@
     <frame index="1">images\TreeStumpHoriz_Anim_1.png</frame>
     <frame index="2">images\TreeStumpHoriz_Anim_2.png</frame>
     <frame index="3">images\TreeStumpHoriz_Anim_3.png</frame>
+    <frame index="4">images\TreeStumpHoriz_Anim_4.png</frame>
+    <frame index="5">images\TreeStumpHoriz_Anim_5.png</frame>
   </frames>
 </sprite>
