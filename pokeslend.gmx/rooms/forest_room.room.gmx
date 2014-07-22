@@ -653,9 +653,9 @@
     <instance objName="obj_Collider" x="656" y="256" name="inst_47C78890" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collider" x="656" y="272" name="inst_DFC859A3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collider" x="656" y="288" name="inst_465B70B5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="message_erschoepft" x="752" y="784" name="inst_AAAC3D6B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="message_erschoepft" x="736" y="784" name="inst_AAAC3D6B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collider" x="656" y="304" name="inst_89305BDF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="message_hunger1" x="736" y="784" name="inst_C455BE8E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="message_hunger1" x="720" y="784" name="inst_C455BE8E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collider" x="656" y="320" name="inst_6108ADC5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collider" x="656" y="336" name="inst_6F88ACAB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collider" x="656" y="352" name="inst_A78B5AF4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -690,7 +690,7 @@
     <instance objName="obj_altar" x="416" y="320" name="inst_36CEEDE4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_roomChanger" x="592" y="128" name="inst_BF9BABE6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_resetter" x="656" y="288" name="inst_E3160623" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="message_hunger2" x="720" y="784" name="inst_84A67DD9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="message_hunger2" x="704" y="784" name="inst_84A67DD9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collider" x="416" y="352" name="inst_8B91F00A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collider" x="432" y="352" name="inst_C8F23F45" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_destroyable" x="576" y="144" name="inst_68AFFA60" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

@@ -8,6 +8,30 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="2" enumb="7">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>shader_reset();
+isDoing = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="2" enumb="6">
       <action>
         <libid>1</libid>
@@ -485,7 +509,22 @@ alarm[5] = 60;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(TreeApple01.isEating == false &amp;&amp; obj_beerenbusch.isEating == false){isDoing = false;}
+            <string>if(TreeApple01.isEating == false &amp;&amp; obj_beerenbusch.isEating == false){
+    if(instance_exists(obj_destroyable) &amp;&amp; instance_exists(obj_axe)){
+        if(obj_destroyable.isDestroying == false &amp;&amp; obj_axe.isDestroying == false){
+            isDoing = false;
+        }
+    } else if(instance_exists(obj_destroyable)){
+        if(obj_destroyable.isDestroying == false){
+            isDoing = false;
+        }
+    } else if(instance_exists(obj_axe)){
+        if(obj_axe.isDestroying == false){
+            isDoing = false;
+        }
+    } else { isDoing = false; }
+}
+
 </string>
           </argument>
         </arguments>
@@ -1344,7 +1383,7 @@ if(obj_GUI.eatMinutes &lt;= 0){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_speed = 0.30;
+            <string>image_speed = 0.25;
 </string>
           </argument>
         </arguments>
@@ -2094,7 +2133,7 @@ if(obj_GUI.eatMinutes &lt;= 0){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_speed = 0.30;
+            <string>image_speed = 0.25;
 </string>
           </argument>
         </arguments>
@@ -2844,7 +2883,7 @@ if(obj_GUI.eatMinutes &lt;= 0){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_speed = 0.30;
+            <string>image_speed = 0.25;
 </string>
           </argument>
         </arguments>
@@ -3560,7 +3599,7 @@ if(obj_GUI.eatMinutes &lt;= 0){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_speed = 0.30;
+            <string>image_speed = 0.25;
 </string>
           </argument>
         </arguments>
@@ -3789,6 +3828,29 @@ steps = 0;
 isSendingMessage = false;
 
 canDestroy = true;
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>shader_set(shd_greyscale);
+isDoing = true;
+alarm[7] = 25;
 </string>
           </argument>
         </arguments>
