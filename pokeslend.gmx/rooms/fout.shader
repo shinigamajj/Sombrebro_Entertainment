@@ -75,7 +75,7 @@ if(_gm_PS_FogEnabled)
 void gl_main()
 {
 {
-float _gray = dot(gl_texture2D(_gm_BaseTexture, _v_texcoord).xyz, float3(0.20999999, 0.70999998, 0.07));
+float _gray = dot(gl_texture2D(_gm_BaseTexture, _v_texcoord).xyz, float3(0.0, 0.0, 0.0));
 (gl_Color[0] = vec4(vec3(_gray), gl_texture2D(_gm_BaseTexture, _v_texcoord).w));
 }
 }

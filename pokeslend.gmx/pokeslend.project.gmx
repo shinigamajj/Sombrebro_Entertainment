@@ -126,9 +126,18 @@
     <sprite>sprites\sprite95</sprite>
     <sprite>sprites\sprite96</sprite>
     <sprite>sprites\spr_axe</sprite>
+    <sprite>sprites\spr_axe01</sprite>
     <sprite>sprites\sprite99</sprite>
     <sprite>sprites\sprite101</sprite>
     <sprite>sprites\sprite102</sprite>
+    <sprite>sprites\sprite104</sprite>
+    <sprite>sprites\sprite106</sprite>
+    <sprite>sprites\sprite107</sprite>
+    <sprite>sprites\sprite108</sprite>
+    <sprite>sprites\sprite109</sprite>
+    <sprite>sprites\sprite110</sprite>
+    <sprite>sprites\sprite111</sprite>
+    <sprite>sprites\sprite112</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Base_Grass</background>
@@ -249,6 +258,15 @@
       <object>objects\objPathFinder</object>
       <object>objects\obj_WaterCollider</object>
     </objects>
+    <objects name="Swamp_Plants">
+      <object>objects\Lillypad01</object>
+      <object>objects\Lillypad02</object>
+      <object>objects\Lillypad03</object>
+      <object>objects\Lillypad04</object>
+      <object>objects\Brush_Swamp01</object>
+      <object>objects\Swamp_Bamboo01</object>
+      <object>objects\Swamp_Bamboo02</object>
+    </objects>
     <object>objects\obj_beerenbusch</object>
     <object>objects\obj_destroyable</object>
     <object>objects\obj_axe</object>
@@ -262,8 +280,8 @@
     <object>objects\Sign</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\forest_room</room>
     <room>rooms\swamp_room</room>
+    <room>rooms\forest_room</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
