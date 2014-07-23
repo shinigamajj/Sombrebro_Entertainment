@@ -37,6 +37,7 @@
       <sprite>sprites\collision_altar</sprite>
       <sprite>sprites\TreeSwampBig01CollisionMask</sprite>
       <sprite>sprites\TreeSwampBig02CollisionMask</sprite>
+      <sprite>sprites\Shroom_Collision</sprite>
     </sprites>
     <sprites name="tree_sprites">
       <sprite>sprites\sprite16</sprite>
@@ -125,6 +126,9 @@
     <sprite>sprites\sprite95</sprite>
     <sprite>sprites\sprite96</sprite>
     <sprite>sprites\spr_axe</sprite>
+    <sprite>sprites\sprite99</sprite>
+    <sprite>sprites\sprite101</sprite>
+    <sprite>sprites\sprite102</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Base_Grass</background>
@@ -196,6 +200,7 @@
     </objects>
     <objects name="Ground_Objects">
       <object>objects\TallGrass</object>
+      <object>objects\TallGrassSwamp</object>
       <object>objects\Swamp_Top_Left</object>
       <object>objects\Swamp_Top_Mid</object>
       <object>objects\Swamp_Top_Right</object>
@@ -212,6 +217,7 @@
       <object>objects\ANM_TallGrass</object>
       <object>objects\reeds01</object>
       <object>objects\Water</object>
+      <object>objects\Mushroom_Eatable</object>
     </objects>
     <objects name="Water_Objects">
       <object>objects\Water01</object>
@@ -246,6 +252,7 @@
     <object>objects\obj_beerenbusch</object>
     <object>objects\obj_destroyable</object>
     <object>objects\obj_axe</object>
+    <object>objects\obj_boots</object>
     <object>objects\obj_paper</object>
     <object>objects\obj_altar</object>
     <object>objects\obj_roomChanger</object>
