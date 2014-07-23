@@ -38,6 +38,7 @@
       <sprite>sprites\TreeSwampBig01CollisionMask</sprite>
       <sprite>sprites\TreeSwampBig02CollisionMask</sprite>
       <sprite>sprites\Shroom_Collision</sprite>
+      <sprite>sprites\Character_ColMask</sprite>
     </sprites>
     <sprites name="tree_sprites">
       <sprite>sprites\sprite16</sprite>
@@ -138,6 +139,12 @@
     <sprite>sprites\sprite110</sprite>
     <sprite>sprites\sprite111</sprite>
     <sprite>sprites\sprite112</sprite>
+    <sprite>sprites\sprite113</sprite>
+    <sprite>sprites\sprite114</sprite>
+    <sprite>sprites\sprite115</sprite>
+    <sprite>sprites\sprite116</sprite>
+    <sprite>sprites\sprite117</sprite>
+    <sprite>sprites\sprite118</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Base_Grass</background>
@@ -210,15 +217,6 @@
     <objects name="Ground_Objects">
       <object>objects\TallGrass</object>
       <object>objects\TallGrassSwamp</object>
-      <object>objects\Swamp_Top_Left</object>
-      <object>objects\Swamp_Top_Mid</object>
-      <object>objects\Swamp_Top_Right</object>
-      <object>objects\Swamp_Mid_Left</object>
-      <object>objects\Swamp_Mid</object>
-      <object>objects\Swamp_Mid_Right</object>
-      <object>objects\Swamp_Bot_Left</object>
-      <object>objects\Swamp_Bot_Mid</object>
-      <object>objects\Swamp_Bot_Right</object>
       <object>objects\Bubble01</object>
       <object>objects\Bubbble02</object>
       <object>objects\Bubble03</object>
@@ -227,6 +225,25 @@
       <object>objects\reeds01</object>
       <object>objects\Water</object>
       <object>objects\Mushroom_Eatable</object>
+      <objects name="Swamp">
+        <object>objects\Swamp_Top_Left</object>
+        <object>objects\Swamp_Top_Mid</object>
+        <object>objects\Swamp_Top_Right</object>
+        <object>objects\Swamp_Mid_Left</object>
+        <object>objects\Swamp_Mid</object>
+        <object>objects\Swamp_Mid_Right</object>
+        <object>objects\Swamp_Bot_Left</object>
+        <object>objects\Swamp_Bot_Mid</object>
+        <object>objects\Swamp_Bot_Right</object>
+      </objects>
+      <objects name="Swamp_Path">
+        <object>objects\Swamp_Path01</object>
+        <object>objects\Swamp_Path02</object>
+        <object>objects\Swamp_Path03</object>
+        <object>objects\Swamp_Path04</object>
+        <object>objects\Swamp_Path05</object>
+        <object>objects\Swamp_Path06</object>
+      </objects>
     </objects>
     <objects name="Water_Objects">
       <object>objects\Water01</object>
@@ -280,8 +297,8 @@
     <object>objects\Sign</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\swamp_room</room>
     <room>rooms\forest_room</room>
+    <room>rooms\swamp_room</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
