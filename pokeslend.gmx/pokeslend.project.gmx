@@ -313,6 +313,7 @@
     <object>objects\Sign</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\forest_room02</room>
     <room>rooms\forest_room</room>
     <room>rooms\swamp_room</room>
   </rooms>
