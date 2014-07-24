@@ -510,12 +510,28 @@ alarm[5] = 60;
           <argument>
             <kind>1</kind>
             <string>if(TreeApple01.isEating == false &amp;&amp; obj_beerenbusch.isEating == false){
-    if(instance_exists(obj_destroyable) &amp;&amp; instance_exists(obj_axe)){
+    if(instance_exists(obj_destroyable) &amp;&amp; instance_exists(obj_axe) &amp;&amp; instance_exists(obj_boots)){
+        if(obj_destroyable.isDestroying == false &amp;&amp; obj_axe.isDestroying == false &amp;&amp; obj_boots.isDestroying == false){
+            isDoing = false;
+        }
+    } else if(instance_exists(obj_destroyable) &amp;&amp; instance_exists(obj_axe)){
         if(obj_destroyable.isDestroying == false &amp;&amp; obj_axe.isDestroying == false){
+            isDoing = false;
+        }
+    } else if(instance_exists(obj_destroyable) &amp;&amp; instance_exists(obj_boots)){
+        if(obj_destroyable.isDestroying == false &amp;&amp; obj_boots.isDestroying == false){
+            isDoing = false;
+        }
+    } else if(instance_exists(obj_boots) &amp;&amp; instance_exists(obj_axe)){
+        if(obj_boots.isDestroying == false &amp;&amp; obj_axe.isDestroying == false){
             isDoing = false;
         }
     } else if(instance_exists(obj_destroyable)){
         if(obj_destroyable.isDestroying == false){
+            isDoing = false;
+        }
+    } else if(instance_exists(obj_boots)){
+        if(obj_boots.isDestroying == false){
             isDoing = false;
         }
     } else if(instance_exists(obj_axe)){
@@ -637,18 +653,24 @@ if(!isCheckingSwamp){
 
 
 /* Sets the Character Speed */
-
-if(isInSwamp &amp;&amp; obj_GUI.eatMinutes &gt;= 1){
-    ini_open("variables.ini");
-        char_speed = ini_read_real("speeds","speed_char_swamp",1);
-        char_speed_run = ini_read_real("speeds","speed_char_run_swamp",2);
-    ini_close();
-} else if(isInSwamp &amp;&amp; obj_GUI.eatMinutes &lt;= 0){ 
-    ini_open("variables.ini");
-        char_speed = ini_read_real("speeds","speed_char_hunger",0.5);
-        char_speed_run = ini_read_real("speeds","speed_char_run_hunger",1);
-    ini_close();
-} else{
+if(hasBoots == 0){
+    if(isInSwamp &amp;&amp; obj_GUI.eatMinutes &gt;= 1){
+        ini_open("variables.ini");
+            char_speed = ini_read_real("speeds","speed_char_swamp",1);
+            char_speed_run = ini_read_real("speeds","speed_char_run_swamp",2);
+        ini_close();
+    } else if(isInSwamp &amp;&amp; obj_GUI.eatMinutes &lt;= 0){ 
+        ini_open("variables.ini");
+            char_speed = ini_read_real("speeds","speed_char_hunger",0.5);
+            char_speed_run = ini_read_real("speeds","speed_char_run_hunger",1);
+        ini_close();
+    } else {
+        ini_open("variables.ini");
+            char_speed = ini_read_real("speeds","speed_char",2);
+            char_speed_run = ini_read_real("speeds","speed_char_run",4);
+        ini_close();
+    }
+} else {
     ini_open("variables.ini");
         char_speed = ini_read_real("speeds","speed_char",2);
         char_speed_run = ini_read_real("speeds","speed_char_run",4);
@@ -4357,6 +4379,7 @@ ini_open("variables.ini");
     char_speed_run = ini_read_real("speeds","speed_char_run",4);
     
     hasAxe = ini_read_real("char","char_has_axe",0);
+    hasBoots = ini_read_real("char","char_has_boots",0);
     
     if(room_caption == "forest_room"){
     pagesCollected = ini_read_real("pages","forest_room_pages_collected",0);
