@@ -3538,7 +3538,7 @@ if(obj_GUI.eatMinutes &lt;= 0){
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>sprite_index != spr_left &amp;&amp; sprite_index != spr_sprint_left &amp;&amp; sprite_index != spr_swamp_left &amp;&amp; sprite_index != spr_swamp_sprint_left !isDoing</string>
+            <string>sprite_index != spr_left &amp;&amp; sprite_index != spr_sprint_left &amp;&amp; sprite_index != spr_swamp_left &amp;&amp; sprite_index != spr_swamp_sprint_left &amp;&amp; !isDoing</string>
           </argument>
         </arguments>
       </action>
