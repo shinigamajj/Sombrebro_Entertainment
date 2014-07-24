@@ -910,9 +910,113 @@ if(obj_GUI.eatMinutes &lt;= 0){
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>sprite_index != spr_down &amp;&amp; sprite_index != spr_sprint_down &amp;&amp; !isDoing</string>
+            <string>sprite_index != spr_down &amp;&amp; sprite_index != spr_sprint_down &amp;&amp; sprite_index != spr_swamp_down &amp;&amp; sprite_index != spr_swamp_sprint_down &amp;&amp; !isDoing</string>
           </argument>
         </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>422</id>
+        <kind>1</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>408</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>-1</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_if</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>isInSwamp</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>422</id>
+        <kind>1</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>541</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_sprite_set</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>5</kind>
+            <sprite>spr_swamp_down</sprite>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>424</id>
+        <kind>2</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>421</id>
+        <kind>3</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
       </action>
       <action>
         <libid>1</libid>
@@ -955,6 +1059,20 @@ if(obj_GUI.eatMinutes &lt;= 0){
             <string>0</string>
           </argument>
         </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>424</id>
+        <kind>2</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
       </action>
       <action>
         <libid>1</libid>
@@ -1045,7 +1163,7 @@ if(obj_GUI.eatMinutes &lt;= 0){
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>sprite_index == spr_down || sprite_index == spr_sprint_down</string>
+            <string>sprite_index == spr_down || sprite_index == spr_sprint_down || sprite_index == spr_swamp_down || sprite_index == spr_swamp_sprint_down</string>
           </argument>
         </arguments>
       </action>
@@ -1265,7 +1383,11 @@ if(obj_GUI.eatMinutes &lt;= 0){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(sprite_index != spr_sprint_down){ sprite_index = spr_sprint_down; }
+            <string>if(isInSwamp){
+    if(sprite_index != spr_swamp_sprint_down){ sprite_index = spr_swamp_sprint_down; }
+} else {
+    if(sprite_index != spr_sprint_down){ sprite_index = spr_sprint_down; }
+}
 </string>
           </argument>
         </arguments>
@@ -1373,7 +1495,11 @@ if(obj_GUI.eatMinutes &lt;= 0){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(sprite_index != spr_down){ sprite_index = spr_down; }
+            <string>if(isInSwamp){
+    if(sprite_index != spr_swamp_down){ sprite_index = spr_swamp_down; }
+} else {
+    if(sprite_index != spr_down){ sprite_index = spr_down; }
+}
 </string>
           </argument>
         </arguments>
@@ -1660,9 +1786,113 @@ if(obj_GUI.eatMinutes &lt;= 0){
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>sprite_index != spr_right &amp;&amp; sprite_index != spr_sprint_right &amp;&amp; !isDoing</string>
+            <string>sprite_index != spr_right &amp;&amp; sprite_index != spr_sprint_right &amp;&amp; sprite_index != spr_swamp_right &amp;&amp; sprite_index != spr_swamp_sprint_right &amp;&amp; !isDoing</string>
           </argument>
         </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>422</id>
+        <kind>1</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>408</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>-1</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_if</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>isInSwamp</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>422</id>
+        <kind>1</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>541</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_sprite_set</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>5</kind>
+            <sprite>spr_swamp_right</sprite>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>424</id>
+        <kind>2</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>421</id>
+        <kind>3</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
       </action>
       <action>
         <libid>1</libid>
@@ -1705,6 +1935,20 @@ if(obj_GUI.eatMinutes &lt;= 0){
             <string>0</string>
           </argument>
         </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>424</id>
+        <kind>2</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
       </action>
       <action>
         <libid>1</libid>
@@ -1795,7 +2039,7 @@ if(obj_GUI.eatMinutes &lt;= 0){
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>sprite_index == spr_right || sprite_index == spr_sprint_right</string>
+            <string>sprite_index == spr_right || sprite_index == spr_sprint_right || sprite_index == spr_swamp_right || sprite_index == spr_swamp_sprint_right</string>
           </argument>
         </arguments>
       </action>
@@ -2015,7 +2259,11 @@ if(obj_GUI.eatMinutes &lt;= 0){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(sprite_index != spr_sprint_right){ sprite_index = spr_sprint_right; }
+            <string>if(isInSwamp){
+    if(sprite_index != spr_swamp_sprint_right){ sprite_index = spr_swamp_sprint_right; }
+} else {
+    if(sprite_index != spr_sprint_right){ sprite_index = spr_sprint_right; }
+}
 </string>
           </argument>
         </arguments>
@@ -2123,7 +2371,11 @@ if(obj_GUI.eatMinutes &lt;= 0){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(sprite_index != spr_right){ sprite_index = spr_right; }
+            <string>if(isInSwamp){
+    if(sprite_index != spr_swamp_right){ sprite_index = spr_swamp_right; }
+} else {
+    if(sprite_index != spr_right){ sprite_index = spr_right; }
+}
 </string>
           </argument>
         </arguments>
@@ -2410,9 +2662,113 @@ if(obj_GUI.eatMinutes &lt;= 0){
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>sprite_index != spr_top &amp;&amp; sprite_index != spr_sprint_top &amp;&amp; !isDoing</string>
+            <string>sprite_index != spr_top &amp;&amp; sprite_index != spr_sprint_top &amp;&amp; sprite_index != spr_swamp_top &amp;&amp; sprite_index != spr_swamp_sprint_top &amp;&amp; !isDoing</string>
           </argument>
         </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>422</id>
+        <kind>1</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>408</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>-1</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_if</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>isInSwamp</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>422</id>
+        <kind>1</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>541</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_sprite_set</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>5</kind>
+            <sprite>spr_swamp_top</sprite>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>424</id>
+        <kind>2</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>421</id>
+        <kind>3</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
       </action>
       <action>
         <libid>1</libid>
@@ -2455,6 +2811,20 @@ if(obj_GUI.eatMinutes &lt;= 0){
             <string>0</string>
           </argument>
         </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>424</id>
+        <kind>2</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
       </action>
       <action>
         <libid>1</libid>
@@ -2545,7 +2915,7 @@ if(obj_GUI.eatMinutes &lt;= 0){
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>sprite_index == spr_top || sprite_index == spr_sprint_top</string>
+            <string>sprite_index == spr_top || sprite_index == spr_sprint_top || sprite_index == spr_swamp_top || sprite_index == spr_swamp_sprint_top</string>
           </argument>
         </arguments>
       </action>
@@ -2765,7 +3135,11 @@ if(obj_GUI.eatMinutes &lt;= 0){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(sprite_index != spr_sprint_top){ sprite_index = spr_sprint_top; }
+            <string>if(isInSwamp){
+    if(sprite_index != spr_swamp_sprint_top){ sprite_index = spr_swamp_sprint_top; }
+} else {
+    if(sprite_index != spr_sprint_top){ sprite_index = spr_sprint_top; }
+}
 </string>
           </argument>
         </arguments>
@@ -2873,7 +3247,11 @@ if(obj_GUI.eatMinutes &lt;= 0){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(sprite_index != spr_top){ sprite_index = spr_top; }
+            <string>if(isInSwamp){
+    if(sprite_index != spr_swamp_top){ sprite_index = spr_swamp_top; }
+} else {
+    if(sprite_index != spr_top){ sprite_index = spr_top; }
+}
 </string>
           </argument>
         </arguments>
@@ -3160,9 +3538,113 @@ if(obj_GUI.eatMinutes &lt;= 0){
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>sprite_index != spr_left &amp;&amp; sprite_index != spr_sprint_left &amp;&amp; !isDoing</string>
+            <string>sprite_index != spr_left &amp;&amp; sprite_index != spr_sprint_left &amp;&amp; sprite_index != spr_swamp_left &amp;&amp; sprite_index != spr_swamp_sprint_left !isDoing</string>
           </argument>
         </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>422</id>
+        <kind>1</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>408</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>-1</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_if</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>isInSwamp</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>422</id>
+        <kind>1</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>541</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_sprite_set</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>5</kind>
+            <sprite>spr_swamp_left</sprite>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>424</id>
+        <kind>2</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>421</id>
+        <kind>3</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
       </action>
       <action>
         <libid>1</libid>
@@ -3205,6 +3687,20 @@ if(obj_GUI.eatMinutes &lt;= 0){
             <string>0</string>
           </argument>
         </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>424</id>
+        <kind>2</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
       </action>
       <action>
         <libid>1</libid>
@@ -3295,7 +3791,7 @@ if(obj_GUI.eatMinutes &lt;= 0){
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>sprite_index == spr_left || sprite_index == spr_sprint_left</string>
+            <string>sprite_index == spr_left || sprite_index == spr_sprint_left || sprite_index == spr_swamp_left || sprite_index == spr_swamp_sprint_left</string>
           </argument>
         </arguments>
       </action>
@@ -3447,6 +3943,40 @@ if(obj_GUI.eatMinutes &lt;= 0){
         <arguments>
           <argument>
             <kind>0</kind>
+            <string>canmove</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>422</id>
+        <kind>1</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>408</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>-1</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_if</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
             <string>running</string>
           </argument>
         </arguments>
@@ -3481,7 +4011,11 @@ if(obj_GUI.eatMinutes &lt;= 0){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(sprite_index != spr_sprint_left){ sprite_index = spr_sprint_left; }
+            <string>if(isInSwamp){
+    if(sprite_index != spr_swamp_sprint_left){ sprite_index = spr_swamp_sprint_left; }
+} else {
+    if(sprite_index != spr_sprint_left){ sprite_index = spr_sprint_left; }
+}
 </string>
           </argument>
         </arguments>
@@ -3589,7 +4123,11 @@ if(obj_GUI.eatMinutes &lt;= 0){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(sprite_index != spr_left){ sprite_index = spr_left; }
+            <string>if(isInSwamp){
+    if(sprite_index != spr_swamp_left){ sprite_index = spr_swamp_left; }
+} else {
+    if(sprite_index != spr_left){ sprite_index = spr_left; }
+}
 </string>
           </argument>
         </arguments>
@@ -3638,6 +4176,20 @@ if(obj_GUI.eatMinutes &lt;= 0){
             <string>char_speed</string>
           </argument>
         </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>424</id>
+        <kind>2</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
       </action>
       <action>
         <libid>1</libid>

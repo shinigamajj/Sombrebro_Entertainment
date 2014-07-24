@@ -28,6 +28,15 @@
       <sprite>sprites\spr_sprint_top</sprite>
       <sprite>sprites\spr_sprint_right</sprite>
       <sprite>sprites\spr_sprint_left</sprite>
+      <sprite>sprites\spr_swamp_sprint_down</sprite>
+      <sprite>sprites\spr_swamp_sprint_right</sprite>
+      <sprite>sprites\spr_swamp_sprint_left</sprite>
+      <sprite>sprites\spr_swamp_sprint_top</sprite>
+      <sprite>sprites\spr_swamp_down</sprite>
+      <sprite>sprites\spr_swamp_right</sprite>
+      <sprite>sprites\spr_swamp_left</sprite>
+      <sprite>sprites\spr_swamp_top</sprite>
+      <sprite>sprites\spr_swamp_sink</sprite>
     </sprites>
     <sprites name="enemy_sprites">
       <sprite>sprites\spr_enemy1</sprite>
