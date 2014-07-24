@@ -4363,6 +4363,9 @@ ini_open("variables.ini");
     } else if(room_caption == "swamp_room"){
     pagesCollected = ini_read_real("pages","swamp_room_pages_collected",0);    
     }
+    else if(room_caption == "forest_room2"){
+    pagesCollected = ini_read_real("pages","swamp_room_pages_collected",0);    
+    }
     
     leftPressed = ini_read_real("controls","lp",0);
     rightPressed = ini_read_real("controls","rp",0);
