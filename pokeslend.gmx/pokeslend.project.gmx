@@ -281,7 +281,6 @@
       <object>objects\objPathFinder</object>
       <object>objects\obj_WaterCollider</object>
       <object>objects\obj_Fog</object>
-      <object>objects\obj_light</object>
     </objects>
     <objects name="Swamp_Plants">
       <object>objects\Lillypad01</object>
