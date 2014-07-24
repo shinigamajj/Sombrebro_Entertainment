@@ -392,7 +392,7 @@ ini_close();
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>(Char.sprite_index == spr_left || Char.sprite_index == spr_sprint_left) &amp;&amp; Char.x == x+32 &amp;&amp; Char.y == y+32</string>
+            <string>(Char.sprite_index == spr_left || Char.sprite_index == spr_sprint_left || Char.sprite_index == spr_swamp_left || Char.sprite_index == spr_swamp_sprint_left) &amp;&amp; Char.x == x+32 &amp;&amp; Char.y == y+32</string>
           </argument>
         </arguments>
       </action>
@@ -464,7 +464,7 @@ ini_close();
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>(Char.sprite_index == spr_right || Char.sprite_index == spr_sprint_right) &amp;&amp; Char.x == x-16 &amp;&amp; Char.y == y+32</string>
+            <string>(Char.sprite_index == spr_right || Char.sprite_index == spr_sprint_right || Char.sprite_index == spr_swamp_right || Char.sprite_index == spr_swamp_sprint_right) &amp;&amp; Char.x == x-16 &amp;&amp; Char.y == y+32</string>
           </argument>
         </arguments>
       </action>
@@ -536,7 +536,7 @@ ini_close();
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>(Char.sprite_index == spr_top || Char.sprite_index == spr_sprint_top) &amp;&amp; Char.y == y+48 &amp;&amp; Char.x == x+16</string>
+            <string>(Char.sprite_index == spr_top || Char.sprite_index == spr_sprint_top || Char.sprite_index == spr_swamp_top || Char.sprite_index == spr_swamp_sprint_top) &amp;&amp; Char.y == y+48 &amp;&amp; Char.x == x+16</string>
           </argument>
         </arguments>
       </action>
@@ -608,7 +608,7 @@ ini_close();
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>(Char.sprite_index == spr_top || Char.sprite_index == spr_sprint_top) &amp;&amp; Char.y == y+48 &amp;&amp; Char.x == x</string>
+            <string>(Char.sprite_index == spr_top || Char.sprite_index == spr_sprint_top || Char.sprite_index == spr_swamp_top || Char.sprite_index == spr_swamp_sprint_top) &amp;&amp; Char.y == y+48 &amp;&amp; Char.x == x</string>
           </argument>
         </arguments>
       </action>
@@ -680,7 +680,7 @@ ini_close();
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>(Char.sprite_index == spr_down || Char.sprite_index == spr_sprint_down) &amp;&amp; Char.y == y+16 &amp;&amp; Char.x == x+16</string>
+            <string>(Char.sprite_index == spr_down || Char.sprite_index == spr_sprint_down || Char.sprite_index == spr_swamp_down || Char.sprite_index == spr_swamp_sprint_down) &amp;&amp; Char.y == y+16 &amp;&amp; Char.x == x+16</string>
           </argument>
         </arguments>
       </action>
@@ -780,7 +780,7 @@ ini_close();
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>(Char.sprite_index == spr_down || Char.sprite_index == spr_sprint_down) &amp;&amp; Char.y == y+16 &amp;&amp; Char.x == x</string>
+            <string>(Char.sprite_index == spr_down || Char.sprite_index == spr_sprint_down || Char.sprite_index == spr_swamp_down || Char.sprite_index == spr_swamp_sprint_down) &amp;&amp; Char.y == y+16 &amp;&amp; Char.x == x</string>
           </argument>
         </arguments>
       </action>
