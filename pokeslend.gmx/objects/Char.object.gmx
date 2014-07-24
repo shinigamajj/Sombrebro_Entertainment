@@ -656,6 +656,12 @@ if(isInSwamp &amp;&amp; obj_GUI.eatMinutes &gt;= 1){
 }
 
 
+/* Regulates Grayscale */
+
+lightsize = 1 + distance_to_object(enemy) / 16;
+lightstrength = 1;
+
+
 /* Checks if Character can run */
 
 if(obj_GUI.eatMinutes &lt;= 0){

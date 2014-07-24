@@ -695,6 +695,7 @@
     <instance objName="obj_Collider" x="432" y="352" name="inst_C8F23F45" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_destroyable" x="576" y="144" name="inst_68AFFA60" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_axe" x="464" y="176" name="inst_AB9F27D1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Fog" x="656" y="784" name="inst_FCD0F2ED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="TilesetBase" x="544" y="288" w="16" h="16" xo="0" yo="0" id="10000787" name="inst_09E687D7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
