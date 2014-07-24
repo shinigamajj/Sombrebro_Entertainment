@@ -3848,7 +3848,7 @@ canDestroy = true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>shader_set(shd_greyscale);
+            <string>shader_set(shd_loading);
 isDoing = true;
 alarm[7] = 25;
 </string>

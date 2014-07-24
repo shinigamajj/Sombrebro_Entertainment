@@ -182,7 +182,7 @@
     </scripts>
   </scripts>
   <shaders name="shaders">
-    <shader type="GLSLES">shaders\shd_greyscale.shader</shader>
+    <shader type="GLSLES">shaders\shd_loading.shader</shader>
   </shaders>
   <fonts name="fonts">
     <font>fonts\ComicSans</font>
