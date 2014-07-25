@@ -4374,6 +4374,9 @@ ini_open("variables.ini");
     } else if(room_caption == "swamp_room"){
         x = ini_read_real("positions","swamp_room_char_x",208);
         y = ini_read_real("positions","swamp_room_char_y",96);
+    } else if(room_caption == "forest_room2"){
+        x = ini_read_real("positions","forest_room2_char_x",496);
+        y = ini_read_real("positions","forest_room2_char_y",704);
     }
     char_speed = ini_read_real("speeds","speed_char",2);
     char_speed_run = ini_read_real("speeds","speed_char_run",4);
@@ -4385,9 +4388,8 @@ ini_open("variables.ini");
     pagesCollected = ini_read_real("pages","forest_room_pages_collected",0);
     } else if(room_caption == "swamp_room"){
     pagesCollected = ini_read_real("pages","swamp_room_pages_collected",0);    
-    }
-    else if(room_caption == "forest_room2"){
-    pagesCollected = ini_read_real("pages","swamp_room_pages_collected",0);    
+    } else if(room_caption == "forest_room2"){
+    pagesCollected = ini_read_real("pages","forest_room2_pages_collected",0);    
     }
     
     leftPressed = ini_read_real("controls","lp",0);

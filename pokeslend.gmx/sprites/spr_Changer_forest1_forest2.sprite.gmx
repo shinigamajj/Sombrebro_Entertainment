@@ -20,6 +20,6 @@
   <width>16</width>
   <height>16</height>
   <frames>
-    <frame index="0">images\spr_roomChanger_0.png</frame>
+    <frame index="0">images\spr_Changer_forest1_forest2_0.png</frame>
   </frames>
 </sprite>

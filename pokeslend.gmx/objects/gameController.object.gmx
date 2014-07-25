@@ -60,6 +60,8 @@ ini_open("variables.ini");
     ini_write_real("positions","forest_room_char_y",304);
     ini_write_real("positions","swamp_room_char_x",928);
     ini_write_real("positions","swamp_room_char_y",352);
+    ini_write_real("positions","forest_room2_char_x",496);
+    ini_write_real("positions","forest_room2_char_y",704);
     
     ini_write_real("char","char_has_axe",0);
     ini_write_real("char","char_has_boots",0);
@@ -73,8 +75,10 @@ ini_open("variables.ini");
     ini_write_real("speeds","speed_enemy",2);
     
     ini_write_real("pages","forest_room_pages_in_altar",0);
+    ini_write_real("pages","forest_room2_pages_in_altar",0);
     ini_write_real("pages","swamp_room_pages_in_altar",0);
     ini_write_real("pages","forest_room_pages_collected",0);
+    ini_write_real("pages","forest_room2_pages_collected",0);
     ini_write_real("pages","swamp_room_pages_collected",0);
     
     ini_write_real("controls","lp",0);

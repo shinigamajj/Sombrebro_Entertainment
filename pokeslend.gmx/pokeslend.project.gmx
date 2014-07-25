@@ -132,7 +132,8 @@
       <sprite>sprites\sprite92</sprite>
       <sprite>sprites\sprite93</sprite>
     </sprites>
-    <sprite>sprites\spr_roomChanger</sprite>
+    <sprite>sprites\spr_Changer_forest1_swamp</sprite>
+    <sprite>sprites\spr_Changer_forest1_forest2</sprite>
     <sprite>sprites\spr_grave</sprite>
     <sprite>sprites\spr_msg_erschoepft</sprite>
     <sprite>sprites\spr_msg_hunger1</sprite>
@@ -308,15 +309,16 @@
     <object>objects\obj_boots</object>
     <object>objects\obj_paper</object>
     <object>objects\obj_altar</object>
-    <object>objects\obj_roomChanger</object>
+    <object>objects\obj_Changer_forest1_swamp</object>
+    <object>objects\obj_Changer_forest1_forest2</object>
     <object>objects\message_erschoepft</object>
     <object>objects\message_hunger1</object>
     <object>objects\message_hunger2</object>
     <object>objects\Sign</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\forest_room02</room>
     <room>rooms\forest_room</room>
+    <room>rooms\forest_room02</room>
     <room>rooms\swamp_room</room>
   </rooms>
   <help>

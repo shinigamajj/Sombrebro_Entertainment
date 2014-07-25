@@ -365,9 +365,11 @@ depth -= 2000;
 
 ini_open("variables.ini");
     if(room_caption == "forest_room"){
-    pagesInAltar = ini_read_real("pages","forest_room_pages_in_altar",0);
+        pagesInAltar = ini_read_real("pages","forest_room_pages_in_altar",0);
     } else if(room_caption == "swamp_room"){
-    pagesInAltar = ini_read_real("pages","swamp_room_pages_in_altar",0);    
+        pagesInAltar = ini_read_real("pages","swamp_room_pages_in_altar",0);    
+    } else if(room_caption == "forest_room2"){
+        pagesInAltar = ini_read_real("pages","forest_room2_pages_in_altar",0);
     }
 ini_close();
 </string>
