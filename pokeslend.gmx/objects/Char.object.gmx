@@ -261,8 +261,10 @@ else {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_index = 0;
-image_speed = 0;
+            <string>if(rightPressed == 0 &amp;&amp; topPressed == 0 &amp;&amp; downPressed == 0 &amp;&amp; leftPressed == 0){
+    image_index = 0;
+    image_speed = 0;
+}
 </string>
           </argument>
         </arguments>
@@ -271,6 +273,34 @@ image_speed = 0;
         <libid>1</libid>
         <id>424</id>
         <kind>2</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>424</id>
+        <kind>2</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>421</id>
+        <kind>3</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>0</useapplyto>
@@ -300,20 +330,6 @@ image_speed = 0;
             <string>running</string>
           </argument>
         </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>424</id>
-        <kind>2</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
       </action>
       <action>
         <libid>1</libid>
@@ -383,8 +399,10 @@ image_speed = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_index = 0;
-image_speed = 0;
+            <string>if(rightPressed == 0 &amp;&amp; topPressed == 0 &amp;&amp; downPressed == 0 &amp;&amp; leftPressed == 0){
+    image_index = 0;
+    image_speed = 0;
+}
 </string>
           </argument>
         </arguments>
