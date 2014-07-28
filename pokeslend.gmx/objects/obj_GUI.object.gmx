@@ -231,6 +231,10 @@ var drawPages;
 drawPages = "" + string(Char.pagesCollected) + "/" + string(pagesAmount);
 draw_text(view_xview[0]+view_wview[0]-20-string_length(drawPages), view_yview[0]+20, drawPages);
 
+var drawEnemyNum;
+drawEnemyNum = "" + string(instance_number(enemy_parent));
+draw_text(view_xview[0]+view_wview[0]-7-string_length(drawEnemyNum), view_yview[0]+40, drawEnemyNum);
+
 if(Char.swampSeconds &gt;= 5){
     dead = true;
     var diedSwamp;
