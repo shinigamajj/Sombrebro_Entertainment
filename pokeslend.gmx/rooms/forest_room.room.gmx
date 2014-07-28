@@ -723,6 +723,7 @@
     <instance objName="obj_Collider" x="752" y="528" name="inst_1624DE67" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collider" x="752" y="512" name="inst_7DDA7321" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collider" x="752" y="496" name="inst_A2F60948" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="enemy" x="288" y="496" name="inst_46C7E096" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="TilesetBase" x="544" y="288" w="16" h="16" xo="0" yo="0" id="10000787" name="inst_09E687D7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

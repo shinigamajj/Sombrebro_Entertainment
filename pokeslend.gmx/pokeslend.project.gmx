@@ -180,17 +180,44 @@
     <script>scripts\move_down.gml</script>
     <script>scripts\move_up.gml</script>
     <script>scripts\treeStump_Movement.gml</script>
-    <scripts name="AStar">
-      <script>scripts\AStar_init.gml</script>
-      <script>scripts\AStar_free.gml</script>
-      <script>scripts\AStar_setAll.gml</script>
-      <script>scripts\AStar_setBlocked.gml</script>
-      <script>scripts\AStar_setDirBlocked.gml</script>
-      <script>scripts\AStar_findPath.gml</script>
-      <script>scripts\AStar_getCost.gml</script>
-      <script>scripts\AStar_getEstimatedCost.gml</script>
-      <script>scripts\AStar_getNeighbors.gml</script>
-      <script>scripts\AStar_constructPath.gml</script>
+    <script>scripts\SpawnEnemy.gml</script>
+    <scripts name="Pathfinding">
+      <scripts name="AStar">
+        <script>scripts\AStar_init.gml</script>
+        <script>scripts\AStar_free.gml</script>
+        <script>scripts\AStar_setAll.gml</script>
+        <script>scripts\AStar_setBlocked.gml</script>
+        <script>scripts\AStar_setDirBlocked.gml</script>
+        <script>scripts\AStar_findPath.gml</script>
+        <script>scripts\AStar_getCost.gml</script>
+        <script>scripts\AStar_getEstimatedCost.gml</script>
+        <script>scripts\AStar_getNeighbors.gml</script>
+        <script>scripts\AStar_constructPath.gml</script>
+      </scripts>
+      <scripts name="BStar">
+        <script>scripts\BStar_init.gml</script>
+        <script>scripts\BStar_free.gml</script>
+        <script>scripts\BStar_setAll.gml</script>
+        <script>scripts\BStar_setBlocked.gml</script>
+        <script>scripts\BStar_setDirBlocked.gml</script>
+        <script>scripts\BStar_findPath.gml</script>
+        <script>scripts\BStar_getCost.gml</script>
+        <script>scripts\BStar_getEstimatedCost.gml</script>
+        <script>scripts\BStar_getNeighbors.gml</script>
+        <script>scripts\BStar_constructPath.gml</script>
+      </scripts>
+      <scripts name="CStar">
+        <script>scripts\CStar_init.gml</script>
+        <script>scripts\CStar_free.gml</script>
+        <script>scripts\CStar_setAll.gml</script>
+        <script>scripts\CStar_setBlocked.gml</script>
+        <script>scripts\CStar_setDirBlocked.gml</script>
+        <script>scripts\CStar_findPath.gml</script>
+        <script>scripts\CStar_getCost.gml</script>
+        <script>scripts\CStar_getEstimatedCost.gml</script>
+        <script>scripts\CStar_getNeighbors.gml</script>
+        <script>scripts\CStar_constructPath.gml</script>
+      </scripts>
     </scripts>
   </scripts>
   <shaders name="shaders">
@@ -202,6 +229,8 @@
   <objects name="objects">
     <object>objects\Char</object>
     <object>objects\enemy</object>
+    <object>objects\enemy2</object>
+    <object>objects\enemy3</object>
     <object>objects\obj_movable</object>
     <object>objects\obj_resetter</object>
     <objects name="Trees">
@@ -291,6 +320,8 @@
       <object>objects\gamePause</object>
       <object>objects\gameController</object>
       <object>objects\objPathFinder</object>
+      <object>objects\objPathFinder2</object>
+      <object>objects\objPathFinder3</object>
       <object>objects\obj_WaterCollider</object>
       <object>objects\obj_Fog</object>
     </objects>

@@ -1217,6 +1217,12 @@ else{image_speed = 0;}
             <string>if(instance_exists(objPathFinder)){
     AStar_setBlocked(x,y,1);
 }
+if(instance_exists(objPathFinder2)){
+    BStar_setBlocked(x,y,1);
+}
+if(instance_exists(objPathFinder3)){
+    CStar_setBlocked(x,y,1);
+}
 </string>
           </argument>
         </arguments>
@@ -2284,6 +2290,12 @@ posY = y;
             <kind>1</kind>
             <string>if(instance_exists(objPathFinder)){
     AStar_setBlocked(x,y,0);
+}
+if(instance_exists(objPathFinder2)){
+    BStar_setBlocked(x,y,0);
+}
+if(instance_exists(objPathFinder3)){
+    CStar_setBlocked(x,y,0);
 }
 </string>
           </argument>
