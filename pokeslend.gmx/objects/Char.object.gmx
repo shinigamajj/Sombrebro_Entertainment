@@ -483,9 +483,9 @@ image_speed = 0;
           <argument>
             <kind>1</kind>
             <string>if(running){
-running = false;
-message_erschoepft.visible = true;
-alarm[5] = 60;
+    running = false;
+    message_erschoepft.visible = true;
+    alarm[5] = 60;
 }
 </string>
           </argument>
@@ -680,8 +680,10 @@ if(hasBoots == 0){
 
 /* Regulates Grayscale */
 
-if(instance_exists(enemy) &amp;&amp; distance_to_object(enemy) &lt; enemy.range){
-    lightsize = 1 + distance_to_object(enemy) / 16;
+NearestEnemy = instance_nearest(x,y,enemy_parent);
+
+if(distance_to_object(NearestEnemy) &lt; NearestEnemy.range){
+    lightsize = 1 + distance_to_object(NearestEnemy) / 16;
     lightstrength = 1;
 } else {
     lightsize = room_width + room_height;
