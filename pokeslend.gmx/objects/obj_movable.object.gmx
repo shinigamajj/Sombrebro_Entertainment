@@ -71,9 +71,11 @@ mov_speed = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>x -= x mod objPathFinder.CELL_WIDTH;
-y -= y mod objPathFinder.CELL_HEIGHT;
-AStar_setBlocked(x,y,1);
+            <string>if(instance_exists(objPathFinder)){
+    x -= x mod objPathFinder.CELL_WIDTH;
+    y -= y mod objPathFinder.CELL_HEIGHT;
+    AStar_setBlocked(x,y,1);
+} else { alarm[0] = 8 }
 </string>
           </argument>
         </arguments>
@@ -223,7 +225,9 @@ else{image_speed = 0;}
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>AStar_setBlocked(x,y,1);
+            <string>if(instance_exists(objPathFinder)){
+    AStar_setBlocked(x,y,1);
+}
 </string>
           </argument>
         </arguments>
@@ -846,7 +850,9 @@ else{image_speed = 0;}
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>AStar_setBlocked(x,y,0);
+            <string>if(instance_exists(objPathFinder)){
+    AStar_setBlocked(x,y,0);
+}
 </string>
           </argument>
         </arguments>

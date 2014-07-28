@@ -680,7 +680,7 @@ if(hasBoots == 0){
 
 /* Regulates Grayscale */
 
-if(distance_to_object(enemy) &lt; enemy.range){
+if(instance_exists(enemy) &amp;&amp; distance_to_object(enemy) &lt; enemy.range){
     lightsize = 1 + distance_to_object(enemy) / 16;
     lightstrength = 1;
 } else {

@@ -2005,6 +2005,7 @@
     <instance objName="TreeSwampBig01" x="592" y="864" name="inst_CA98FC52" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TreeSwampBig01" x="704" y="736" name="inst_996EA682" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Swamp_Path03" x="1008" y="368" name="inst_B9C93FFA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Fog" x="80" y="0" name="inst_B4086615" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="TilesetBase" x="544" y="256" w="16" h="16" xo="16" yo="96" id="10000768" name="inst_2BC86457" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

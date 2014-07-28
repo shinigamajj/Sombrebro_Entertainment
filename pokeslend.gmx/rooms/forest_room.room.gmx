@@ -227,7 +227,7 @@
     <instance objName="TreeSmall01" x="192" y="608" name="inst_621F6C7E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Char" x="464" y="304" name="inst_24DC167C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="gameController" x="784" y="784" name="inst_03532CD3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="enemy" x="288" y="448" name="inst_AE4F85E8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Changer_forest1_forest2" x="736" y="496" name="inst_CE7F9612" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collider" x="288" y="624" name="inst_9DF9FF4D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TallGrass" x="208" y="320" name="inst_15D2E27F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="RockBig01" x="560" y="112" name="inst_B19D6297" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -723,7 +723,6 @@
     <instance objName="obj_Collider" x="752" y="528" name="inst_1624DE67" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collider" x="752" y="512" name="inst_7DDA7321" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collider" x="752" y="496" name="inst_A2F60948" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Changer_forest1_forest2" x="736" y="496" name="inst_CE7F9612" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="TilesetBase" x="544" y="288" w="16" h="16" xo="0" yo="0" id="10000787" name="inst_09E687D7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
