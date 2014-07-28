@@ -317,6 +317,8 @@
     <objects name="invisible_objects">
       <object>objects\obj_GUI</object>
       <object>objects\obj_Collider</object>
+      <object>objects\obj_RockCollider</object>
+      <object>objects\obj_TreeCollider</object>
       <object>objects\gamePause</object>
       <object>objects\gameController</object>
       <object>objects\objPathFinder</object>

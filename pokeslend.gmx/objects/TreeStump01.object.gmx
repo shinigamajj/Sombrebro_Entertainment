@@ -102,11 +102,11 @@ image_speed = 0.03;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(instance_exists(objPathFinder)){
+            <string>/*if(instance_exists(objPathFinder)){
     x -= x mod objPathFinder.CELL_WIDTH;
     y -= y mod objPathFinder.CELL_HEIGHT;
     AStar_setBlocked(x,y,1);
-} else { alarm[0] = 8; }
+} else { alarm[0] = 8; }*/
 </string>
           </argument>
         </arguments>
@@ -134,6 +134,14 @@ image_speed = 0.03;
 if(obj_GUI.eatMinutes &lt;= 0){
 mov_speed = 0.5;
 } else { mov_speed = 1; }
+
+if(!place_meeting(x-16,y,obj_TreeCollider)){
+    instance_create(x,y,obj_TreeCollider);
+}
+if(!place_meeting(x+16,y,obj_TreeCollider)){
+    instance_create(x+16,y,obj_TreeCollider);
+}
+
 
 if(distance_to_object(obj_WaterCollider)==0 &amp;&amp; (distance_to_object(Water02) == 0
     || distance_to_object(Water08) == 0 || distance_to_object(Water05) == 0 || distance_to_object(Swamp_Water02) == 0
@@ -1214,7 +1222,7 @@ else{image_speed = 0;}
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(instance_exists(objPathFinder)){
+            <string>/*if(instance_exists(objPathFinder)){
     AStar_setBlocked(x,y,1);
 }
 if(instance_exists(objPathFinder2)){
@@ -1222,7 +1230,7 @@ if(instance_exists(objPathFinder2)){
 }
 if(instance_exists(objPathFinder3)){
     CStar_setBlocked(x,y,1);
-}
+}*/
 </string>
           </argument>
         </arguments>
@@ -2288,7 +2296,7 @@ posY = y;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(instance_exists(objPathFinder)){
+            <string>/*if(instance_exists(objPathFinder)){
     AStar_setBlocked(x,y,0);
 }
 if(instance_exists(objPathFinder2)){
@@ -2296,7 +2304,7 @@ if(instance_exists(objPathFinder2)){
 }
 if(instance_exists(objPathFinder3)){
     CStar_setBlocked(x,y,0);
-}
+}*/
 </string>
           </argument>
         </arguments>

@@ -71,11 +71,11 @@ mov_speed = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(instance_exists(objPathFinder)){
+            <string>/*if(instance_exists(objPathFinder)){
     x -= x mod objPathFinder.CELL_WIDTH;
     y -= y mod objPathFinder.CELL_HEIGHT;
     AStar_setBlocked(x,y,1);
-} else { alarm[0] = 8 }
+} else { alarm[0] = 8 }*/
 </string>
           </argument>
         </arguments>
@@ -103,6 +103,13 @@ mov_speed = 1;
 if(obj_GUI.eatMinutes &lt;= 0){
 mov_speed = 0.5;
 } else { mov_speed = 1; }
+
+
+if(distance_to_object(obj_RockCollider) != 0){
+    if(!place_meeting(x,y,obj_RockCollider)){
+        instance_create(x,y,obj_RockCollider);
+    }
+}
 </string>
           </argument>
         </arguments>
@@ -225,7 +232,7 @@ else{image_speed = 0;}
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(instance_exists(objPathFinder)){
+            <string>/*if(instance_exists(objPathFinder)){
     AStar_setBlocked(x,y,1);
 }
 if(instance_exists(objPathFinder2)){
@@ -233,7 +240,7 @@ if(instance_exists(objPathFinder2)){
 }
 if(instance_exists(objPathFinder3)){
     CStar_setBlocked(x,y,1);
-}
+}*/
 </string>
           </argument>
         </arguments>
@@ -856,7 +863,7 @@ if(instance_exists(objPathFinder3)){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(instance_exists(objPathFinder)){
+            <string>/*if(instance_exists(objPathFinder)){
     AStar_setBlocked(x,y,0);
 }
 if(instance_exists(objPathFinder2)){
@@ -864,7 +871,7 @@ if(instance_exists(objPathFinder2)){
 }
 if(instance_exists(objPathFinder3)){
     CStar_setBlocked(x,y,0);
-}
+}*/
 </string>
           </argument>
         </arguments>

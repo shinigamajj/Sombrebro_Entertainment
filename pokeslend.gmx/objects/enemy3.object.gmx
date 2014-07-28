@@ -66,17 +66,17 @@ alarm[0] = 8;
 
 /*set blocked tiles */
 
-with(TreeStump01){
+/*with(TreeStump01){
+    x -= x mod objPathFinder3.CELL_WIDTH;
+    y -= y mod objPathFinder3.CELL_HEIGHT;
+    CStar_setBlocked(x,y,1);
+}*/
+with(obj_TreeCollider){
     x -= x mod objPathFinder3.CELL_WIDTH;
     y -= y mod objPathFinder3.CELL_HEIGHT;
     CStar_setBlocked(x,y,1);
 }
-with(TreeStump02){
-    x -= x mod objPathFinder3.CELL_WIDTH;
-    y -= y mod objPathFinder3.CELL_HEIGHT;
-    CStar_setBlocked(x,y,1);
-}
-with(obj_movable){
+with(obj_RockCollider){
     x -= x mod objPathFinder3.CELL_WIDTH;
     y -= y mod objPathFinder3.CELL_HEIGHT;
     CStar_setBlocked(x,y,1);
