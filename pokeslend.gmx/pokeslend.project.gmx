@@ -37,6 +37,14 @@
       <sprite>sprites\spr_swamp_left</sprite>
       <sprite>sprites\spr_swamp_top</sprite>
       <sprite>sprites\spr_swamp_sink</sprite>
+      <sprite>sprites\spr_eat_down</sprite>
+      <sprite>sprites\spr_eat_left</sprite>
+      <sprite>sprites\spr_eat_right</sprite>
+      <sprite>sprites\spr_eat_top</sprite>
+      <sprite>sprites\spr_axe_down</sprite>
+      <sprite>sprites\spr_axe_right</sprite>
+      <sprite>sprites\spr_axe_left</sprite>
+      <sprite>sprites\spr_axe_top</sprite>
     </sprites>
     <sprites name="enemy_sprites">
       <sprite>sprites\spr_enemy1</sprite>
