@@ -402,6 +402,7 @@
     <room>rooms\forest_room</room>
     <room>rooms\forest_room02</room>
     <room>rooms\swamp_room</room>
+    <room>rooms\Tutorial_Room</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
