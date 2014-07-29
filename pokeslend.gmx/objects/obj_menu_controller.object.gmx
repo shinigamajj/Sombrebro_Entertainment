@@ -183,6 +183,22 @@ if(menuState = 1){
             exit;
         }
     } else { exit; }
+} else if(menuState = 2){
+    if(menu_button_go.isSelected){
+        if (keyboard_check_pressed(vk_left)){
+            exit;
+        } else if (keyboard_check_pressed(vk_right)){
+            menu_button_go.isSelected = false;
+            menu_button_back.isSelected = true;
+        }
+    } else if(menu_button_back.isSelected){
+        if (keyboard_check_pressed(vk_left)){
+            menu_button_back.isSelected = false;
+            menu_button_go.isSelected = true;
+        } else if (keyboard_check_pressed(vk_down)){
+            exit;
+        }
+    } else { exit; }
 } else if(menuState = 5){
     if(menu_button_yes.isSelected){
         if (keyboard_check_pressed(vk_left)){
@@ -336,8 +352,10 @@ if (menuState == 1) {
         with(menu_button_credits){instance_destroy();}
         with(menu_button_options){instance_destroy();}
         with(menu_button_exit){instance_destroy();}
-        instance_create(251,185,menu_button_back);
-        menu_button_back.isSelected = true;
+        instance_create(231,35,menu_controls);
+        instance_create(261,185,menu_button_back);
+        instance_create(231,185,menu_button_go);
+        menu_button_go.isSelected = true;
     } else if(menu_button_credits.isSelected &amp;&amp; keyboard_check_pressed(vk_enter)){
         menu_button_credits.isSelected = false;
         menuState = 3;
@@ -373,11 +391,15 @@ if (menuState == 1) {
         menu_button_back.isSelected = false;
         menuState = 1;
         with(menu_button_back){ instance_destroy(); }
+        with(menu_button_go){ instance_destroy(); }
+        with(menu_controls){ instance_destroy(); }
         instance_create(231,35,menu_button_play);
         instance_create(231,65,menu_button_credits);
         instance_create(231,95,menu_button_options);
         instance_create(231,125,menu_button_exit);
         menu_button_play.isSelected = true;
+    } else if(menu_button_go.isSelected &amp;&amp; keyboard_check_pressed(vk_enter)){ 
+        room_goto(forest_room);
     } else { exit; }
 } else if (menuState == 3) {
     if(menu_button_back.isSelected &amp;&amp; keyboard_check_pressed(vk_enter)){
