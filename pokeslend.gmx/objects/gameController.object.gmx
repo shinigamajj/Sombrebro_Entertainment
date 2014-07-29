@@ -49,6 +49,8 @@
           <argument>
             <kind>1</kind>
             <string>AStar_free();
+BStar_free();
+CStar_free();
 </string>
           </argument>
         </arguments>
