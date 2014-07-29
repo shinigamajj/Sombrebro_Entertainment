@@ -36,6 +36,7 @@ instance_create(231,65,menu_button_credits);
 instance_create(231,95,menu_button_options);
 instance_create(231,125,menu_button_exit);
 menu_button_play.isSelected = true;
+menuState = 1;
 </string>
           </argument>
         </arguments>
@@ -148,36 +149,273 @@ menu_button_play.isSelected = true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(menu_button_play.isSelected){
-    if (keyboard_check_pressed(vk_up)){
-        exit;
-    } else if (keyboard_check_pressed(vk_down)){
+            <string>/* Button Changer */
+
+if(menuState = 1){
+    if(menu_button_play.isSelected){
+        if (keyboard_check_pressed(vk_up)){
+            exit;
+        } else if (keyboard_check_pressed(vk_down)){
+            menu_button_play.isSelected = false;
+            menu_button_credits.isSelected = true;
+        }
+    } else if(menu_button_credits.isSelected){
+        if (keyboard_check_pressed(vk_up)){
+            menu_button_credits.isSelected = false;
+            menu_button_play.isSelected = true;
+        } else if (keyboard_check_pressed(vk_down)){
+            menu_button_credits.isSelected = false;
+            menu_button_options.isSelected = true;
+        }
+    } else if(menu_button_options.isSelected){
+        if (keyboard_check_pressed(vk_up)){
+            menu_button_options.isSelected = false;
+            menu_button_credits.isSelected = true;
+        } else if (keyboard_check_pressed(vk_down)){
+            menu_button_options.isSelected = false;
+            menu_button_exit.isSelected = true;
+        }
+    } else if(menu_button_exit.isSelected){
+        if (keyboard_check_pressed(vk_up)){
+            menu_button_exit.isSelected = false;
+            menu_button_options.isSelected = true;
+        } else if (keyboard_check_pressed(vk_down)){
+            exit;
+        }
+    } else { exit; }
+} else if(menuState = 5){
+    if(menu_button_yes.isSelected){
+        if (keyboard_check_pressed(vk_left)){
+            exit;
+        } else if (keyboard_check_pressed(vk_right)){
+            menu_button_yes.isSelected = false;
+            menu_button_no.isSelected = true;
+        }
+    } else if(menu_button_no.isSelected){
+        if (keyboard_check_pressed(vk_left)){
+            menu_button_no.isSelected = false;
+            menu_button_yes.isSelected = true;
+        } else if (keyboard_check_pressed(vk_down)){
+            exit;
+        }
+    } else { exit; }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>424</id>
+        <kind>2</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>408</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>-1</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_if</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>-1</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>canDo</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>422</id>
+        <kind>1</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>425</id>
+        <kind>4</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>424</id>
+        <kind>2</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>421</id>
+        <kind>3</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>422</id>
+        <kind>1</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/* Menu Changer */
+
+if (menuState == 1) {
+    if(menu_button_play.isSelected &amp;&amp; keyboard_check_pressed(vk_enter)){
         menu_button_play.isSelected = false;
-        menu_button_credits.isSelected = true;
-    }
-} else if(menu_button_credits.isSelected){
-    if (keyboard_check_pressed(vk_up)){
+        menuState = 2;
+        with(menu_button_play){instance_destroy();}
+        with(menu_button_credits){instance_destroy();}
+        with(menu_button_options){instance_destroy();}
+        with(menu_button_exit){instance_destroy();}
+        instance_create(251,185,menu_button_back);
+        menu_button_back.isSelected = true;
+    } else if(menu_button_credits.isSelected &amp;&amp; keyboard_check_pressed(vk_enter)){
         menu_button_credits.isSelected = false;
-        menu_button_play.isSelected = true;
-    } else if (keyboard_check_pressed(vk_down)){
-        menu_button_credits.isSelected = false;
-        menu_button_options.isSelected = true;
-    }
-} else if(menu_button_options.isSelected){
-    if (keyboard_check_pressed(vk_up)){
+        menuState = 3;
+        with(menu_button_play){instance_destroy();}
+        with(menu_button_credits){instance_destroy();}
+        with(menu_button_options){instance_destroy();}
+        with(menu_button_exit){instance_destroy();}
+        instance_create(231,35,menu_credits);
+        instance_create(251,185,menu_button_back);
+        menu_button_back.isSelected = true;
+    } else if(menu_button_options.isSelected &amp;&amp; keyboard_check_pressed(vk_enter)){
         menu_button_options.isSelected = false;
-        menu_button_credits.isSelected = true;
-    } else if (keyboard_check_pressed(vk_down)){
-        menu_button_options.isSelected = false;
-        menu_button_exit.isSelected = true;
-    }
-} else if(menu_button_exit.isSelected){
-    if (keyboard_check_pressed(vk_up)){
+        menuState = 4;
+        with(menu_button_play){instance_destroy();}
+        with(menu_button_credits){instance_destroy();}
+        with(menu_button_options){instance_destroy();}
+        with(menu_button_exit){instance_destroy();}
+        instance_create(251,185,menu_button_back);
+        menu_button_back.isSelected = true;
+    } else if(menu_button_exit.isSelected &amp;&amp; keyboard_check_pressed(vk_enter)){
         menu_button_exit.isSelected = false;
+        menuState = 5;
+        with(menu_button_play){instance_destroy();}
+        with(menu_button_credits){instance_destroy();}
+        with(menu_button_options){instance_destroy();}
+        with(menu_button_exit){instance_destroy();}
+        instance_create(281,185,menu_button_no);
+        instance_create(231,185,menu_button_yes);
+        menu_button_yes.isSelected = true;
+    } else { exit; }
+} else if (menuState == 2) {
+    if(menu_button_back.isSelected &amp;&amp; keyboard_check_pressed(vk_enter)){
+        menu_button_back.isSelected = false;
+        menuState = 1;
+        with(menu_button_back){ instance_destroy(); }
+        instance_create(231,35,menu_button_play);
+        instance_create(231,65,menu_button_credits);
+        instance_create(231,95,menu_button_options);
+        instance_create(231,125,menu_button_exit);
+        menu_button_play.isSelected = true;
+    } else { exit; }
+} else if (menuState == 3) {
+    if(menu_button_back.isSelected &amp;&amp; keyboard_check_pressed(vk_enter)){
+        menu_button_back.isSelected = false;
+        menuState = 1;
+        with(menu_button_back){ instance_destroy(); }
+        with(menu_credits){ instance_destroy(); }
+        instance_create(231,35,menu_button_play);
+        instance_create(231,65,menu_button_credits);
+        instance_create(231,95,menu_button_options);
+        instance_create(231,125,menu_button_exit);
+        menu_button_credits.isSelected = true;
+    } else { exit; }
+} else if (menuState == 4) {
+    if(menu_button_back.isSelected &amp;&amp; keyboard_check_pressed(vk_enter)){
+        menu_button_back.isSelected = false;
+        menuState = 1;
+        with(menu_button_back){ instance_destroy(); }
+        instance_create(231,35,menu_button_play);
+        instance_create(231,65,menu_button_credits);
+        instance_create(231,95,menu_button_options);
+        instance_create(231,125,menu_button_exit);
         menu_button_options.isSelected = true;
-    } else if (keyboard_check_pressed(vk_down)){
-        exit;
-    }
+    } else { exit; }
+} else if (menuState == 5) {
+    if(menu_button_no.isSelected &amp;&amp; keyboard_check_pressed(vk_enter)){
+        menu_button_no.isSelected = false;
+        menuState = 1;
+        with(menu_button_no){ instance_destroy(); }
+        with(menu_button_yes){ instance_destroy(); }
+        instance_create(231,35,menu_button_play);
+        instance_create(231,65,menu_button_credits);
+        instance_create(231,95,menu_button_options);
+        instance_create(231,125,menu_button_exit);
+        menu_button_exit.isSelected = true;
+    } else if(menu_button_yes.isSelected &amp;&amp; keyboard_check_pressed(vk_enter)){ 
+        game_end();
+    } else { exit; }
 } else { exit; }
 </string>
           </argument>
@@ -216,9 +454,20 @@ menu_button_play.isSelected = true;
           <argument>
             <kind>1</kind>
             <string>canDo = false;
+menuState = 0;
 
 instance_create(0,0,menu_MDH_Logo);
 alarm[0] = 45;
+
+/* Menu States */
+/*
+*   0 = MDH Logo
+*   1 = Game Menu
+*   2 = Play Menu / Controls
+*   3 = Credits Menu
+*   4 = Options Menu
+*   5 = Exit Confirmation Menu
+*/
 </string>
           </argument>
         </arguments>

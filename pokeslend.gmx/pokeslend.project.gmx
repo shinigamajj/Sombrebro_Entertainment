@@ -181,7 +181,9 @@
       <sprite>sprites\spr_menu_credits</sprite>
       <sprite>sprites\spr_menu_play</sprite>
       <sprite>sprites\spr_menu_back</sprite>
-      <sprite>sprites\spr_menu_yes_no</sprite>
+      <sprite>sprites\spr_menu_yes</sprite>
+      <sprite>sprites\spr_menu_credits_names</sprite>
+      <sprite>sprites\spr_menu_no</sprite>
       <sprite>sprites\spr_menu_background</sprite>
       <sprite>sprites\spr_menu_BGblack</sprite>
     </sprites>
@@ -378,12 +380,14 @@
     <object>objects\Sign</object>
     <objects name="MENU_Objects">
       <object>objects\menu_MDH_Logo</object>
+      <object>objects\menu_credits</object>
       <object>objects\menu_button_exit</object>
       <object>objects\menu_button_options</object>
       <object>objects\menu_button_credits</object>
       <object>objects\menu_button_play</object>
       <object>objects\menu_button_back</object>
-      <object>objects\menu_button_yes_no</object>
+      <object>objects\menu_button_yes</object>
+      <object>objects\menu_button_no</object>
       <object>objects\menu_BG_Full</object>
       <object>objects\menu_BG_Black</object>
       <object>objects\obj_menu_controller</object>
