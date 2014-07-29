@@ -15,7 +15,6 @@
       <sprite>sprites\sprite121</sprite>
       <sprite>sprites\sprite122</sprite>
     </sprites>
-    <sprite>sprites\spr_paper</sprite>
     <sprite>sprites\ANM_GrassTall</sprite>
     <sprite>sprites\GrassTallSprite</sprite>
     <sprite>sprites\spr_beerenbusch</sprite>
@@ -95,6 +94,9 @@
       <sprite>sprites\sprite69</sprite>
       <sprite>sprites\sprite66</sprite>
       <sprite>sprites\sprite70</sprite>
+      <sprite>sprites\sprite94</sprite>
+      <sprite>sprites\sprite95</sprite>
+      <sprite>sprites\sprite96</sprite>
     </sprites>
     <sprites name="altar_sprites">
       <sprite>sprites\spr_altar1</sprite>
@@ -118,7 +120,7 @@
       <sprite>sprites\sprite71</sprite>
       <sprite>sprites\sprite72</sprite>
     </sprites>
-    <sprites name="wate_sprites">
+    <sprites name="water_sprites">
       <sprite>sprites\sprite73</sprite>
       <sprite>sprites\sprite74</sprite>
       <sprite>sprites\sprite75</sprite>
@@ -142,34 +144,47 @@
     </sprites>
     <sprite>sprites\spr_Changer_forest1_swamp</sprite>
     <sprite>sprites\spr_Changer_forest1_forest2</sprite>
-    <sprite>sprites\spr_grave</sprite>
     <sprite>sprites\spr_msg_erschoepft</sprite>
     <sprite>sprites\spr_msg_hunger1</sprite>
     <sprite>sprites\spr_msg_hunger2</sprite>
     <sprite>sprites\spr_destroyable</sprite>
-    <sprite>sprites\sprite82</sprite>
-    <sprite>sprites\sprite94</sprite>
-    <sprite>sprites\sprite95</sprite>
-    <sprite>sprites\sprite96</sprite>
-    <sprite>sprites\spr_axe</sprite>
     <sprite>sprites\sprite101</sprite>
-    <sprite>sprites\sprite102</sprite>
-    <sprite>sprites\sprite104</sprite>
-    <sprite>sprites\sprite106</sprite>
-    <sprite>sprites\sprite107</sprite>
-    <sprite>sprites\sprite108</sprite>
-    <sprite>sprites\sprite109</sprite>
-    <sprite>sprites\sprite110</sprite>
-    <sprite>sprites\sprite111</sprite>
-    <sprite>sprites\sprite112</sprite>
-    <sprite>sprites\sprite113</sprite>
-    <sprite>sprites\sprite114</sprite>
-    <sprite>sprites\sprite115</sprite>
-    <sprite>sprites\sprite116</sprite>
-    <sprite>sprites\sprite117</sprite>
-    <sprite>sprites\sprite118</sprite>
     <sprite>sprites\spr_Light</sprite>
     <sprite>sprites\sprite132</sprite>
+    <sprites name="Accessories">
+      <sprite>sprites\sprite113</sprite>
+      <sprite>sprites\sprite114</sprite>
+      <sprite>sprites\sprite115</sprite>
+      <sprite>sprites\sprite116</sprite>
+      <sprite>sprites\sprite117</sprite>
+      <sprite>sprites\sprite118</sprite>
+      <sprite>sprites\sprite109</sprite>
+      <sprite>sprites\sprite108</sprite>
+      <sprite>sprites\sprite107</sprite>
+      <sprite>sprites\sprite106</sprite>
+      <sprite>sprites\sprite112</sprite>
+      <sprite>sprites\sprite111</sprite>
+      <sprite>sprites\sprite110</sprite>
+      <sprite>sprites\sprite104</sprite>
+      <sprite>sprites\sprite82</sprite>
+      <sprite>sprites\spr_grave</sprite>
+    </sprites>
+    <sprites name="Collectibles">
+      <sprite>sprites\spr_axe</sprite>
+      <sprite>sprites\sprite102</sprite>
+      <sprite>sprites\spr_paper</sprite>
+    </sprites>
+    <sprites name="MENU_Sprites">
+      <sprite>sprites\spr_menu_mdh_logo</sprite>
+      <sprite>sprites\spr_menu_exit</sprite>
+      <sprite>sprites\spr_menu_options</sprite>
+      <sprite>sprites\spr_menu_credits</sprite>
+      <sprite>sprites\spr_menu_play</sprite>
+      <sprite>sprites\spr_menu_back</sprite>
+      <sprite>sprites\spr_menu_yes_no</sprite>
+      <sprite>sprites\spr_menu_background</sprite>
+      <sprite>sprites\spr_menu_BGblack</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\Base_Grass</background>
@@ -239,17 +254,12 @@
     <object>objects\enemy</object>
     <object>objects\enemy2</object>
     <object>objects\enemy3</object>
-    <object>objects\obj_movable</object>
-    <object>objects\obj_resetter</object>
     <objects name="Trees">
       <object>objects\TreeBig01</object>
       <object>objects\TreeBig02</object>
       <object>objects\TreeSmall01</object>
       <object>objects\TreeDead01</object>
-      <object>objects\TreeStump01</object>
-      <object>objects\TreeStump02</object>
       <object>objects\TreeDead03</object>
-      <object>objects\TreeApple01</object>
       <object>objects\TreeSwampBig01</object>
       <object>objects\TreeSwampBig02</object>
       <object>objects\TreeSmall02</object>
@@ -345,20 +355,42 @@
       <object>objects\Swamp_Bamboo01</object>
       <object>objects\Swamp_Bamboo02</object>
     </objects>
-    <object>objects\obj_beerenbusch</object>
-    <object>objects\obj_destroyable</object>
-    <object>objects\obj_axe</object>
-    <object>objects\obj_boots</object>
-    <object>objects\obj_paper</object>
-    <object>objects\obj_altar</object>
+    <objects name="Collectibles">
+      <object>objects\obj_axe</object>
+      <object>objects\obj_boots</object>
+      <object>objects\obj_paper</object>
+    </objects>
+    <objects name="Interactive_Objects">
+      <object>objects\obj_movable</object>
+      <object>objects\obj_resetter</object>
+      <object>objects\TreeStump01</object>
+      <object>objects\TreeStump02</object>
+      <object>objects\obj_altar</object>
+      <object>objects\obj_destroyable</object>
+      <object>objects\obj_beerenbusch</object>
+      <object>objects\TreeApple01</object>
+    </objects>
     <object>objects\obj_Changer_forest1_swamp</object>
     <object>objects\obj_Changer_forest1_forest2</object>
     <object>objects\message_erschoepft</object>
     <object>objects\message_hunger1</object>
     <object>objects\message_hunger2</object>
     <object>objects\Sign</object>
+    <objects name="MENU_Objects">
+      <object>objects\menu_MDH_Logo</object>
+      <object>objects\menu_button_exit</object>
+      <object>objects\menu_button_options</object>
+      <object>objects\menu_button_credits</object>
+      <object>objects\menu_button_play</object>
+      <object>objects\menu_button_back</object>
+      <object>objects\menu_button_yes_no</object>
+      <object>objects\menu_BG_Full</object>
+      <object>objects\menu_BG_Black</object>
+      <object>objects\obj_menu_controller</object>
+    </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\MENU</room>
     <room>rooms\forest_room</room>
     <room>rooms\forest_room02</room>
     <room>rooms\swamp_room</room>
