@@ -4339,8 +4339,8 @@ if(obj_GUI.eatMinutes &lt;= 0){
     runningCooldown = true;
     running = true;
 
-    alarm[1] = 150;
-    alarm[2] = 900;
+    alarm[1] = 60;
+    alarm[2] = 150;
 }
 </string>
           </argument>
