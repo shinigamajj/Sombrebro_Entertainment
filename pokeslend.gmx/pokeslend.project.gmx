@@ -190,6 +190,7 @@
       <sprite>sprites\spr_menu_background</sprite>
       <sprite>sprites\spr_menu_BGblack</sprite>
     </sprites>
+    <sprite>sprites\sprite156</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Base_Grass</background>
@@ -283,6 +284,7 @@
       <object>objects\RockMossyBig01</object>
       <object>objects\RockMossBig02</object>
       <object>objects\RockMossSmall01</object>
+      <object>objects\RockCrystalHuge01</object>
     </objects>
     <objects name="Ground_Objects">
       <object>objects\TallGrass</object>
