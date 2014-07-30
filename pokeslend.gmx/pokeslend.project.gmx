@@ -98,6 +98,7 @@
       <sprite>sprites\sprite94</sprite>
       <sprite>sprites\sprite95</sprite>
       <sprite>sprites\sprite96</sprite>
+      <sprite>sprites\sprite156</sprite>
     </sprites>
     <sprites name="altar_sprites">
       <sprite>sprites\spr_altar1</sprite>
@@ -190,7 +191,6 @@
       <sprite>sprites\spr_menu_background</sprite>
       <sprite>sprites\spr_menu_BGblack</sprite>
     </sprites>
-    <sprite>sprites\sprite156</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Base_Grass</background>

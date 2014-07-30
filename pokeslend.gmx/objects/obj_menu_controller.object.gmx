@@ -30,11 +30,11 @@ with(menu_MDH_Logo){instance_destroy();}
 
 /* Create Menu */
 instance_create(0,0,menu_BG_Full);
-instance_create(224,0,menu_BG_Black);
-instance_create(231,35,menu_button_play);
-instance_create(231,65,menu_button_credits);
-instance_create(231,95,menu_button_options);
-instance_create(231,125,menu_button_exit);
+//instance_create(0,0,menu_BG_Black);
+instance_create(5,15,menu_button_play);
+instance_create(5,75,menu_button_credits);
+instance_create(5,135,menu_button_options);
+instance_create(5,195,menu_button_exit);
 menu_button_play.isSelected = true;
 menuState = 1;
 </string>
