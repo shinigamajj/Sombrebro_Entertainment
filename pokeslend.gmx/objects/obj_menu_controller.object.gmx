@@ -31,9 +31,9 @@ with(menu_MDH_Logo){instance_destroy();}
 /* Create Menu */
 instance_create(0,0,menu_BG_Full);
 //instance_create(0,0,menu_BG_Black);
-instance_create(5,15,menu_button_play);
-instance_create(5,75,menu_button_credits);
-instance_create(5,135,menu_button_options);
+instance_create(5,105,menu_button_play);
+instance_create(5,135,menu_button_credits);
+instance_create(5,165,menu_button_options);
 instance_create(5,195,menu_button_exit);
 menu_button_play.isSelected = true;
 menuState = 1;
@@ -393,10 +393,18 @@ if (menuState == 1) {
         with(menu_button_back){ instance_destroy(); }
         with(menu_button_go){ instance_destroy(); }
         with(menu_controls){ instance_destroy(); }
+        // v das da hab ich geändert 30.07.2014 dachte macht position richtig?
+        //Original war folgendes hab auch weiter unten geändert
+        /*
         instance_create(231,35,menu_button_play);
         instance_create(231,65,menu_button_credits);
         instance_create(231,95,menu_button_options);
         instance_create(231,125,menu_button_exit);
+        */
+        instance_create(5,105,menu_button_play);
+        instance_create(5,135,menu_button_credits);
+        instance_create(5,165,menu_button_options);
+        instance_create(5,195,menu_button_exit);
         menu_button_play.isSelected = true;
     } else if(menu_button_go.isSelected &amp;&amp; keyboard_check_pressed(vk_enter)){ 
         room_goto(forest_room);
@@ -407,10 +415,10 @@ if (menuState == 1) {
         menuState = 1;
         with(menu_button_back){ instance_destroy(); }
         with(menu_credits){ instance_destroy(); }
-        instance_create(231,35,menu_button_play);
-        instance_create(231,65,menu_button_credits);
-        instance_create(231,95,menu_button_options);
-        instance_create(231,125,menu_button_exit);
+        instance_create(5,105,menu_button_play);
+        instance_create(5,135,menu_button_credits);
+        instance_create(5,165,menu_button_options);
+        instance_create(5,195,menu_button_exit);
         menu_button_credits.isSelected = true;
     } else { exit; }
 } else if (menuState == 4) {
@@ -418,10 +426,10 @@ if (menuState == 1) {
         menu_button_back.isSelected = false;
         menuState = 1;
         with(menu_button_back){ instance_destroy(); }
-        instance_create(231,35,menu_button_play);
-        instance_create(231,65,menu_button_credits);
-        instance_create(231,95,menu_button_options);
-        instance_create(231,125,menu_button_exit);
+        instance_create(5,105,menu_button_play);
+        instance_create(5,135,menu_button_credits);
+        instance_create(5,165,menu_button_options);
+        instance_create(5,195,menu_button_exit);
         menu_button_options.isSelected = true;
     } else { exit; }
 } else if (menuState == 5) {
@@ -430,10 +438,10 @@ if (menuState == 1) {
         menuState = 1;
         with(menu_button_no){ instance_destroy(); }
         with(menu_button_yes){ instance_destroy(); }
-        instance_create(231,35,menu_button_play);
-        instance_create(231,65,menu_button_credits);
-        instance_create(231,95,menu_button_options);
-        instance_create(231,125,menu_button_exit);
+        instance_create(5,105,menu_button_play);
+        instance_create(5,135,menu_button_credits);
+        instance_create(5,165,menu_button_options);
+        instance_create(5,195,menu_button_exit);
         menu_button_exit.isSelected = true;
     } else if(menu_button_yes.isSelected &amp;&amp; keyboard_check_pressed(vk_enter)){ 
         game_end();
