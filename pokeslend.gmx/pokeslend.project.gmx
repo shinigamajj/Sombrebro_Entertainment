@@ -78,7 +78,8 @@
       <sprite>sprites\spr_TreeStump02Water</sprite>
       <sprites name="TreeStump_Animations">
         <sprite>sprites\TreeStumpVert_Anim</sprite>
-        <sprite>sprites\TreeStumpHoriz_Anim</sprite>
+        <sprite>sprites\TreeStumpHoriz_Anim_down</sprite>
+        <sprite>sprites\TreeStumpHoriz_Anim_up</sprite>
       </sprites>
     </sprites>
     <sprites name="rock_sprites">

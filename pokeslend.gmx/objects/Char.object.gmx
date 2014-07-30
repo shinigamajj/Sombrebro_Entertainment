@@ -4340,7 +4340,7 @@ if(obj_GUI.eatMinutes &lt;= 0){
     running = true;
 
     alarm[1] = 60;
-    alarm[2] = 150;
+    alarm[2] = 180;
 }
 </string>
           </argument>
