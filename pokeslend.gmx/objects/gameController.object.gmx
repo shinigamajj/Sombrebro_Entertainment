@@ -137,9 +137,15 @@ sound_global_volume(volume);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_deactivate_all(false);
+            <string>if(room != MENU){
 
-instance_create(1,1,gamePause);
+    instance_deactivate_all(false);
+
+    instance_create(1,1,gamePause);
+    instance_create(view_xview[0]+112,view_yview[0]+200,menu_pause_button_menu);
+    instance_create(view_xview[0]+224,view_yview[0]+200,menu_pause_button_continue);
+    menu_pause_button_continue.isSelected = true;
+}
 </string>
           </argument>
         </arguments>

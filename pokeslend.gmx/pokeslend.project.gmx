@@ -192,6 +192,10 @@
       <sprite>sprites\spr_menu_BGblack</sprite>
       <sprite>sprites\spr_menu_BGslider</sprite>
       <sprite>sprites\spr_menu_slider</sprite>
+      <sprites name="PAUSE_MENU_Sprites">
+        <sprite>sprites\spr_pause_menu_menu</sprite>
+        <sprite>sprites\spr_pause_menu_continue</sprite>
+      </sprites>
     </sprites>
     <sprite>sprites\sprite157</sprite>
   </sprites>
@@ -404,6 +408,12 @@
       <object>objects\menu_BG_Black</object>
       <object>objects\menu_BG_slider</object>
       <object>objects\menu_slider_sound</object>
+      <objects name="PAUSE_MENU_Objects">
+        <object>objects\menu_pause_button_yes</object>
+        <object>objects\menu_pause_button_no</object>
+        <object>objects\menu_pause_button_menu</object>
+        <object>objects\menu_pause_button_continue</object>
+      </objects>
     </objects>
   </objects>
   <rooms name="rooms">
