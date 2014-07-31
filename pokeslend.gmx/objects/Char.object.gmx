@@ -607,6 +607,9 @@ else {
 if(distance_to_object(TallGrass) == 0){
     isInGrass = true;
     grasID = instance_place(Char.x, Char.y, TallGrass);
+} else if(distance_to_object(TallGrassSwamp) == 0){
+    isInGrass = true;
+    grasID = instance_place(Char.x, Char.y, TallGrassSwamp);
 } else { isInGrass = false; }
 
     

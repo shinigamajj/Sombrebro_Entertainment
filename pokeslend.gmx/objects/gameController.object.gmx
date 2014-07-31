@@ -110,7 +110,11 @@ ini_open("variables.ini");
     ini_write_real("controls","rp",0);
     ini_write_real("controls","tp",0);
     ini_write_real("controls","dp",0);
+    
+    volume = ini_read_real("options","volume",0.5);
 ini_close();
+
+sound_global_volume(volume);
 </string>
           </argument>
         </arguments>

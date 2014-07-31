@@ -199,7 +199,23 @@ if(menuState = 1){
             exit;
         }
     } else { exit; }
-} else if(menuState = 5){
+} else if(menuState = 4){
+    if(menu_button_back.isSelected){
+        if (keyboard_check_pressed(vk_down)){
+            exit;
+        } else if (keyboard_check_pressed(vk_up)){
+            menu_button_back.isSelected = false;
+            menu_slider_sound.isSelected = true;
+        }
+    } else if(menu_slider_sound.isSelected){
+        if (keyboard_check_pressed(vk_down)){
+            menu_slider_sound.isSelected = false;
+            menu_button_back.isSelected = true;
+        } else if (keyboard_check_pressed(vk_up)){
+            exit;
+        }
+    } else { exit; }
+}else if(menuState = 5){
     if(menu_button_yes.isSelected){
         if (keyboard_check_pressed(vk_left)){
             exit;
@@ -211,7 +227,7 @@ if(menuState = 1){
         if (keyboard_check_pressed(vk_left)){
             menu_button_no.isSelected = false;
             menu_button_yes.isSelected = true;
-        } else if (keyboard_check_pressed(vk_down)){
+        } else if (keyboard_check_pressed(vk_right)){
             exit;
         }
     } else { exit; }
@@ -374,6 +390,8 @@ if (menuState == 1) {
         with(menu_button_options){instance_destroy();}
         with(menu_button_exit){instance_destroy();}
         instance_create(251,185,menu_button_back);
+        instance_create(229,35,menu_BG_slider);
+        instance_create(229,35,menu_slider_sound);
         menu_button_back.isSelected = true;
     } else if(menu_button_exit.isSelected &amp;&amp; keyboard_check_pressed(vk_enter)){
         menu_button_exit.isSelected = false;
@@ -426,6 +444,8 @@ if (menuState == 1) {
         menu_button_back.isSelected = false;
         menuState = 1;
         with(menu_button_back){ instance_destroy(); }
+        with(menu_BG_slider){ instance_destroy(); }
+        with(menu_slider_sound) { instance_destroy(); }
         instance_create(5,105,menu_button_play);
         instance_create(5,135,menu_button_credits);
         instance_create(5,165,menu_button_options);
