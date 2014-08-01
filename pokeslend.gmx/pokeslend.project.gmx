@@ -454,10 +454,10 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\swamp_room</room>
     <room>rooms\MENU</room>
     <room>rooms\forest_room</room>
     <room>rooms\forest_room02</room>
+    <room>rooms\swamp_room</room>
     <room>rooms\Tutorial_Room</room>
     <room>rooms\room5</room>
   </rooms>

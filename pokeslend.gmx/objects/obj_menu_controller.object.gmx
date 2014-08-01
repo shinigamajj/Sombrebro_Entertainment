@@ -380,7 +380,7 @@ if (menuState == 1) {
         with(menu_button_credits){instance_destroy();}
         with(menu_button_options){instance_destroy();}
         with(menu_button_exit){instance_destroy();}
-        instance_create(231,35,menu_controls);
+        instance_create(158,3,menu_controls);
         instance_create(5,195,menu_button_back);
         instance_create(5,165,menu_button_go);
         menu_button_go.isSelected = true;
