@@ -6,9 +6,6 @@
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\sound0</sound>
-    <sounds name="BGMusic">
-      <sound>sound\sound_BG_menu</sound>
-    </sounds>
     <sounds name="Sounds">
       <sound>sound\sound_menu_cursor</sound>
       <sound>sound\sound_menu_start</sound>
