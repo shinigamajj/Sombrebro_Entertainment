@@ -728,7 +728,11 @@ if(obj_GUI.eatMinutes &lt;= 0 &amp;&amp; !isSendingMessage){
     isSendingMessage = true;
     alarm[6] = 1;
 }
-if(TreeApple01.isEating == true || obj_beerenbusch.isEating == true){
+
+appleID = instance_nearest(x,y,TreeApple01);
+berryID = instance_nearest(x,y,obj_beerenbusch);
+
+if(appleID.isEating == true || berryID.isEating == true){
     message_hunger1.visible = false;
     message_hunger2.visible = false;
 }
