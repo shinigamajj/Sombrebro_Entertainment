@@ -211,8 +211,10 @@
       <sprite>sprites\spr_menu_BGslider_selected</sprite>
       <sprite>sprites\spr_menu_slider</sprite>
       <sprites name="PAUSE_MENU_Sprites">
-        <sprite>sprites\spr_pause_menu_menu</sprite>
-        <sprite>sprites\spr_pause_menu_continue</sprite>
+        <sprite>sprites\spr_pause_menu</sprite>
+        <sprite>sprites\spr_pause_menu_selected</sprite>
+        <sprite>sprites\spr_pause_continue</sprite>
+        <sprite>sprites\spr_pause_continue_selected</sprite>
       </sprites>
       <sprite>sprites\spr_menu_sicher</sprite>
     </sprites>
