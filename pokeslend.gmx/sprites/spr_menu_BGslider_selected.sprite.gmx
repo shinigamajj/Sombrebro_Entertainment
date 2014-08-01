@@ -20,9 +20,9 @@
   <width>124</width>
   <height>38</height>
   <frames>
-    <frame index="0">images\spr_menu_BGslider_0.png</frame>
+    <frame index="0">images\spr_menu_BGslider_selected_0.png</frame>
   </frames>
-  <SWFfile>images\spr_menu_BGslider.swf</SWFfile>
+  <SWFfile>images\spr_menu_BGslider_selected.swf</SWFfile>
   <SWFnumframes>1</SWFnumframes>
   <SWFprecision>0.5</SWFprecision>
 </sprite>

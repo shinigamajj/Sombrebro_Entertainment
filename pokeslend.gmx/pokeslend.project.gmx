@@ -208,6 +208,7 @@
       <sprite>sprites\spr_menu_background</sprite>
       <sprite>sprites\spr_menu_BGblack</sprite>
       <sprite>sprites\spr_menu_BGslider</sprite>
+      <sprite>sprites\spr_menu_BGslider_selected</sprite>
       <sprite>sprites\spr_menu_slider</sprite>
       <sprites name="PAUSE_MENU_Sprites">
         <sprite>sprites\spr_pause_menu_menu</sprite>

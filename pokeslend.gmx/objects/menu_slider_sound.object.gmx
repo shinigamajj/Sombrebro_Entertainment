@@ -50,11 +50,11 @@ ini_close();
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>229 + (volume * 100)</string>
+            <string>215 + (volume * 100)</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>35</string>
+            <string>54</string>
           </argument>
         </arguments>
       </action>
@@ -76,7 +76,7 @@ ini_close();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>volume = (x - 229) / 100;
+            <string>volume = (x - 215) / 100;
 
 ini_open("variables.ini");
     ini_write_real("options","volume",volume);
@@ -139,7 +139,7 @@ audio_master_gain(volume);
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>x &lt; 329</string>
+            <string>x &lt; 315</string>
           </argument>
         </arguments>
       </action>
@@ -261,7 +261,7 @@ audio_master_gain(volume);
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>x &gt; 229</string>
+            <string>x &gt; 215</string>
           </argument>
         </arguments>
       </action>
