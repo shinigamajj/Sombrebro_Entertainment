@@ -160,7 +160,6 @@ depth = -1;
 } else {
 solid = true;
 sprite_index = spr_TreeStump02;
-image_speed = 0;
 depth = -((y*100)+x);
 }
 </string>
@@ -447,30 +446,6 @@ posY = y;
       </action>
       <action>
         <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/*if(distance_to_object(Char) &lt; 32){
-image_speed = 0.03;
-}
-else{image_speed = 0;}*/
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
         <id>424</id>
         <kind>2</kind>
         <userelative>0</userelative>
@@ -645,30 +620,8 @@ else{image_speed = 0;}*/
             <kind>1</kind>
             <string>posX = x;
 posY = y;
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/*if(distance_to_object(Char) &lt; 32){
-image_speed = 0.03;
-}
-else{image_speed = 0;}*/
+
+image_speed = 0;
 </string>
           </argument>
         </arguments>
@@ -795,30 +748,8 @@ else{image_speed = 0;}*/
             <kind>1</kind>
             <string>posX = x;
 posY = y;
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/*if(distance_to_object(Char) &lt; 32){
-image_speed = 0.03;
-}
-else{image_speed = 0;}*/
+
+image_speed = 0;
 </string>
           </argument>
         </arguments>
@@ -999,30 +930,8 @@ else{image_speed = 0;}*/
             <kind>1</kind>
             <string>posX = x;
 posY = y;
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/*if(distance_to_object(Char) &lt; 32){
-image_speed = 0.03;
-}
-else{image_speed = 0;}*/
+
+image_speed = 0;
 </string>
           </argument>
         </arguments>
@@ -1149,30 +1058,8 @@ else{image_speed = 0;}*/
             <kind>1</kind>
             <string>posX = x;
 posY = y;
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/*if(distance_to_object(Char) &lt; 32){
-image_speed = 0.03;
-}
-else{image_speed = 0;}*/
+
+image_speed = 0;
 </string>
           </argument>
         </arguments>
@@ -1502,7 +1389,7 @@ if(Char.sprite_index == spr_left || Char.sprite_index == spr_sprint_left || Char
             <string>posX = x;
 posY = y;
 
-image_speed = 0.1;
+image_speed = 0.25;
 </string>
           </argument>
         </arguments>
@@ -1646,7 +1533,7 @@ image_speed = 0.1;
             <string>posX = x;
 posY = y;
 
-image_speed = 0.45;
+image_speed = 0.25;
 </string>
           </argument>
         </arguments>
@@ -2074,7 +1961,7 @@ posY = y;
             <string>posX = x;
 posY = y;
 
-image_speed = 0.45;
+image_speed = 0.25;
 </string>
           </argument>
         </arguments>
@@ -2218,7 +2105,7 @@ image_speed = 0.45;
             <string>posX = x;
 posY = y;
 
-image_speed = 0.45;
+image_speed = 0.25;
 </string>
           </argument>
         </arguments>
