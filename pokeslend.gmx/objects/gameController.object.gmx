@@ -114,7 +114,7 @@ ini_open("variables.ini");
     volume = ini_read_real("options","volume",0.5);
 ini_close();
 
-sound_global_volume(volume);
+audio_master_gain(volume);
 </string>
           </argument>
         </arguments>
@@ -142,8 +142,8 @@ sound_global_volume(volume);
     instance_deactivate_all(false);
 
     instance_create(1,1,gamePause);
-    instance_create(view_xview[0]+112,view_yview[0]+200,menu_pause_button_menu);
-    instance_create(view_xview[0]+224,view_yview[0]+200,menu_pause_button_continue);
+    instance_create(view_xview[0]+5,view_yview[0]+165,menu_pause_button_menu);
+    instance_create(view_xview[0]+5,view_yview[0]+195,menu_pause_button_continue);
     menu_pause_button_continue.isSelected = true;
 }
 </string>

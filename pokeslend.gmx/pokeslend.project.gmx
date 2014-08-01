@@ -6,6 +6,13 @@
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\sound0</sound>
+    <sounds name="BGMusic">
+      <sound>sound\sound_BG_menu</sound>
+    </sounds>
+    <sounds name="Sounds">
+      <sound>sound\sound_menu_cursor</sound>
+      <sound>sound\sound_menu_start</sound>
+    </sounds>
   </sounds>
   <sprites name="sprites">
     <sprites name="MushroomBig_Eatable">
@@ -95,10 +102,13 @@
       <sprite>sprites\sprite69</sprite>
       <sprite>sprites\sprite66</sprite>
       <sprite>sprites\sprite70</sprite>
+      <sprite>sprites\sprite164</sprite>
       <sprite>sprites\sprite94</sprite>
       <sprite>sprites\sprite95</sprite>
       <sprite>sprites\sprite96</sprite>
       <sprite>sprites\sprite156</sprite>
+      <sprite>sprites\sprite157</sprite>
+      <sprite>sprites\sprite163</sprite>
     </sprites>
     <sprites name="altar_sprites">
       <sprite>sprites\spr_altar1</sprite>
@@ -170,6 +180,8 @@
       <sprite>sprites\sprite104</sprite>
       <sprite>sprites\sprite82</sprite>
       <sprite>sprites\spr_grave</sprite>
+      <sprite>sprites\sprite167</sprite>
+      <sprite>sprites\sprite168</sprite>
     </sprites>
     <sprites name="Collectibles">
       <sprite>sprites\spr_axe</sprite>
@@ -179,15 +191,23 @@
     <sprites name="MENU_Sprites">
       <sprite>sprites\spr_menu_mdh_logo</sprite>
       <sprite>sprites\spr_menu_exit</sprite>
+      <sprite>sprites\spr_menu_exit_selected</sprite>
       <sprite>sprites\spr_menu_options</sprite>
+      <sprite>sprites\spr_menu_options_selected</sprite>
       <sprite>sprites\spr_menu_credits</sprite>
+      <sprite>sprites\spr_menu_credits_selected</sprite>
       <sprite>sprites\spr_menu_play</sprite>
+      <sprite>sprites\spr_menu_play_selected</sprite>
       <sprite>sprites\spr_menu_back</sprite>
+      <sprite>sprites\spr_menu_back_selected</sprite>
       <sprite>sprites\spr_menu_yes</sprite>
+      <sprite>sprites\spr_menu_yes_selected</sprite>
       <sprite>sprites\spr_menu_go</sprite>
+      <sprite>sprites\spr_menu_go_selected</sprite>
       <sprite>sprites\spr_menu_credits_names</sprite>
       <sprite>sprites\spr_menu_controls</sprite>
       <sprite>sprites\spr_menu_no</sprite>
+      <sprite>sprites\spr_menu_no_selected</sprite>
       <sprite>sprites\spr_menu_background</sprite>
       <sprite>sprites\spr_menu_BGblack</sprite>
       <sprite>sprites\spr_menu_BGslider</sprite>
@@ -197,7 +217,13 @@
         <sprite>sprites\spr_pause_menu_continue</sprite>
       </sprites>
     </sprites>
-    <sprite>sprites\sprite157</sprite>
+    <sprite>sprites\sprite165</sprite>
+    <sprite>sprites\sprite166</sprite>
+    <sprite>sprites\sprite169</sprite>
+    <sprite>sprites\sprite170</sprite>
+    <sprite>sprites\sprite171</sprite>
+    <sprite>sprites\sprite172</sprite>
+    <sprite>sprites\sprite173</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Base_Grass</background>
@@ -288,13 +314,20 @@
       <object>objects\RockCliff_WallVert01</object>
       <object>objects\RockCliff_WallVert02</object>
       <object>objects\RockCliff_WallHoriz01</object>
+      <object>objects\RockCliff_Stairs01</object>
       <object>objects\RockMossyBig01</object>
       <object>objects\RockMossBig02</object>
       <object>objects\RockMossSmall01</object>
       <object>objects\RockCrystalHuge01</object>
       <object>objects\RockCrystalBig01</object>
+      <object>objects\RockCrystalBig02</object>
     </objects>
     <objects name="Ground_Objects">
+      <object>objects\Portshadow</object>
+      <object>objects\Portshadow_Up</object>
+      <object>objects\Portshadow_Down</object>
+      <object>objects\Portshadow_Left</object>
+      <object>objects\Portshadow_Right</object>
       <object>objects\TallGrass</object>
       <object>objects\TallGrassSwamp</object>
       <object>objects\Bubble01</object>
@@ -391,6 +424,8 @@
     <object>objects\message_hunger1</object>
     <object>objects\message_hunger2</object>
     <object>objects\Sign</object>
+    <object>objects\Sign02left_nohotdog</object>
+    <object>objects\Sign02right_nohotdog</object>
     <objects name="MENU_Objects">
       <object>objects\obj_menu_controller</object>
       <object>objects\menu_MDH_Logo</object>
@@ -414,6 +449,10 @@
         <object>objects\menu_pause_button_menu</object>
         <object>objects\menu_pause_button_continue</object>
       </objects>
+    </objects>
+    <objects name="Dungeon">
+      <object>objects\DungeonWall_Stairs01</object>
+      <object>objects\DungeonWall_Stairs02</object>
     </objects>
   </objects>
   <rooms name="rooms">

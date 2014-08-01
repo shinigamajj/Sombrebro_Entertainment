@@ -82,7 +82,7 @@ ini_open("variables.ini");
     ini_write_real("options","volume",volume);
 ini_close();
 
-sound_global_volume(volume);
+audio_master_gain(volume);
 </string>
           </argument>
         </arguments>

@@ -59,13 +59,14 @@
     if(menu_pause_button_menu.isSelected){
         if(keyboard_check_pressed(vk_enter)){
             menu_pause_button_menu.isSelected = false;
-            instance_create(view_xview[0]+112,view_yview[0]+200,menu_pause_button_yes);
-            instance_create(view_xview[0]+224,view_yview[0]+200,menu_pause_button_no);
+            instance_create(view_xview[0]+5,view_yview[0]+165,menu_pause_button_yes);
+            instance_create(view_xview[0]+5,view_yview[0]+195,menu_pause_button_no);
             with(menu_pause_button_menu){instance_destroy();}
             with(menu_pause_button_continue){instance_destroy();}
             menu_pause_button_yes.isSelected = true;
             menuState = 2;
-        } else if(keyboard_check_pressed(vk_right)){
+        } else if(keyboard_check_pressed(vk_down)){
+            audio_play_sound(sound_menu_cursor,0,0);
             menu_pause_button_menu.isSelected = false;
             menu_pause_button_continue.isSelected = true;
         } else { exit; }
@@ -77,7 +78,8 @@
             with(menu_pause_button_menu){instance_destroy();}
             with(menu_pause_button_continue){instance_destroy();}
             with(gamePause){instance_destroy();}
-        } else if(keyboard_check_pressed(vk_left)){
+        } else if(keyboard_check_pressed(vk_up)){
+            audio_play_sound(sound_menu_cursor,0,0);
             menu_pause_button_continue.isSelected = false;
             menu_pause_button_menu.isSelected = true;
         } else { exit; }
@@ -86,20 +88,22 @@
     if(menu_pause_button_yes.isSelected){
         if(keyboard_check_pressed(vk_enter)){
             game_restart();
-        } else if(keyboard_check_pressed(vk_right)){
+        } else if(keyboard_check_pressed(vk_down)){
+            audio_play_sound(sound_menu_cursor,0,0);
             menu_pause_button_yes.isSelected = false;
             menu_pause_button_no.isSelected = true;
         } else { exit; }
     }else if(menu_pause_button_no.isSelected){
         if(keyboard_check_pressed(vk_enter)){
             menu_pause_button_no.isSelected = false;
-            instance_create(view_xview[0]+112,view_yview[0]+200,menu_pause_button_menu);
-            instance_create(view_xview[0]+224,view_yview[0]+200,menu_pause_button_continue);
+            instance_create(view_xview[0]+5,view_yview[0]+165,menu_pause_button_menu);
+            instance_create(view_xview[0]+5,view_yview[0]+195,menu_pause_button_continue);
             with(menu_pause_button_yes){instance_destroy();}
             with(menu_pause_button_no){instance_destroy();}
             menu_pause_button_menu.isSelected = true;
             menuState = 1;
-        } else if(keyboard_check_pressed(vk_left)){
+        } else if(keyboard_check_pressed(vk_up)){
+            audio_play_sound(sound_menu_cursor,0,0);
             menu_pause_button_no.isSelected = false;
             menu_pause_button_yes.isSelected = true;
         } else { exit; }
