@@ -527,7 +527,10 @@ else {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(TreeApple01.isEating == false &amp;&amp; obj_beerenbusch.isEating == false){
+            <string>appleID = instance_nearest(x,y,TreeApple01);
+berryID = instance_nearest(x,y,obj_beerenbusch);
+
+if(appleID.isEating == false &amp;&amp; berryID.isEating == false){
     if(instance_exists(obj_destroyable) &amp;&amp; instance_exists(obj_axe) &amp;&amp; instance_exists(obj_boots)){
         if(obj_destroyable.isDestroying == false &amp;&amp; obj_axe.isDestroying == false &amp;&amp; obj_boots.isDestroying == false){
             isDoing = false;
