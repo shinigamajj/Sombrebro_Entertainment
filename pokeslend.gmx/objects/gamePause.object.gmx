@@ -61,6 +61,7 @@
             menu_pause_button_menu.isSelected = false;
             instance_create(view_xview[0]+5,view_yview[0]+165,menu_pause_button_yes);
             instance_create(view_xview[0]+5,view_yview[0]+195,menu_pause_button_no);
+            instance_create(view_xview[0]+5,view_yview[0]+5,menu_sure);
             with(menu_pause_button_menu){instance_destroy();}
             with(menu_pause_button_continue){instance_destroy();}
             menu_pause_button_yes.isSelected = true;
@@ -100,6 +101,7 @@
             instance_create(view_xview[0]+5,view_yview[0]+195,menu_pause_button_continue);
             with(menu_pause_button_yes){instance_destroy();}
             with(menu_pause_button_no){instance_destroy();}
+            with(menu_sure){instance_destroy();}
             menu_pause_button_menu.isSelected = true;
             menuState = 1;
         } else if(keyboard_check_pressed(vk_up)){

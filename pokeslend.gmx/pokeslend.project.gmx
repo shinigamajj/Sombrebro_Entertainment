@@ -214,6 +214,7 @@
         <sprite>sprites\spr_pause_menu_menu</sprite>
         <sprite>sprites\spr_pause_menu_continue</sprite>
       </sprites>
+      <sprite>sprites\spr_menu_sicher</sprite>
     </sprites>
     <sprite>sprites\sprite165</sprite>
     <sprite>sprites\sprite166</sprite>
@@ -429,6 +430,7 @@
       <object>objects\menu_MDH_Logo</object>
       <object>objects\menu_credits</object>
       <object>objects\menu_controls</object>
+      <object>objects\menu_sure</object>
       <object>objects\menu_button_exit</object>
       <object>objects\menu_button_options</object>
       <object>objects\menu_button_credits</object>
