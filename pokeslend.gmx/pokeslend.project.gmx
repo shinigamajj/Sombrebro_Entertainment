@@ -216,6 +216,8 @@
         <sprite>sprites\spr_pause_continue_selected</sprite>
       </sprites>
       <sprite>sprites\spr_menu_sicher</sprite>
+      <sprite>sprites\spr_menu_win</sprite>
+      <sprite>sprites\spr_menu_lose</sprite>
     </sprites>
     <sprite>sprites\sprite165</sprite>
     <sprite>sprites\sprite166</sprite>
@@ -284,6 +286,7 @@
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shd_loading.shader</shader>
+    <shader type="GLSLES">shaders\shd_white.shader</shader>
   </shaders>
   <fonts name="fonts">
     <font>fonts\ComicSans</font>
@@ -452,6 +455,10 @@
         <object>objects\menu_pause_button_menu</object>
         <object>objects\menu_pause_button_continue</object>
       </objects>
+      <objects name="winlose_MENU">
+        <object>objects\menu_win</object>
+        <object>objects\menu_lose</object>
+      </objects>
     </objects>
     <objects name="Dungeon">
       <object>objects\DungeonWall_Stairs01</object>
@@ -460,13 +467,13 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\MENU</room>
+    <room>rooms\win_lose_MENU</room>
     <room>rooms\forest_room</room>
     <room>rooms\forest_room02</room>
     <room>rooms\swamp_room</room>
     <room>rooms\tutorial_room_01</room>
     <room>rooms\forest_room_02</room>
     <room>rooms\room6</room>
-    <room>rooms\win_lose_MENU</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

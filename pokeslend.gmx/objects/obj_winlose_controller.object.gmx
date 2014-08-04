@@ -30,6 +30,12 @@ shader_reset();
 
 /* Create Menu */
 //instance_create BG, Stats
+instance_create(0,0,menu_BG_Full);
+
+if(win) { instance_create(80,5,menu_win);
+} else if(lose){ instance_create(80,5,menu_lose);
+} else { /*error!*/ exit; }
+
 instance_create(5,195,menu_pause_button_menu);
 menu_pause_button_menu.isSelected = true;
 menuState = 1;
@@ -189,10 +195,20 @@ if (menuState == 1) {
           <argument>
             <kind>1</kind>
             <string>canDo = false;
+ini_open("variables.ini");
+    didwin = ini_read_real("state","win",0);
+    didlose = ini_read_real("state","lose",0);    
+ini_close();
+
+if(didwin == 1){win = true;} else { win = false; }
+if(didlose == 1){lose = true;} else { lose = false; }
+
+
 menuState = 0;
 //audio_play_music(sound_BG_menu,0);
-
-shader_set(shd_loading);
+if(win){ shader_set(shd_white);
+} else if(lose) { shader_set(shd_loading);
+} else { /*error!*/ exit; }
 alarm[0] = 45;
 
 /* Menu States */

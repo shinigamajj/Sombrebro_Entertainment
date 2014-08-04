@@ -97,7 +97,13 @@ if(seconds == 60)
 }
 }
 
-if(eatSeconds == 0 &amp;&amp; eatMinutes == 0){dead = true;}
+if(eatSeconds == 0 &amp;&amp; eatMinutes == 0){
+    dead = true;
+    ini_open("variables.ini");
+        ini_write_real("state","lose",1);
+    ini_close();
+    room_goto(win_lose_MENU);
+}
 
 if(TreeApple01.isEating == false &amp;&amp; obj_beerenbusch.isEating == false){
     if(!dead){

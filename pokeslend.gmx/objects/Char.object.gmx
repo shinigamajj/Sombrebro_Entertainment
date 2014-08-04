@@ -157,6 +157,10 @@ if(isInSwamp){
         if(swampSeconds &gt;= 5){
             isDoing = true;
             sprite_index = spr_grave;
+            ini_open("variables.ini");
+                ini_write_real("state","lose",1);
+            ini_close();
+            room_goto(win_lose_MENU);
         }
         alarm[4] = 1;
     } else {
