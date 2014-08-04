@@ -147,6 +147,10 @@ if(isInSwamp){
         if(obj_GUI.dead == false){
             if(steps == 30){
                 swampSeconds += 1;
+                if(swampSeconds &gt;= 2){
+                    sprite_index = spr_swamp_sink;
+                    image_speed = 0.2;
+                }
                 steps = 0;
             }
         }
@@ -155,11 +159,12 @@ if(isInSwamp){
             sprite_index = spr_grave;
         }
         alarm[4] = 1;
-    }
-    else {
+    } else {
         swampSeconds = -1;
         isCheckingSwamp = false;
         steps = 0;
+        sprite_index = spr_down;
+        image_speed = 0;
     }
 }
 else {
@@ -264,7 +269,8 @@ else {
             <string>if(sprite_index != spr_axe_down &amp;&amp; sprite_index != spr_axe_top
     &amp;&amp; sprite_index != spr_axe_left &amp;&amp; sprite_index != spr_axe_right
     &amp;&amp; sprite_index != spr_eat_down &amp;&amp; sprite_index != spr_eat_top
-    &amp;&amp; sprite_index != spr_eat_left &amp;&amp; sprite_index != spr_eat_right){
+    &amp;&amp; sprite_index != spr_eat_left &amp;&amp; sprite_index != spr_eat_right
+    &amp;&amp; sprite_index != spr_swamp_sink){
     if(rightPressed == 0 &amp;&amp; topPressed == 0 &amp;&amp; downPressed == 0 &amp;&amp; leftPressed == 0){
         image_index = 0;
         image_speed = 0;
@@ -407,7 +413,8 @@ else {
             <string>if(sprite_index != spr_axe_down &amp;&amp; sprite_index != spr_axe_top
     &amp;&amp; sprite_index != spr_axe_left &amp;&amp; sprite_index != spr_axe_right
     &amp;&amp; sprite_index != spr_eat_down &amp;&amp; sprite_index != spr_eat_top
-    &amp;&amp; sprite_index != spr_eat_left &amp;&amp; sprite_index != spr_eat_right){
+    &amp;&amp; sprite_index != spr_eat_left &amp;&amp; sprite_index != spr_eat_right
+    &amp;&amp; sprite_index != spr_swamp_sink){
     if(rightPressed == 0 &amp;&amp; topPressed == 0 &amp;&amp; downPressed == 0 &amp;&amp; leftPressed == 0){
         image_index = 0;
         image_speed = 0;
