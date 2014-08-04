@@ -420,6 +420,7 @@
     </objects>
     <object>objects\obj_Changer_forest1_swamp</object>
     <object>objects\obj_Changer_forest1_forest2</object>
+    <object>objects\obj_Changer_01_02</object>
     <object>objects\message_erschoepft</object>
     <object>objects\message_hunger1</object>
     <object>objects\message_hunger2</object>
@@ -461,8 +462,8 @@
     <room>rooms\forest_room</room>
     <room>rooms\forest_room02</room>
     <room>rooms\swamp_room</room>
-    <room>rooms\Tutorial_Room</room>
-    <room>rooms\room5</room>
+    <room>rooms\tutorial_room_01</room>
+    <room>rooms\forest_room_02</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

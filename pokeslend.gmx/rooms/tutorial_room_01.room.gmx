@@ -7,10 +7,10 @@
   <hsnap>16</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code>room_caption = "tutorial_room";</code>
+  <code>room_caption = "tutorial_room_01";</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -530,6 +530,10 @@
     <instance objName="message_erschoepft" x="1216" y="1264" name="inst_D4DFB49C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="message_hunger1" x="1200" y="1264" name="inst_A6F68BC6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="message_hunger2" x="1184" y="1264" name="inst_6EF8C9E0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Changer_01_02" x="992" y="688" name="inst_E39CA6EC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Changer_01_02" x="1008" y="688" name="inst_C986AB3B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Changer_01_02" x="1024" y="688" name="inst_1B500C89" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_altar" x="1152" y="1232" name="inst_2EB1560A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="TilesetBase" x="256" y="1024" w="16" h="16" xo="48" yo="144" id="10000924" name="inst_8C08BCC1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
