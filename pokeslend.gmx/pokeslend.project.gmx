@@ -429,6 +429,7 @@
     <object>objects\Sign02right_nohotdog</object>
     <objects name="MENU_Objects">
       <object>objects\obj_menu_controller</object>
+      <object>objects\obj_winlose_controller</object>
       <object>objects\menu_MDH_Logo</object>
       <object>objects\menu_credits</object>
       <object>objects\menu_controls</object>
