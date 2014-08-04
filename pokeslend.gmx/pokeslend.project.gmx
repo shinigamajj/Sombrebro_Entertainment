@@ -464,6 +464,7 @@
     <room>rooms\swamp_room</room>
     <room>rooms\tutorial_room_01</room>
     <room>rooms\forest_room_02</room>
+    <room>rooms\room6</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
