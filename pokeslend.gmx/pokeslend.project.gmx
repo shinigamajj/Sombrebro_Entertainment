@@ -465,6 +465,7 @@
     <room>rooms\tutorial_room_01</room>
     <room>rooms\forest_room_02</room>
     <room>rooms\room6</room>
+    <room>rooms\win_lose_MENU</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
