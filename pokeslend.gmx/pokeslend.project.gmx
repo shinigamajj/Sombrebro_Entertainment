@@ -19,8 +19,8 @@
       <sprite>sprites\sprite121</sprite>
       <sprite>sprites\sprite122</sprite>
     </sprites>
-    <sprite>sprites\ANM_GrassTall</sprite>
-    <sprite>sprites\GrassTallSprite</sprite>
+    <sprite>sprites\spr_GrassTall</sprite>
+    <sprite>sprites\spr_SwampGrassTall</sprite>
     <sprite>sprites\spr_beerenbusch</sprite>
     <sprites name="char_sprites">
       <sprite>sprites\spr_down</sprite>
@@ -157,7 +157,6 @@
     <sprite>sprites\spr_msg_hunger1</sprite>
     <sprite>sprites\spr_msg_hunger2</sprite>
     <sprite>sprites\spr_destroyable</sprite>
-    <sprite>sprites\sprite101</sprite>
     <sprite>sprites\spr_Light</sprite>
     <sprite>sprites\sprite132</sprite>
     <sprites name="Accessories">
@@ -335,7 +334,6 @@
       <object>objects\Bubbble02</object>
       <object>objects\Bubble03</object>
       <object>objects\Bubble04</object>
-      <object>objects\ANM_TallGrass</object>
       <object>objects\reeds01</object>
       <object>objects\Water</object>
       <object>objects\Mushroom_Eatable</object>

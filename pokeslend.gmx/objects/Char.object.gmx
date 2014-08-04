@@ -621,10 +621,17 @@ if(appleID.isEating == false &amp;&amp; berryID.isEating == false){
 if(distance_to_object(TallGrass) == 0){
     isInGrass = true;
     grasID = instance_place(Char.x, Char.y, TallGrass);
+    if(place_meeting(x,y-16,TallGrass) || place_meeting(x,y-16,TallGrassSwamp)){visible = false;}
+        else { visible = true; }
 } else if(distance_to_object(TallGrassSwamp) == 0){
     isInGrass = true;
     grasID = instance_place(Char.x, Char.y, TallGrassSwamp);
-} else { isInGrass = false; }
+    if(place_meeting(x,y-16,TallGrass) || place_meeting(x,y-16,TallGrassSwamp)){visible = false;}
+        else { visible = true; }
+} else {
+    isInGrass = false;
+    visible = true;
+}
 
     
 /* Check if Player is in Swamp */
