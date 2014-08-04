@@ -428,7 +428,7 @@ if (menuState == 1) {
     } else if(menu_button_go.isSelected &amp;&amp; keyboard_check_pressed(vk_enter)){ 
         //audio_stop_music();
         audio_play_sound(sound_menu_start,0,0);
-        room_goto(forest_room);
+        room_goto(Tutorial_Room);
     } else { exit; }
 } else if (menuState == 3) {
     if(menu_button_back.isSelected &amp;&amp; keyboard_check_pressed(vk_enter)){
