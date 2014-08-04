@@ -387,7 +387,7 @@ if (menuState == 1) {
         with(menu_button_credits){instance_destroy();}
         with(menu_button_options){instance_destroy();}
         with(menu_button_exit){instance_destroy();}
-        instance_create(187,20,menu_credits);
+        instance_create(158,3,menu_credits);
         instance_create(5,195,menu_button_back);
         menu_button_back.isSelected = true;
     } else if(menu_button_options.isSelected &amp;&amp; keyboard_check_pressed(vk_enter)){
