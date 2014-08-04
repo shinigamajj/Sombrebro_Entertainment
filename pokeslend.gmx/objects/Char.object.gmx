@@ -261,9 +261,14 @@ else {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(rightPressed == 0 &amp;&amp; topPressed == 0 &amp;&amp; downPressed == 0 &amp;&amp; leftPressed == 0){
-    image_index = 0;
-    image_speed = 0;
+            <string>if(sprite_index != spr_axe_down &amp;&amp; sprite_index != spr_axe_top
+    &amp;&amp; sprite_index != spr_axe_left &amp;&amp; sprite_index != spr_axe_right
+    &amp;&amp; sprite_index != spr_eat_down &amp;&amp; sprite_index != spr_eat_top
+    &amp;&amp; sprite_index != spr_eat_left &amp;&amp; sprite_index != spr_eat_right){
+    if(rightPressed == 0 &amp;&amp; topPressed == 0 &amp;&amp; downPressed == 0 &amp;&amp; leftPressed == 0){
+        image_index = 0;
+        image_speed = 0;
+    }
 }
 </string>
           </argument>
@@ -399,9 +404,14 @@ else {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(rightPressed == 0 &amp;&amp; topPressed == 0 &amp;&amp; downPressed == 0 &amp;&amp; leftPressed == 0){
-    image_index = 0;
-    image_speed = 0;
+            <string>if(sprite_index != spr_axe_down &amp;&amp; sprite_index != spr_axe_top
+    &amp;&amp; sprite_index != spr_axe_left &amp;&amp; sprite_index != spr_axe_right
+    &amp;&amp; sprite_index != spr_eat_down &amp;&amp; sprite_index != spr_eat_top
+    &amp;&amp; sprite_index != spr_eat_left &amp;&amp; sprite_index != spr_eat_right){
+    if(rightPressed == 0 &amp;&amp; topPressed == 0 &amp;&amp; downPressed == 0 &amp;&amp; leftPressed == 0){
+        image_index = 0;
+        image_speed = 0;
+    }
 }
 </string>
           </argument>
@@ -529,18 +539,19 @@ else {
             <kind>1</kind>
             <string>appleID = instance_nearest(x,y,TreeApple01);
 berryID = instance_nearest(x,y,obj_beerenbusch);
+destroID = instance_nearest(x,y,obj_destroyable);
 
 if(appleID.isEating == false &amp;&amp; berryID.isEating == false){
     if(instance_exists(obj_destroyable) &amp;&amp; instance_exists(obj_axe) &amp;&amp; instance_exists(obj_boots)){
-        if(obj_destroyable.isDestroying == false &amp;&amp; obj_axe.isDestroying == false &amp;&amp; obj_boots.isDestroying == false){
+        if(destroID.isDestroying == false &amp;&amp; obj_axe.isDestroying == false &amp;&amp; obj_boots.isDestroying == false){
             isDoing = false;
         }
     } else if(instance_exists(obj_destroyable) &amp;&amp; instance_exists(obj_axe)){
-        if(obj_destroyable.isDestroying == false &amp;&amp; obj_axe.isDestroying == false){
+        if(destroID.isDestroying == false &amp;&amp; obj_axe.isDestroying == false){
             isDoing = false;
         }
     } else if(instance_exists(obj_destroyable) &amp;&amp; instance_exists(obj_boots)){
-        if(obj_destroyable.isDestroying == false &amp;&amp; obj_boots.isDestroying == false){
+        if(destroID.isDestroying == false &amp;&amp; obj_boots.isDestroying == false){
             isDoing = false;
         }
     } else if(instance_exists(obj_boots) &amp;&amp; instance_exists(obj_axe)){
@@ -548,7 +559,7 @@ if(appleID.isEating == false &amp;&amp; berryID.isEating == false){
             isDoing = false;
         }
     } else if(instance_exists(obj_destroyable)){
-        if(obj_destroyable.isDestroying == false){
+        if(destroID.isDestroying == false){
             isDoing = false;
         }
     } else if(instance_exists(obj_boots)){
@@ -743,6 +754,7 @@ if(appleID.isEating == true || berryID.isEating == true){
 if(obj_GUI.eatMinutes &lt;= 0){
     canDestroy = false;
 } else { canDestroy = true; }
+
 </string>
           </argument>
         </arguments>
@@ -7999,6 +8011,63 @@ alarm[7] = 25;
           <argument>
             <kind>1</kind>
             <string>isDoing = true;
+
+/* Sprite Changer */
+
+if(instance_exists(obj_destroyable)){
+    destrID = instance_nearest(x,y,obj_destroyable)
+    if(destrID.isDestroying == true){
+        if (sprite_index == spr_left || sprite_index == spr_sprint_left ||
+            sprite_index == spr_swamp_left || sprite_index == spr_swamp_sprint_left) {
+                sprite_index = spr_axe_left; image_speed = 0.1;
+        } else if (sprite_index == spr_right || sprite_index == spr_sprint_right ||
+            sprite_index == spr_swamp_right || sprite_index == spr_swamp_sprint_right) {
+                sprite_index = spr_axe_right; image_speed = 0.1; 
+        } else if (sprite_index == spr_top || sprite_index == spr_sprint_top ||
+            sprite_index == spr_swamp_top || sprite_index == spr_swamp_sprint_top) {
+                 sprite_index = spr_axe_top; image_speed = 0.1;
+        } else if (sprite_index == spr_down || sprite_index == spr_sprint_down ||
+            sprite_index == spr_swamp_down || sprite_index == spr_swamp_sprint_down) {
+                sprite_index = spr_axe_down; image_speed = 0.1;
+        } else { exit; }
+    }
+}
+if(instance_exists(TreeApple01)){
+    eatID = instance_nearest(x,y,TreeApple01)
+    if(eatID.isEating == true){
+        if (sprite_index == spr_left || sprite_index == spr_sprint_left ||
+            sprite_index == spr_swamp_left || sprite_index == spr_swamp_sprint_left) {
+                sprite_index = spr_eat_left; image_speed = 0.25;
+        } else if (sprite_index == spr_right || sprite_index == spr_sprint_right ||
+            sprite_index == spr_swamp_right || sprite_index == spr_swamp_sprint_right) {
+                sprite_index = spr_eat_right; image_speed = 0.25; 
+        } else if (sprite_index == spr_top || sprite_index == spr_sprint_top ||
+            sprite_index == spr_swamp_top || sprite_index == spr_swamp_sprint_top) {
+                 sprite_index = spr_eat_top; image_speed = 0.25;
+        } else if (sprite_index == spr_down || sprite_index == spr_sprint_down ||
+            sprite_index == spr_swamp_down || sprite_index == spr_swamp_sprint_down) {
+                sprite_index = spr_eat_down; image_speed = 0.25;
+        } else { exit; }
+    }
+}
+if(instance_exists(obj_beerenbusch)){
+    eat2ID = instance_nearest(x,y,obj_beerenbusch)
+    if(eat2ID.isEating == true){
+        if (sprite_index == spr_left || sprite_index == spr_sprint_left ||
+            sprite_index == spr_swamp_left || sprite_index == spr_swamp_sprint_left) {
+                sprite_index = spr_eat_left; image_speed = 0.25;
+        } else if (sprite_index == spr_right || sprite_index == spr_sprint_right ||
+            sprite_index == spr_swamp_right || sprite_index == spr_swamp_sprint_right) {
+                sprite_index = spr_eat_right; image_speed = 0.25; 
+        } else if (sprite_index == spr_top || sprite_index == spr_sprint_top ||
+            sprite_index == spr_swamp_top || sprite_index == spr_swamp_sprint_top) {
+                 sprite_index = spr_eat_top; image_speed = 0.25;
+        } else if (sprite_index == spr_down || sprite_index == spr_sprint_down ||
+            sprite_index == spr_swamp_down || sprite_index == spr_swamp_sprint_down) {
+                sprite_index = spr_eat_down; image_speed = 0.25;
+        } else { exit; }
+    }
+}
 </string>
           </argument>
         </arguments>

@@ -82,6 +82,20 @@ isDestroying  = false;
             <string>didDestroy = true;
 isDestroying = false;
 Char.isDoing = false;
+
+/* Char sprite changer */
+
+if (Char.sprite_index == spr_axe_left) {
+        Char.sprite_index = spr_left; 
+} else if (Char.sprite_index == spr_axe_right) {
+        Char.sprite_index = spr_right; 
+} else if (Char.sprite_index == spr_axe_down) {
+        Char.sprite_index = spr_down; 
+} else if (Char.sprite_index == spr_axe_top) {
+        Char.sprite_index = spr_top; 
+} else { exit; }
+
+Char.image_speed = 0;
 </string>
           </argument>
         </arguments>
@@ -228,6 +242,34 @@ Char.isDoing = false;
       </action>
       <action>
         <libid>1</libid>
+        <id>541</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_sprite_set</functionname>
+        <codestring></codestring>
+        <whoName>Char</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>5</kind>
+            <sprite>spr_axe_left</sprite>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0.2</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -244,6 +286,26 @@ Char.isDoing = false;
             <kind>1</kind>
             <string>Char.isDoing = true;
 isDestroying = true;
+
+/* Char sprite changer 
+
+Char.image_speed = 0.1;
+if (Char.sprite_index == spr_left || Char.sprite_index == spr_sprint_left ||
+    Char.sprite_index == spr_swamp_left || Char.sprite_index == spr_swamp_sprint_left) {
+        Char.sprite_index = spr_axe_left; 
+} else if (Char.sprite_index == spr_right || Char.sprite_index == spr_sprint_right ||
+    Char.sprite_index == spr_swamp_right || Char.sprite_index == spr_swamp_sprint_right) {
+        Char.sprite_index = spr_axe_right; 
+} else if (Char.sprite_index == spr_top || Char.sprite_index == spr_sprint_top ||
+    Char.sprite_index == spr_swamp_top || Char.sprite_index == spr_swamp_sprint_top) {
+        Char.sprite_index = spr_axe_top; 
+} else if (Char.sprite_index == spr_down || Char.sprite_index == spr_sprint_down ||
+    Char.sprite_index == spr_swamp_down || Char.sprite_index == spr_swamp_sprint_down) {
+        Char.sprite_index = spr_axe_down; 
+} else { exit; }
+
+*/
+
 </string>
           </argument>
         </arguments>
@@ -350,6 +412,34 @@ isDestroying = true;
       </action>
       <action>
         <libid>1</libid>
+        <id>541</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_sprite_set</functionname>
+        <codestring></codestring>
+        <whoName>Char</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>5</kind>
+            <sprite>spr_axe_right</sprite>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0.2</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -366,6 +456,23 @@ isDestroying = true;
             <kind>1</kind>
             <string>Char.isDoing = true;
 isDestroying = true;
+
+/* Char sprite changer 
+
+Char.image_speed = 0.1;
+if (Char.sprite_index == spr_left || Char.sprite_index == spr_sprint_left ||
+    Char.sprite_index == spr_swamp_left || Char.sprite_index == spr_swamp_sprint_left) {
+        Char.sprite_index = spr_axe_left; 
+} else if (Char.sprite_index == spr_right || Char.sprite_index == spr_sprint_right ||
+    Char.sprite_index == spr_swamp_right || Char.sprite_index == spr_swamp_sprint_right) {
+        Char.sprite_index = spr_axe_right; 
+} else if (Char.sprite_index == spr_top || Char.sprite_index == spr_sprint_top ||
+    Char.sprite_index == spr_swamp_top || Char.sprite_index == spr_swamp_sprint_top) {
+        Char.sprite_index = spr_axe_top; 
+} else if (Char.sprite_index == spr_down || Char.sprite_index == spr_sprint_down ||
+    Char.sprite_index == spr_swamp_down || Char.sprite_index == spr_swamp_sprint_down) {
+        Char.sprite_index = spr_axe_down; 
+} else { exit; } */
 </string>
           </argument>
         </arguments>
@@ -472,6 +579,34 @@ isDestroying = true;
       </action>
       <action>
         <libid>1</libid>
+        <id>541</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_sprite_set</functionname>
+        <codestring></codestring>
+        <whoName>Char</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>5</kind>
+            <sprite>spr_axe_top</sprite>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0.2</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -488,6 +623,23 @@ isDestroying = true;
             <kind>1</kind>
             <string>Char.isDoing = true;
 isDestroying = true;
+
+/* Char sprite changer 
+
+Char.image_speed = 0.1;
+if (Char.sprite_index == spr_left || Char.sprite_index == spr_sprint_left ||
+    Char.sprite_index == spr_swamp_left || Char.sprite_index == spr_swamp_sprint_left) {
+        Char.sprite_index = spr_axe_left; 
+} else if (Char.sprite_index == spr_right || Char.sprite_index == spr_sprint_right ||
+    Char.sprite_index == spr_swamp_right || Char.sprite_index == spr_swamp_sprint_right) {
+        Char.sprite_index = spr_axe_right; 
+} else if (Char.sprite_index == spr_top || Char.sprite_index == spr_sprint_top ||
+    Char.sprite_index == spr_swamp_top || Char.sprite_index == spr_swamp_sprint_top) {
+        Char.sprite_index = spr_axe_top; 
+} else if (Char.sprite_index == spr_down || Char.sprite_index == spr_sprint_down ||
+    Char.sprite_index == spr_swamp_down || Char.sprite_index == spr_swamp_sprint_down) {
+        Char.sprite_index = spr_axe_down; 
+} else { exit; } */
 </string>
           </argument>
         </arguments>
@@ -594,6 +746,34 @@ isDestroying = true;
       </action>
       <action>
         <libid>1</libid>
+        <id>541</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_sprite_set</functionname>
+        <codestring></codestring>
+        <whoName>Char</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>5</kind>
+            <sprite>spr_axe_down</sprite>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0.2</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -610,6 +790,23 @@ isDestroying = true;
             <kind>1</kind>
             <string>Char.isDoing = true;
 isDestroying = true;
+
+/* Char sprite changer 
+
+Char.image_speed = 0.1;
+if (Char.sprite_index == spr_left || Char.sprite_index == spr_sprint_left ||
+    Char.sprite_index == spr_swamp_left || Char.sprite_index == spr_swamp_sprint_left) {
+        Char.sprite_index = spr_axe_left; 
+} else if (Char.sprite_index == spr_right || Char.sprite_index == spr_sprint_right ||
+    Char.sprite_index == spr_swamp_right || Char.sprite_index == spr_swamp_sprint_right) {
+        Char.sprite_index = spr_axe_right; 
+} else if (Char.sprite_index == spr_top || Char.sprite_index == spr_sprint_top ||
+    Char.sprite_index == spr_swamp_top || Char.sprite_index == spr_swamp_sprint_top) {
+        Char.sprite_index = spr_axe_top; 
+} else if (Char.sprite_index == spr_down || Char.sprite_index == spr_sprint_down ||
+    Char.sprite_index == spr_swamp_down || Char.sprite_index == spr_swamp_sprint_down) {
+        Char.sprite_index = spr_axe_down; 
+} else { exit; } */
 </string>
           </argument>
         </arguments>

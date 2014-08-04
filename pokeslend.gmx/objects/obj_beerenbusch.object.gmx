@@ -85,6 +85,20 @@ isEating = false;
 Char.isDoing = false;
 obj_GUI.eatSeconds = 0;
 obj_GUI.eatMinutes = 2;
+
+/* Char sprite changer */
+
+if (Char.sprite_index == spr_eat_left) {
+        Char.sprite_index = spr_left; 
+} else if (Char.sprite_index == spr_eat_right) {
+        Char.sprite_index = spr_right; 
+} else if (Char.sprite_index == spr_eat_down) {
+        Char.sprite_index = spr_down; 
+} else if (Char.sprite_index == spr_eat_top) {
+        Char.sprite_index = spr_top; 
+} else { exit; }
+
+Char.image_speed = 0;
 </string>
           </argument>
         </arguments>
@@ -217,6 +231,34 @@ obj_GUI.eatMinutes = 2;
       </action>
       <action>
         <libid>1</libid>
+        <id>541</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_sprite_set</functionname>
+        <codestring></codestring>
+        <whoName>Char</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>5</kind>
+            <sprite>spr_eat_left</sprite>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0.2</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -330,6 +372,34 @@ isEating = true;
           <argument>
             <kind>0</kind>
             <string>1</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0.2</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>541</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_sprite_set</functionname>
+        <codestring></codestring>
+        <whoName>Char</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>5</kind>
+            <sprite>spr_eat_right</sprite>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
           </argument>
           <argument>
             <kind>0</kind>
@@ -461,6 +531,34 @@ isEating = true;
       </action>
       <action>
         <libid>1</libid>
+        <id>541</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_sprite_set</functionname>
+        <codestring></codestring>
+        <whoName>Char</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>5</kind>
+            <sprite>spr_eat_top</sprite>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0.2</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -574,6 +672,34 @@ isEating = true;
           <argument>
             <kind>0</kind>
             <string>1</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0.2</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>541</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_sprite_set</functionname>
+        <codestring></codestring>
+        <whoName>Char</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>5</kind>
+            <sprite>spr_eat_top</sprite>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
           </argument>
           <argument>
             <kind>0</kind>
@@ -705,6 +831,34 @@ isEating = true;
       </action>
       <action>
         <libid>1</libid>
+        <id>541</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_sprite_set</functionname>
+        <codestring></codestring>
+        <whoName>Char</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>5</kind>
+            <sprite>spr_eat_down</sprite>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0.2</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -818,6 +972,34 @@ isEating = true;
           <argument>
             <kind>0</kind>
             <string>1</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0.2</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>541</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_sprite_set</functionname>
+        <codestring></codestring>
+        <whoName>Char</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>5</kind>
+            <sprite>spr_eat_down</sprite>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
           </argument>
           <argument>
             <kind>0</kind>
