@@ -295,6 +295,7 @@
     <object>objects\enemy3</object>
     <objects name="Trees">
       <object>objects\TreeBig01</object>
+      <object>objects\TreeBig01Activator</object>
       <object>objects\TreeBig02</object>
       <object>objects\TreeSmall01</object>
       <object>objects\TreeDead01</object>
