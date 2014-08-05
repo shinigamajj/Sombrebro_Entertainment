@@ -54,36 +54,42 @@ isDoing = false;
     {
         case 59:
             message_hunger1.visible = true;
+            audio_play_sound(sound_hunger_01,0,0);
             break;        
         case 58:
             message_hunger1.visible = false;
             break;
         case 50:
             message_hunger2.visible = true;
+            audio_play_sound(sound_hunger_02,0,0);
             break;        
         case 48:
             message_hunger2.visible = false;
             break;        
         case 40:
             message_hunger1.visible = true;
+            audio_play_sound(sound_hunger_01,0,0);
             break;        
         case 38:
             message_hunger1.visible = false;
             break;        
         case 30:
             message_hunger2.visible = true;
+            audio_play_sound(sound_hunger_02,0,0);
             break;        
         case 28:
             message_hunger2.visible = false;
             break;        
         case 20:
             message_hunger1.visible = true;
+            audio_play_sound(sound_hunger_01,0,0);
             break;        
         case 18:
             message_hunger1.visible = false;
             break;        
         case 10:
             message_hunger2.visible = true;
+            audio_play_sound(sound_hunger_02,0,0);
             break;        
         case 8:
             message_hunger2.visible = false;

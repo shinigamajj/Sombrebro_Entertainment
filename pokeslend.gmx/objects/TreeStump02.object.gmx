@@ -108,6 +108,7 @@ alarm1_check = 0;
             <kind>1</kind>
             <string>sprite_index = spr_TreeStump02Water;
 image_speed = 0.03;
+audio_play_sound(sound_push_tree_water,0,0);
 </string>
           </argument>
         </arguments>
@@ -1425,6 +1426,7 @@ if(Char.sprite_index == spr_left || Char.sprite_index == spr_sprint_left || Char
 posY = y;
 
 image_speed = 0.25;
+audio_play_sound(sound_push_tree,0,0);
 </string>
           </argument>
         </arguments>
@@ -1569,6 +1571,7 @@ image_speed = 0.25;
 posY = y;
 
 image_speed = 0.25;
+audio_play_sound(sound_push_tree,0,0);
 </string>
           </argument>
         </arguments>
@@ -1711,6 +1714,8 @@ image_speed = 0.25;
             <kind>1</kind>
             <string>posX = x;
 posY = y;
+
+audio_play_sound(sound_push_tree,0,0);
 </string>
           </argument>
         </arguments>
@@ -1853,6 +1858,8 @@ posY = y;
             <kind>1</kind>
             <string>posX = x;
 posY = y;
+
+audio_play_sound(sound_push_tree,0,0);
 </string>
           </argument>
         </arguments>
@@ -1997,6 +2004,7 @@ posY = y;
 posY = y;
 
 image_speed = 0.25;
+audio_play_sound(sound_push_tree,0,0);
 </string>
           </argument>
         </arguments>
@@ -2141,6 +2149,7 @@ image_speed = 0.25;
 posY = y;
 
 image_speed = 0.25;
+audio_play_sound(sound_push_tree,0,0);
 </string>
           </argument>
         </arguments>

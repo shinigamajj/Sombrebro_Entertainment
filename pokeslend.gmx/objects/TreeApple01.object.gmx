@@ -275,6 +275,7 @@ Char.image_speed = 0;
             <kind>1</kind>
             <string>Char.isDoing = true;
 isEating = true;
+audio_play_sound(sound_eating,0,0);
 </string>
           </argument>
         </arguments>
@@ -425,6 +426,7 @@ isEating = true;
             <kind>1</kind>
             <string>Char.isDoing = true;
 isEating = true;
+audio_play_sound(sound_eating,0,0);
 </string>
           </argument>
         </arguments>
@@ -575,6 +577,7 @@ isEating = true;
             <kind>1</kind>
             <string>Char.isDoing = true;
 isEating = true;
+audio_play_sound(sound_eating,0,0);
 </string>
           </argument>
         </arguments>
