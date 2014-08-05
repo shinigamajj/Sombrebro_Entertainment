@@ -32,8 +32,8 @@ shader_reset();
 //instance_create BG, Stats
 instance_create(0,0,menu_BG_Full);
 
-if(win) { instance_create(80,5,menu_win);
-} else if(lose){ instance_create(80,5,menu_lose);
+if(win) { instance_create(80,45,menu_win);
+} else if(lose){ instance_create(80,45,menu_lose);
 } else { /*error!*/ exit; }
 
 instance_create(5,195,menu_pause_button_menu);

@@ -245,6 +245,7 @@
     <script>scripts\move_up.gml</script>
     <script>scripts\treeStump_Movement.gml</script>
     <script>scripts\SpawnEnemy.gml</script>
+    <script>scripts\EndGame.gml</script>
     <scripts name="Pathfinding">
       <scripts name="AStar">
         <script>scripts\AStar_init.gml</script>
@@ -385,6 +386,7 @@
     </objects>
     <objects name="invisible_objects">
       <object>objects\obj_GUI</object>
+      <object>objects\obj_win_lose_GUI</object>
       <object>objects\obj_Collider</object>
       <object>objects\obj_RockCollider</object>
       <object>objects\obj_TreeCollider</object>
