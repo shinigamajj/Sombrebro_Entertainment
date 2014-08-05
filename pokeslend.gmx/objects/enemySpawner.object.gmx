@@ -48,8 +48,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (y &gt; view_yview &amp;&amp; y &lt; view_yview+view_hview &amp;&amp; x &gt; view_xview
-    &amp;&amp; x &lt; view_xview + view_wview){
+            <string>if (y &gt; (view_yview - 1) &amp;&amp; y &lt; (view_yview+view_hview + 1) &amp;&amp; x &gt; (view_xview - 1)
+    &amp;&amp; x &lt; (view_xview + view_wview + 1)){
         canuse = false;
 } else { canuse = true; }
 </string>
