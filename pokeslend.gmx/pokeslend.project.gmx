@@ -9,9 +9,43 @@
     <sounds name="Sounds">
       <sound>sound\sound_menu_cursor</sound>
       <sound>sound\sound_menu_start</sound>
+      <sounds name="EnemySound">
+        <sound>sound\sound_enemy_catch_char</sound>
+        <sound>sound\sound_enemy_stop_searching</sound>
+        <sound>sound\sound_enemy_death_01</sound>
+        <sound>sound\sound_enemy_death_02</sound>
+        <sound>sound\sound_enemy_follow_char_01</sound>
+        <sound>sound\sound_enemy_follow_char_02</sound>
+      </sounds>
+      <sounds name="CharSound">
+        <sounds name="Actions">
+          <sound>sound\sound_altar_fail</sound>
+          <sound>sound\sound_altar_success</sound>
+          <sound>sound\sound_pick_axe</sound>
+          <sound>sound\sound_pick_paper</sound>
+          <sound>sound\sound_pick_shoes</sound>
+          <sound>sound\sound_eating</sound>
+          <sound>sound\sound_hunger_01</sound>
+          <sound>sound\sound_hunger_02</sound>
+          <sound>sound\sound_char_death</sound>
+          <sound>sound\sound_push_tree_water</sound>
+          <sound>sound\sound_push_tree</sound>
+          <sound>sound\sound_push_rock</sound>
+        </sounds>
+      </sounds>
     </sounds>
     <sounds name="BG_Music">
       <sound>sound\sound_BG_menu</sound>
+      <sounds name="Forest">
+        <sound>sound\sound_BG_forest_01</sound>
+        <sound>sound\sound_BG_forest_02</sound>
+        <sound>sound\sound_BG_forest_03</sound>
+      </sounds>
+      <sounds name="Swamp">
+        <sound>sound\sound_BG_swamp_01</sound>
+        <sound>sound\sound_BG_swamp_02</sound>
+        <sound>sound\sound_BG_swamp_03</sound>
+      </sounds>
     </sounds>
   </sounds>
   <sprites name="sprites">

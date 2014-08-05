@@ -245,6 +245,8 @@ Char.hasBoots = 1;
             <kind>1</kind>
             <string>Char.isDoing = true;
 isDestroying = true;
+
+audio_play_sound(sound_pick_shoes,0,0);
 </string>
           </argument>
         </arguments>
@@ -367,6 +369,8 @@ isDestroying = true;
             <kind>1</kind>
             <string>Char.isDoing = true;
 isDestroying = true;
+
+audio_play_sound(sound_pick_shoes,0,0);
 </string>
           </argument>
         </arguments>
@@ -489,6 +493,8 @@ isDestroying = true;
             <kind>1</kind>
             <string>Char.isDoing = true;
 isDestroying = true;
+
+audio_play_sound(sound_pick_shoes,0,0);
 </string>
           </argument>
         </arguments>
@@ -611,6 +617,8 @@ isDestroying = true;
             <kind>1</kind>
             <string>Char.isDoing = true;
 isDestroying = true;
+
+audio_play_sound(sound_pick_shoes,0,0);
 </string>
           </argument>
         </arguments>

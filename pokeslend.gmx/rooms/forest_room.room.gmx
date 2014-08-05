@@ -108,7 +108,7 @@
     <instance objName="TreeBig02" x="640" y="352" name="inst_0ACF8ECE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TreeBig02" x="608" y="336" name="inst_4BBD87D0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TreeBig02" x="688" y="400" name="inst_1081C689" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Fog" x="656" y="784" name="inst_FCD0F2ED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Fog" x="752" y="784" name="inst_FCD0F2ED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TreeBig02" x="592" y="384" name="inst_459FF039" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TreeBig02" x="576" y="352" name="inst_A009A03C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TreeBig02" x="608" y="528" name="inst_91C65FC6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
