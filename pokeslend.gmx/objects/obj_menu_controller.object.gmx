@@ -426,7 +426,7 @@ if (menuState == 1) {
         instance_create(5,195,menu_button_exit);
         menu_button_play.isSelected = true;
     } else if(menu_button_go.isSelected &amp;&amp; keyboard_check_pressed(vk_enter)){ 
-        //audio_stop_music();
+        audio_stop_music();
         audio_play_sound(sound_menu_start,0,0);
         room_goto(tutorial_room_01);
     } else { exit; }
@@ -509,7 +509,7 @@ if (menuState == 1) {
             <kind>1</kind>
             <string>canDo = false;
 menuState = 0;
-//audio_play_music(sound_BG_menu,0);
+audio_play_music(sound_BG_menu,0);
 
 instance_create(0,0,menu_MDH_Logo);
 alarm[0] = 45;

@@ -10,6 +10,9 @@
       <sound>sound\sound_menu_cursor</sound>
       <sound>sound\sound_menu_start</sound>
     </sounds>
+    <sounds name="BG_Music">
+      <sound>sound\sound_BG_menu</sound>
+    </sounds>
   </sounds>
   <sprites name="sprites">
     <sprites name="MushroomBig_Eatable">
