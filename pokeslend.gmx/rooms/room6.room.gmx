@@ -74,13 +74,13 @@
     <instance objName="TreeSwampBig01" x="240" y="416" name="inst_0A9B9923" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TreeSwampBig02" x="272" y="384" name="inst_41A5D66F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TreeSwampBig01" x="272" y="400" name="inst_D87D55E9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="TreeSwampBig01" x="368" y="208" name="inst_655902CF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TreeSwampBig01" x="448" y="96" name="inst_89281F85" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TreeSwampBig01" x="384" y="240" name="inst_59527779" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TreeSwampBig02" x="416" y="224" name="inst_1DD4F4EC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TreeSwampBig02" x="272" y="80" name="inst_E23065C2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TreeSwampBig01" x="288" y="112" name="inst_61D35AF6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TreeSwampBig01" x="416" y="272" name="inst_ED9831AB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="TreeSwampBig01" x="448" y="240" name="inst_FE0E2A59" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TreeSwampBig01" x="448" y="224" name="inst_FE0E2A59" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TreeSwampBig01" x="304" y="80" name="inst_D4581ED7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TreeSwampBig01" x="176" y="80" name="inst_AE293C76" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TreeSwampBig01" x="224" y="48" name="inst_16E49309" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -101,7 +101,7 @@
     <instance objName="TreeSwampBig02" x="432" y="368" name="inst_0098EFB4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TreeSwampBig02" x="464" y="352" name="inst_729DC5B0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TreeSwampBig01" x="448" y="384" name="inst_57BA9F51" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="TreeSwampBig01" x="432" y="416" name="inst_C63A5946" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TallGrassSwamp" x="352" y="544" name="inst_514ACC5A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TreeSwampBig01" x="480" y="400" name="inst_6079BD5E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TreeSwampBig01" x="496" y="352" name="inst_D6708E97" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TreeSwampBig01" x="96" y="336" name="inst_9E339E58" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -111,26 +111,64 @@
     <instance objName="TreeSwampBig01" x="144" y="192" name="inst_3BD9DC96" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TreeSwampBig01" x="112" y="176" name="inst_D7DA8500" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TreeSwampBig01" x="128" y="144" name="inst_1AF19F77" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_movable" x="480" y="160" name="inst_D0B30E83" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_movable" x="496" y="176" name="inst_058C6292" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_movable" x="512" y="160" name="inst_85A738BD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_movable" x="512" y="192" name="inst_88997C66" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_movable" x="480" y="192" name="inst_920F657C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="RockMossSmall01" x="480" y="208" name="inst_D062022E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="TreeSwampBig01" x="448" y="96" name="inst_89281F85" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="TreeSwampBig01" x="400" y="112" name="inst_0F1037A0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="TreeSwampBig01" x="384" y="96" name="inst_98B41F26" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="TreeSwampBig01" x="416" y="64" name="inst_299942A2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="TreeSwampBig01" x="384" y="32" name="inst_B8F5BDFD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="TreeSwampBig02" x="480" y="112" name="inst_2D08F18B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TreeSwampBig02" x="496" y="96" name="inst_0BF5D029" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="RockSmall01" x="512" y="144" name="inst_7E8AB09B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="RockMossyBig01" x="448" y="144" name="inst_2567045F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="RockMossyBig01" x="528" y="176" name="inst_EF99EFCD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="RockMossyBig01" x="512" y="192" name="inst_59821A3F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="TreeSwampBig01" x="512" y="176" name="inst_A4CEBA2D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="TreeSwampBig01" x="448" y="192" name="inst_917AC871" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="TreeSwampBig01" x="400" y="192" name="inst_41089A22" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TreeSwampBig01" x="384" y="96" name="inst_98B41F26" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TreeSwampBig01" x="384" y="32" name="inst_B8F5BDFD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TreeSwampBig01" x="400" y="112" name="inst_0F1037A0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TreeSwampBig01" x="416" y="64" name="inst_299942A2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TreeSwampBig01" x="464" y="256" name="inst_D42E5E96" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TreeSwampBig01" x="240" y="448" name="inst_3166FE16" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TallGrassSwamp" x="352" y="512" name="inst_C85CE7D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TallGrassSwamp" x="304" y="528" name="inst_ACD2D832" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TreeSwampBig01" x="272" y="544" name="inst_A935B7A1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TreeSwampBig01" x="304" y="560" name="inst_B5DB5779" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TreeSwampBig01" x="336" y="576" name="inst_9EAC4176" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TreeSwampBig01" x="352" y="544" name="inst_487B30D5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TreeSwampBig02" x="384" y="576" name="inst_C2383ADA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TallGrassSwamp" x="336" y="544" name="inst_EDB1ACE3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TreeSwampBig01" x="256" y="576" name="inst_F26574FA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TallGrassSwamp" x="304" y="544" name="inst_FA15A3BE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TreeSwampBig01" x="256" y="464" name="inst_D51B38DA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TreeSwampBig02" x="224" y="560" name="inst_831D0FE7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TreeSwampBig02" x="256" y="544" name="inst_C1F85FF1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TreeSwampBig01" x="400" y="592" name="inst_25B2D4E8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TreeSwampBig01" x="448" y="608" name="inst_DC014692" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TreeSwampBig01" x="240" y="496" name="inst_0505894B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TreeSwampBig01" x="224" y="512" name="inst_7723D4CA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TreeSwampBig01" x="480" y="576" name="inst_B380B5EA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TreeSwampBig01" x="368" y="624" name="inst_78F7A811" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TreeSwampBig02" x="304" y="608" name="inst_6D628C3B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TreeSwampBig02" x="368" y="608" name="inst_8DB540AC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TreeSwampBig01" x="416" y="560" name="inst_32276004" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TreeSwampBig01" x="496" y="608" name="inst_2C42EDAD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TreeSwampBig01" x="400" y="640" name="inst_F0FB1944" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TallGrassSwamp" x="320" y="544" name="inst_BB599859" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TallGrassSwamp" x="352" y="528" name="inst_EB5CA5FF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TallGrassSwamp" x="336" y="528" name="inst_8851979C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TallGrassSwamp" x="320" y="528" name="inst_CDC0C6E2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TallGrassSwamp" x="304" y="512" name="inst_F34399D0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TallGrassSwamp" x="320" y="512" name="inst_54859204" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TallGrassSwamp" x="336" y="512" name="inst_2D96E54A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TreeSwampBig01" x="432" y="416" name="inst_1CDEF1FC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TallGrassSwamp" x="320" y="496" name="inst_9CE2B984" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TallGrassSwamp" x="336" y="496" name="inst_4C01F0CC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TallGrassSwamp" x="352" y="496" name="inst_BB7C7301" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TallGrassSwamp" x="320" y="480" name="inst_6D7DC9AE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TallGrassSwamp" x="336" y="480" name="inst_86247DFB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TallGrassSwamp" x="352" y="480" name="inst_F75B1C3C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TallGrassSwamp" x="368" y="480" name="inst_23642B4C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TallGrassSwamp" x="368" y="496" name="inst_FB7672E9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TallGrassSwamp" x="368" y="512" name="inst_998D9ECE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TallGrassSwamp" x="368" y="528" name="inst_95348AF7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TallGrassSwamp" x="368" y="544" name="inst_B51B413B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TallGrassSwamp" x="384" y="544" name="inst_79F16808" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TallGrassSwamp" x="384" y="528" name="inst_171A3049" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TallGrassSwamp" x="384" y="512" name="inst_5B08C9CE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TallGrassSwamp" x="384" y="496" name="inst_7FED0BC3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="TallGrassSwamp" x="384" y="480" name="inst_5175CCB1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Swamp_Top_Left" x="480" y="464" name="inst_FD0CB37E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Swamp_Top_Mid" x="496" y="464" name="inst_7558D898" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Swamp_Top_Mid" x="512" y="464" name="inst_A52F433C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="TilesetBase" x="256" y="160" w="16" h="16" xo="64" yo="48" id="10001606" name="inst_616E167F" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
