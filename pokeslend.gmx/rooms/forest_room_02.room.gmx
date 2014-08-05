@@ -1340,6 +1340,10 @@
     <instance objName="TreeSwampBig01" x="32" y="528" name="inst_60F90114" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TreeSwampBig01" x="32" y="368" name="inst_5F0F1970" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_beerenbusch" x="672" y="448" name="inst_FC3E1265" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Changer_02_03" x="240" y="544" name="inst_7237AF0A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Changer_02_03" x="240" y="528" name="inst_E1203074" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Changer_02_03" x="240" y="512" name="inst_7EF75BFF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_eat_shroom" x="128" y="1248" name="inst_DB653D76" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="TilesetBase" x="672" y="960" w="16" h="16" xo="80" yo="0" id="10001234" name="inst_71B3ED20" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

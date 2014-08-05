@@ -50,11 +50,11 @@
   </sounds>
   <sprites name="sprites">
     <sprites name="MushroomBig_Eatable">
-      <sprite>sprites\sprite99</sprite>
-      <sprite>sprites\sprite119</sprite>
-      <sprite>sprites\sprite120</sprite>
-      <sprite>sprites\sprite121</sprite>
-      <sprite>sprites\sprite122</sprite>
+      <sprite>sprites\spr_eatshroom_01</sprite>
+      <sprite>sprites\spr_eatshroom_02</sprite>
+      <sprite>sprites\spr_eatshroom_03</sprite>
+      <sprite>sprites\spr_eatshroom_04</sprite>
+      <sprite>sprites\spr_eatshroom_05</sprite>
     </sprites>
     <sprite>sprites\spr_GrassTall</sprite>
     <sprite>sprites\spr_SwampGrassTall</sprite>
@@ -379,7 +379,6 @@
       <object>objects\Bubble04</object>
       <object>objects\reeds01</object>
       <object>objects\Water</object>
-      <object>objects\Mushroom_Eatable</object>
       <objects name="Swamp">
         <object>objects\Swamp_Top_Left</object>
         <object>objects\Swamp_Top_Mid</object>
@@ -462,10 +461,12 @@
       <object>objects\obj_destroyable</object>
       <object>objects\obj_beerenbusch</object>
       <object>objects\TreeApple01</object>
+      <object>objects\obj_eat_shroom</object>
     </objects>
     <object>objects\obj_Changer_forest1_swamp</object>
     <object>objects\obj_Changer_forest1_forest2</object>
     <object>objects\obj_Changer_01_02</object>
+    <object>objects\obj_Changer_02_03</object>
     <object>objects\message_erschoepft</object>
     <object>objects\message_hunger1</object>
     <object>objects\message_hunger2</object>
@@ -515,7 +516,7 @@
     <room>rooms\swamp_room</room>
     <room>rooms\tutorial_room_01</room>
     <room>rooms\forest_room_02</room>
-    <room>rooms\room6</room>
+    <room>rooms\swamp_room_03</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

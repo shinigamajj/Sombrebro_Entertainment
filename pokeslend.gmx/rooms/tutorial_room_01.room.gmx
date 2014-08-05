@@ -455,7 +455,7 @@
     <instance objName="TreeDead01" x="160" y="944" name="inst_6F8D3C2F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="RockBig01" x="368" y="752" name="inst_8082DE53" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Swamp_Bamboo01" x="816" y="640" name="inst_8DC28A5F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="RockCrystalBig01" x="96" y="816" name="inst_1EA8B8D2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_altar" x="1152" y="1232" name="inst_2EB1560A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TreeDead01" x="1152" y="736" name="inst_CF3CBD8A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TreeSmall01" x="1152" y="736" name="inst_014DBAAD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TreeSmall01" x="1152" y="752" name="inst_0E7F9AD4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -533,7 +533,8 @@
     <instance objName="obj_Changer_01_02" x="992" y="688" name="inst_E39CA6EC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Changer_01_02" x="1008" y="688" name="inst_C986AB3B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Changer_01_02" x="1024" y="688" name="inst_1B500C89" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_altar" x="1152" y="1232" name="inst_2EB1560A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_eat_shroom" x="1120" y="1248" name="inst_C76AEA90" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_eat_shroom" x="288" y="1024" name="inst_F557CCDD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="TilesetBase" x="256" y="1024" w="16" h="16" xo="48" yo="144" id="10000924" name="inst_8C08BCC1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

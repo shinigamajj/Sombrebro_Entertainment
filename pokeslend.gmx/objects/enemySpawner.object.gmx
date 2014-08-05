@@ -48,10 +48,44 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (y &gt; (view_yview - 16) &amp;&amp; y &lt; (view_yview+view_hview + 16) &amp;&amp; x &gt; (view_xview - 16)
-    &amp;&amp; x &lt; (view_xview + view_wview + 16)){
-        canuse = false;
-} else { canuse = true; }
+            <string>/* Spawn enemy on Spawner in direction of Character */
+if(Char.sprite_index == spr_right || Char.sprite_index == spr_sprint_right
+    || Char.sprite_index == spr_swamp_right || Char.sprite_index == spr_swamp_sprint_right){
+        if ((y &gt; (view_yview - 64) &amp;&amp; y &lt; (view_yview+view_hview + 64) &amp;&amp; x &gt; (view_xview - 64)
+            &amp;&amp; x &lt; (view_xview + view_wview + 64)) || x &lt; Char.x){
+                canuse = false;
+        } else { canuse = true; }
+        
+} else if(Char.sprite_index == spr_left || Char.sprite_index == spr_sprint_left
+    || Char.sprite_index == spr_swamp_left || Char.sprite_index == spr_swamp_sprint_left){
+        if ((y &gt; (view_yview - 64) &amp;&amp; y &lt; (view_yview+view_hview + 64) &amp;&amp; x &gt; (view_xview - 64)
+            &amp;&amp; x &lt; (view_xview + view_wview + 64)) || x &gt; Char.x){
+                canuse = false;
+        } else { canuse = true; }
+        
+} else if(Char.sprite_index == spr_top || Char.sprite_index == spr_sprint_top
+    || Char.sprite_index == spr_swamp_top || Char.sprite_index == spr_swamp_sprint_top){
+        if ((y &gt; (view_yview - 64) &amp;&amp; y &lt; (view_yview+view_hview + 64) &amp;&amp; x &gt; (view_xview - 64)
+            &amp;&amp; x &lt; (view_xview + view_wview + 64)) || y &gt; Char.y){
+                canuse = false;
+        } else { canuse = true; }
+        
+} else if(Char.sprite_index == spr_down || Char.sprite_index == spr_sprint_down
+    || Char.sprite_index == spr_swamp_down || Char.sprite_index == spr_swamp_sprint_down){
+        if ((y &gt; (view_yview - 64) &amp;&amp; y &lt; (view_yview+view_hview + 64) &amp;&amp; x &gt; (view_xview - 64)
+            &amp;&amp; x &lt; (view_xview + view_wview + 64)) || y &lt; Char.y){
+                canuse = false;
+        } else { canuse = true; }
+        
+} else { /* If no direction found spawn at closest outside of view */
+    if (y &gt; (view_yview - 64) &amp;&amp; y &lt; (view_yview+view_hview + 64) &amp;&amp; x &gt; (view_xview - 64)
+        &amp;&amp; x &lt; (view_xview + view_wview + 64)){
+            canuse = false;
+    } else { canuse = true; }
+}
+
+
+
 </string>
           </argument>
         </arguments>

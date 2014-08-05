@@ -553,9 +553,10 @@ else {
             <kind>1</kind>
             <string>appleID = instance_nearest(x,y,TreeApple01);
 berryID = instance_nearest(x,y,obj_beerenbusch);
+shroomID = instance_nearest(x,y,obj_eat_shroom);
 destroID = instance_nearest(x,y,obj_destroyable);
 
-if(appleID.isEating == false &amp;&amp; berryID.isEating == false){
+if(appleID.isEating == false &amp;&amp; berryID.isEating == false &amp;&amp; shroomID.isEating == false){
     if(instance_exists(obj_destroyable) &amp;&amp; instance_exists(obj_axe) &amp;&amp; instance_exists(obj_boots)){
         if(destroID.isDestroying == false &amp;&amp; obj_axe.isDestroying == false &amp;&amp; obj_boots.isDestroying == false){
             isDoing = false;
@@ -763,8 +764,9 @@ if(obj_GUI.eatMinutes &lt;= 0 &amp;&amp; !isSendingMessage){
 
 appleID = instance_nearest(x,y,TreeApple01);
 berryID = instance_nearest(x,y,obj_beerenbusch);
+shroomID = instance_nearest(x,y,obj_eat_shroom);
 
-if(appleID.isEating == true || berryID.isEating == true){
+if(appleID.isEating == true || berryID.isEating == true || shroomID.isEating == true){
     message_hunger1.visible = false;
     message_hunger2.visible = false;
 }
@@ -7950,6 +7952,9 @@ ini_open("variables.ini");
     } else if(room_caption == "forest_room_02"){
         x = ini_read_real("positions","forest_room_02_char_x",1008);
         y = ini_read_real("positions","forest_room_02_char_y",992);
+    } else if(room_caption == "swamp_room_03"){
+        x = ini_read_real("positions","swamp_room_03_char_x",176);
+        y = ini_read_real("positions","swamp_room_03_char_y",496);
     }
     
     char_speed = ini_read_real("speeds","speed_char",2);
@@ -7968,6 +7973,8 @@ ini_open("variables.ini");
     pagesCollected = ini_read_real("pages","tuto_room_01_pages_collected",0);
     } else if(room_caption == "forest_room_02"){
     pagesCollected = ini_read_real("pages","forest_room_02_pages_collected",0);
+    } else if(room_caption == "swamp_room_03"){
+    pagesCollected = ini_read_real("pages","swamp_room_03_pages_collected",0);
     }
     
     leftPressed = ini_read_real("controls","lp",0);

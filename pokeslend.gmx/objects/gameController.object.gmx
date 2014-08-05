@@ -87,10 +87,13 @@ ini_open("variables.ini");
     ini_write_real("positions","swamp_room_char_y",352);
     ini_write_real("positions","forest_room2_char_x",496);
     ini_write_real("positions","forest_room2_char_y",704);
+    //New Rooms
     ini_write_real("positions","tuto_room_01_char_x",240);
     ini_write_real("positions","tuto_room_01_char_y",1088);
     ini_write_real("positions","forest_room_02_char_x",1008);
     ini_write_real("positions","forest_room_02_char_y",992);
+    ini_write_real("positions","swamp_room_03_char_x",176);
+    ini_write_real("positions","swamp_room_03_char_y",496);
     
     ini_write_real("char","char_has_axe",0);
     ini_write_real("char","char_has_boots",0);
@@ -109,10 +112,13 @@ ini_open("variables.ini");
     ini_write_real("pages","forest_room_pages_collected",0);
     ini_write_real("pages","forest_room2_pages_collected",0);
     ini_write_real("pages","swamp_room_pages_collected",0);
+    //New Rooms
     ini_write_real("pages","tuto_room_01_pages_in_altar",0);
     ini_write_real("pages","tuto_room_01_pages_collected",0);
     ini_write_real("pages","forest_room_02_pages_in_altar",0);
     ini_write_real("pages","forest_room_02_pages_collected",0);
+    ini_write_real("pages","swamp_room_03_pages_in_altar",0);
+    ini_write_real("pages","swamp_room_03_pages_collected",0);
     
     ini_write_real("controls","lp",0);
     ini_write_real("controls","rp",0);

@@ -29,5 +29,11 @@
 
     if(nearest.canuse){
         return nearest;
-    } else { return instance_nth_nearest(argument0,argument1,argument2,argument3+1); }
+    } else {
+        if(argument3 < instance_number(enemySpawner)){
+            return instance_nth_nearest(argument0,argument1,argument2,argument3+1);
+        } else {
+            return instance_furthest(pointx,pointy,object);
+        }
+    }
 }
