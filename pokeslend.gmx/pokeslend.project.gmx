@@ -244,8 +244,9 @@
     <script>scripts\move_down.gml</script>
     <script>scripts\move_up.gml</script>
     <script>scripts\treeStump_Movement.gml</script>
-    <script>scripts\SpawnEnemy.gml</script>
     <script>scripts\EndGame.gml</script>
+    <script>scripts\RespawnEnemy.gml</script>
+    <script>scripts\instance_nth_nearest.gml</script>
     <scripts name="Pathfinding">
       <scripts name="AStar">
         <script>scripts\AStar_init.gml</script>
@@ -399,6 +400,7 @@
       <object>objects\obj_Fog</object>
       <object>objects\enemy_parent</object>
       <object>objects\interactive_parent</object>
+      <object>objects\enemySpawner</object>
     </objects>
     <objects name="Swamp_Plants">
       <object>objects\Lillypad01</object>

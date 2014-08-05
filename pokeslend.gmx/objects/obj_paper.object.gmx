@@ -62,47 +62,6 @@
     <event eventtype="2" enumb="0">
       <action>
         <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>Char.pagesCollected += 1;
-
-if(room == forest_room){
-    if(Char.x &lt; 240 &amp;&amp; Char.y &lt; 208){
-        SpawnEnemy(irandom_range(0,2),enemy2);
-    } else if(Char.x &gt; 544 &amp;&amp; Char.y &gt; 528){
-        SpawnEnemy(irandom_range(3,4),enemy3);
-    }
-} else if(room == forest_room02){
-    if(Char.x &lt; 224 &amp;&amp; Char.y &lt; 224){
-        SpawnEnemy(irandom_range(5,6),enemy2);
-    } else if(Char.x &gt; 560 &amp;&amp; Char.y &gt; 384){
-        SpawnEnemy(7,enemy3);
-    }
-} else if(room == swamp_room){
-    if(Char.x &gt; 336 &amp;&amp; Char.y &lt; 160){
-        SpawnEnemy(irandom_range(8,9),enemy2);
-    } else if(Char.x &lt; 208 &amp;&amp; Char.y &gt; 304){
-        SpawnEnemy(10,enemy3);
-    }
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
         <id>203</id>
         <kind>0</kind>
         <userelative>0</userelative>
