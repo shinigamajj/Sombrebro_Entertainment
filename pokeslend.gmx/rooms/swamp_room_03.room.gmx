@@ -41,11 +41,7 @@
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
   </backgrounds>
   <views>
-<<<<<<< HEAD:pokeslend.gmx/rooms/swamp_room_03.room.gmx
     <view visible="-1" objName="Char" xview="0" yview="0" wview="336" hview="240" xport="0" yport="0" wport="672" hport="480" hborder="320" vborder="320" hspeed="-1" vspeed="-1"/>
-=======
-    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
->>>>>>> origin/master:pokeslend.gmx/rooms/room6.room.gmx
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
@@ -984,15 +980,9 @@
     <instance objName="TallGrassSwamp" x="1056" y="944" name="inst_0F4C4994" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TallGrassSwamp" x="1072" y="928" name="inst_6501E9F8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TallGrassSwamp" x="1104" y="912" name="inst_8130A6F8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-<<<<<<< HEAD:pokeslend.gmx/rooms/swamp_room_03.room.gmx
     <instance objName="obj_eat_shroom" x="336" y="848" name="inst_425F7ADA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_destroyable" x="912" y="896" name="inst_4A3C1ACD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_destroyable" x="912" y="912" name="inst_4CB15E97" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-=======
-    <instance objName="Mushroom_Eatable" x="336" y="848" name="inst_425F7ADA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_destroyable" x="928" y="896" name="inst_4A3C1ACD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_destroyable" x="928" y="912" name="inst_4CB15E97" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
->>>>>>> origin/master:pokeslend.gmx/rooms/room6.room.gmx
     <instance objName="RockMossBig02" x="928" y="864" name="inst_C8FA67D2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="RockMossyBig01" x="896" y="864" name="inst_F7B32D8D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="RockMossSmall01" x="928" y="880" name="inst_74EEC37A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -1031,20 +1021,6 @@
     <instance objName="TreeSwampBig02" x="688" y="112" name="inst_B4542BB6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TreeSwampBig02" x="544" y="128" name="inst_E0F44561" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TreeSwampBig02" x="1216" y="640" name="inst_BB97560B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-<<<<<<< HEAD:pokeslend.gmx/rooms/swamp_room_03.room.gmx
-    <instance objName="obj_GUI" x="0" y="0" name="inst_91CAA096" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="gameController" x="16" y="0" name="inst_4753A9F5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Fog" x="32" y="0" name="inst_A2679229" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="message_erschoepft" x="48" y="0" name="inst_2998FB52" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="message_hunger1" x="64" y="0" name="inst_A707E328" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="message_hunger2" x="80" y="0" name="inst_2E91289C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Changer_02_03" x="144" y="512" name="inst_94642F15" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Changer_02_03" x="144" y="496" name="inst_D26FBE29" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Changer_02_03" x="144" y="480" name="inst_D8447759" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_altar" x="48" y="48" name="inst_EA54DB9A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_beerenbusch" x="48" y="32" name="inst_7721D3AF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="TreeApple01" x="0" y="32" name="inst_450AF2FA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-=======
     <instance objName="TreeStump02" x="1104" y="768" name="inst_497A83D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TreeStump02" x="1072" y="816" name="inst_5B94015A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="RockMossyBig01" x="288" y="576" name="inst_EBCE7715" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -1216,7 +1192,6 @@
     <instance objName="TreeSwampBig02" x="112" y="576" name="inst_30E6651F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TreeSwampBig02" x="144" y="592" name="inst_0DE1D27A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TreeSwampBig02" x="224" y="528" name="inst_E4B00441" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
->>>>>>> origin/master:pokeslend.gmx/rooms/room6.room.gmx
   </instances>
   <tiles>
     <tile bgName="TilesetBase" x="272" y="192" w="16" h="16" xo="16" yo="96" id="10001619" name="inst_DE1B33E4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
