@@ -147,7 +147,13 @@ ini_close();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(forest_room_02);
+            <string>audio_stop_music();
+randNum = irandom_range(1,3);
+if(randNum == 1) { audio_play_music(sound_BG_forest_01,0); }
+    else if(randNum == 2) { audio_play_music(sound_BG_forest_02,0); }
+    else if(randNum == 3) { audio_play_music(sound_BG_forest_03,0); }
+
+room_goto(forest_room_02);
 </string>
           </argument>
         </arguments>
@@ -284,7 +290,13 @@ ini_close();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(tutorial_room_01);
+            <string>audio_stop_music();
+randNum = irandom_range(1,3);
+if(randNum == 1) { audio_play_music(sound_BG_forest_01,0); }
+    else if(randNum == 2) { audio_play_music(sound_BG_forest_02,0); }
+    else if(randNum == 3) { audio_play_music(sound_BG_forest_03,0); }
+
+room_goto(tutorial_room_01);
 </string>
           </argument>
         </arguments>
