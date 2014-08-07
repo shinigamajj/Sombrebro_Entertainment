@@ -534,7 +534,6 @@
     <instance objName="obj_Changer_01_02" x="1008" y="688" name="inst_C986AB3B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Changer_01_02" x="1024" y="688" name="inst_1B500C89" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_eat_shroom" x="1120" y="1248" name="inst_C76AEA90" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_eat_shroom" x="288" y="1024" name="inst_F557CCDD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="TilesetBase" x="256" y="1024" w="16" h="16" xo="48" yo="144" id="10000924" name="inst_8C08BCC1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

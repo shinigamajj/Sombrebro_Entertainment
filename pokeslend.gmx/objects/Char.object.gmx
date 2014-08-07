@@ -163,6 +163,7 @@ if(isInSwamp){
         if(swampSeconds &gt;= 5){
             isDoing = true;
             sprite_index = spr_grave;
+            audio_play_sound(sound_char_dead,0,0);
             EndGame("lose");
         }
         alarm[4] = 1;
@@ -7914,6 +7915,10 @@ if(obj_GUI.eatMinutes &lt;= 0){
           <argument>
             <kind>1</kind>
             <string>depth = -((y*100)+x);
+
+if(!instance_exists(audioController)){
+    instance_create(0,0,audioController);
+}
 </string>
           </argument>
         </arguments>

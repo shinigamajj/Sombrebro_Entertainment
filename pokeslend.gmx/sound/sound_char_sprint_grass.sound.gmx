@@ -2,7 +2,7 @@
 <sound>
   <kind>0</kind>
   <extension>.wav</extension>
-  <origname>E:\DATA\Documents\MDH\PokiSlend\Dropbox\Team-Pokeslend\Projekt\Sound\Background\++Character\Action\Action verschieben\Action Stein verschieben_mixdown.wav</origname>
+  <origname>E:\DATA\Documents\MDH\PokiSlend\Dropbox\Team-Pokeslend\Projekt\Sound\Background\++Character\Sprint\Sprint Gras\Sprint Gras_mixdown.wav</origname>
   <effects>0</effects>
   <volume>
     <volume>1</volume>
@@ -21,7 +21,7 @@
     <bitDepth>16</bitDepth>
   </bitDepths>
   <preload>-1</preload>
-  <data>sound_push_rock.wav</data>
+  <data>sound_char_sprint_grass.wav</data>
   <compressed>0</compressed>
   <streamed>0</streamed>
   <uncompressOnLoad>0</uncompressOnLoad>

@@ -287,25 +287,7 @@ Char.image_speed = 0;
             <string>Char.isDoing = true;
 isDestroying = true;
 
-/* Char sprite changer 
-
-Char.image_speed = 0.1;
-if (Char.sprite_index == spr_left || Char.sprite_index == spr_sprint_left ||
-    Char.sprite_index == spr_swamp_left || Char.sprite_index == spr_swamp_sprint_left) {
-        Char.sprite_index = spr_axe_left; 
-} else if (Char.sprite_index == spr_right || Char.sprite_index == spr_sprint_right ||
-    Char.sprite_index == spr_swamp_right || Char.sprite_index == spr_swamp_sprint_right) {
-        Char.sprite_index = spr_axe_right; 
-} else if (Char.sprite_index == spr_top || Char.sprite_index == spr_sprint_top ||
-    Char.sprite_index == spr_swamp_top || Char.sprite_index == spr_swamp_sprint_top) {
-        Char.sprite_index = spr_axe_top; 
-} else if (Char.sprite_index == spr_down || Char.sprite_index == spr_sprint_down ||
-    Char.sprite_index == spr_swamp_down || Char.sprite_index == spr_swamp_sprint_down) {
-        Char.sprite_index = spr_axe_down; 
-} else { exit; }
-
-*/
-
+audio_play_sound(sound_use_axe,0,0);
 </string>
           </argument>
         </arguments>
@@ -457,22 +439,7 @@ if (Char.sprite_index == spr_left || Char.sprite_index == spr_sprint_left ||
             <string>Char.isDoing = true;
 isDestroying = true;
 
-/* Char sprite changer 
-
-Char.image_speed = 0.1;
-if (Char.sprite_index == spr_left || Char.sprite_index == spr_sprint_left ||
-    Char.sprite_index == spr_swamp_left || Char.sprite_index == spr_swamp_sprint_left) {
-        Char.sprite_index = spr_axe_left; 
-} else if (Char.sprite_index == spr_right || Char.sprite_index == spr_sprint_right ||
-    Char.sprite_index == spr_swamp_right || Char.sprite_index == spr_swamp_sprint_right) {
-        Char.sprite_index = spr_axe_right; 
-} else if (Char.sprite_index == spr_top || Char.sprite_index == spr_sprint_top ||
-    Char.sprite_index == spr_swamp_top || Char.sprite_index == spr_swamp_sprint_top) {
-        Char.sprite_index = spr_axe_top; 
-} else if (Char.sprite_index == spr_down || Char.sprite_index == spr_sprint_down ||
-    Char.sprite_index == spr_swamp_down || Char.sprite_index == spr_swamp_sprint_down) {
-        Char.sprite_index = spr_axe_down; 
-} else { exit; } */
+audio_play_sound(sound_use_axe,0,0);
 </string>
           </argument>
         </arguments>
@@ -624,22 +591,7 @@ if (Char.sprite_index == spr_left || Char.sprite_index == spr_sprint_left ||
             <string>Char.isDoing = true;
 isDestroying = true;
 
-/* Char sprite changer 
-
-Char.image_speed = 0.1;
-if (Char.sprite_index == spr_left || Char.sprite_index == spr_sprint_left ||
-    Char.sprite_index == spr_swamp_left || Char.sprite_index == spr_swamp_sprint_left) {
-        Char.sprite_index = spr_axe_left; 
-} else if (Char.sprite_index == spr_right || Char.sprite_index == spr_sprint_right ||
-    Char.sprite_index == spr_swamp_right || Char.sprite_index == spr_swamp_sprint_right) {
-        Char.sprite_index = spr_axe_right; 
-} else if (Char.sprite_index == spr_top || Char.sprite_index == spr_sprint_top ||
-    Char.sprite_index == spr_swamp_top || Char.sprite_index == spr_swamp_sprint_top) {
-        Char.sprite_index = spr_axe_top; 
-} else if (Char.sprite_index == spr_down || Char.sprite_index == spr_sprint_down ||
-    Char.sprite_index == spr_swamp_down || Char.sprite_index == spr_swamp_sprint_down) {
-        Char.sprite_index = spr_axe_down; 
-} else { exit; } */
+audio_play_sound(sound_use_axe,0,0);
 </string>
           </argument>
         </arguments>
@@ -791,22 +743,7 @@ if (Char.sprite_index == spr_left || Char.sprite_index == spr_sprint_left ||
             <string>Char.isDoing = true;
 isDestroying = true;
 
-/* Char sprite changer 
-
-Char.image_speed = 0.1;
-if (Char.sprite_index == spr_left || Char.sprite_index == spr_sprint_left ||
-    Char.sprite_index == spr_swamp_left || Char.sprite_index == spr_swamp_sprint_left) {
-        Char.sprite_index = spr_axe_left; 
-} else if (Char.sprite_index == spr_right || Char.sprite_index == spr_sprint_right ||
-    Char.sprite_index == spr_swamp_right || Char.sprite_index == spr_swamp_sprint_right) {
-        Char.sprite_index = spr_axe_right; 
-} else if (Char.sprite_index == spr_top || Char.sprite_index == spr_sprint_top ||
-    Char.sprite_index == spr_swamp_top || Char.sprite_index == spr_swamp_sprint_top) {
-        Char.sprite_index = spr_axe_top; 
-} else if (Char.sprite_index == spr_down || Char.sprite_index == spr_sprint_down ||
-    Char.sprite_index == spr_swamp_down || Char.sprite_index == spr_swamp_sprint_down) {
-        Char.sprite_index = spr_axe_down; 
-} else { exit; } */
+audio_play_sound(sound_use_axe,0,0);
 </string>
           </argument>
         </arguments>

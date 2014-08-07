@@ -111,9 +111,9 @@ alarm[0] = 8;
             <kind>1</kind>
             <string>if(!looksInGrass){
     path_end();
-    alarm[0] = 1;
+    alarm[1] = 1;
 } else {
-    alarm[4] = 1;
+    alarm[4] = 3;
 }
 </string>
           </argument>
@@ -173,7 +173,7 @@ alarm[0] = 8;
 
 searchtimer += 1;
 
-if(searchtimer &gt;= 8){
+if(searchtimer &gt;= 12){
     RespawnEnemy();
 }
 

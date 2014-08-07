@@ -18,7 +18,7 @@
         <sound>sound\sound_enemy_follow_char_02</sound>
       </sounds>
       <sounds name="CharSound">
-        <sounds name="Actions">
+        <sounds name="ActionsSound">
           <sound>sound\sound_altar_fail</sound>
           <sound>sound\sound_altar_success</sound>
           <sound>sound\sound_pick_axe</sound>
@@ -31,6 +31,22 @@
           <sound>sound\sound_push_tree_water</sound>
           <sound>sound\sound_push_tree</sound>
           <sound>sound\sound_push_rock</sound>
+          <sound>sound\sound_use_axe</sound>
+          <sound>sound\sound_char_dead</sound>
+        </sounds>
+        <sounds name="StepsSound">
+          <sound>sound\sound_char_walk_grass</sound>
+          <sound>sound\sound_char_walk_tall_grass</sound>
+          <sound>sound\sound_char_walk_swamp</sound>
+          <sound>sound\sound_char_walk_swamp_tall_grass</sound>
+          <sound>sound\sound_char_walk_swamp_deep</sound>
+        </sounds>
+        <sounds name="SprintSound">
+          <sound>sound\sound_char_sprint_grass</sound>
+          <sound>sound\sound_char_sprint_tall_grass</sound>
+          <sound>sound\sound_char_sprint_swamp</sound>
+          <sound>sound\sound_char_sprint_swamp_tall_grass</sound>
+          <sound>sound\sound_char_sprint_swamp_deep</sound>
         </sounds>
       </sounds>
     </sounds>
@@ -429,6 +445,7 @@
       <object>objects\obj_TreeCollider</object>
       <object>objects\gamePause</object>
       <object>objects\gameController</object>
+      <object>objects\audioController</object>
       <object>objects\objPathFinder</object>
       <object>objects\objPathFinder2</object>
       <object>objects\objPathFinder3</object>
@@ -510,8 +527,8 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\MENU</room>
-    <room>rooms\win_lose_MENU</room>
     <room>rooms\forest_room</room>
+    <room>rooms\win_lose_MENU</room>
     <room>rooms\forest_room02</room>
     <room>rooms\swamp_room</room>
     <room>rooms\tutorial_room_01</room>

@@ -99,6 +99,7 @@ if(seconds == 60)
 
 if(eatSeconds == 0 &amp;&amp; eatMinutes == 0){
     dead = true;
+    audio_play_sound(sound_char_dead,0,0);
     EndGame("lose");
 }
 
