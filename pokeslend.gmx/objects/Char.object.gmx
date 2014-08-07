@@ -8,6 +8,29 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>Character_ColMask</maskName>
   <events>
+    <event eventtype="2" enumb="8">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>EndGame("lose");
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="2" enumb="7">
       <action>
         <libid>1</libid>
@@ -164,7 +187,8 @@ if(isInSwamp){
             isDoing = true;
             sprite_index = spr_grave;
             audio_play_sound(sound_char_dead,0,0);
-            EndGame("lose");
+            alarm[8] = 30;
+            exit;
         }
         alarm[4] = 1;
     } else {

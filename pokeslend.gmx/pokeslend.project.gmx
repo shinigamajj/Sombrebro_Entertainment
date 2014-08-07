@@ -272,6 +272,9 @@
       <sprite>sprites\spr_menu_win</sprite>
       <sprite>sprites\spr_menu_lose</sprite>
     </sprites>
+    <sprites name="HUD">
+      <sprite>sprites\spr_tutorial_page_01</sprite>
+    </sprites>
     <sprite>sprites\sprite165</sprite>
     <sprite>sprites\sprite166</sprite>
     <sprite>sprites\sprite169</sprite>
@@ -524,11 +527,14 @@
       <object>objects\DungeonWall_Stairs01</object>
       <object>objects\DungeonWall_Stairs02</object>
     </objects>
+    <objects name="HUD_Objects">
+      <object>objects\tutorial_page_01</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\MENU</room>
-    <room>rooms\forest_room</room>
     <room>rooms\win_lose_MENU</room>
+    <room>rooms\forest_room</room>
     <room>rooms\forest_room02</room>
     <room>rooms\swamp_room</room>
     <room>rooms\tutorial_room_01</room>
