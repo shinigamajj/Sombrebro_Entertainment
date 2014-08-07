@@ -128,7 +128,10 @@
       <sprite>sprites\spr_TreeStump01</sprite>
       <sprite>sprites\spr_TreeStump02</sprite>
       <sprite>sprites\sprite22</sprite>
-      <sprite>sprites\spr_apfelbaum</sprite>
+      <sprite>sprites\spr_apfelbaum_01</sprite>
+      <sprite>sprites\spr_apfelbaum_02</sprite>
+      <sprite>sprites\spr_apfelbaum_03</sprite>
+      <sprite>sprites\spr_apfelbaum_04</sprite>
       <sprite>sprites\sprite44</sprite>
       <sprite>sprites\sprite45</sprite>
       <sprite>sprites\spr_TreeStump01Water</sprite>
@@ -532,10 +535,10 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\forest_room02</room>
     <room>rooms\MENU</room>
     <room>rooms\win_lose_MENU</room>
     <room>rooms\forest_room</room>
+    <room>rooms\forest_room02</room>
     <room>rooms\swamp_room</room>
     <room>rooms\tutorial_room_01</room>
     <room>rooms\forest_room_02</room>
