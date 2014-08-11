@@ -289,6 +289,9 @@
       <sprite>sprites\sprite190</sprite>
     </sprites>
     <sprite>sprites\sprite191</sprite>
+    <sprite>sprites\sprite192</sprite>
+    <sprite>sprites\sprite193</sprite>
+    <sprite>sprites\sprite194</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Base_Grass</background>
@@ -537,6 +540,9 @@
       <object>objects\DungeonWall_Stairs02</object>
       <object>objects\Dungeon_Entrance</object>
       <object>objects\Dungeon_Exit</object>
+      <object>objects\DungeonWall_EdgeBase01</object>
+      <object>objects\DungeonWall_EdgeBase02</object>
+      <object>objects\DungeonWall_EdgeBase03</object>
     </objects>
     <objects name="HUD_Objects">
       <object>objects\tutorial_page_01</object>
