@@ -171,7 +171,10 @@ alarm[0] = 8;
     else if(sprite_index = spr_enemy2){sprite_index = spr_enemy4;}
     else if(sprite_index = spr_enemy4){sprite_index = spr_enemy1;}
 
-searchtimer += 1;
+if ((y &gt; (view_yview - 32) &amp;&amp; y &lt; (view_yview+view_hview + 32) &amp;&amp; x &gt; (view_xview - 32)
+    &amp;&amp; x &lt; (view_xview + view_wview + 32))){
+        searchtimer = 0;
+} else { searchtimer += 1; }
 
 if(searchtimer &gt;= 12){
     RespawnEnemy();
