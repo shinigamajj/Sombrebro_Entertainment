@@ -7991,7 +7991,8 @@ ini_open("variables.ini");
     
     hasAxe = ini_read_real("char","char_has_axe",0);
     hasBoots = ini_read_real("char","char_has_boots",0);
-    
+    lifes = ini_read_real("char","lifes",2);
+        
     if(room_caption == "forest_room"){
     pagesCollected = ini_read_real("pages","forest_room_pages_collected",0);
     } else if(room_caption == "swamp_room"){
@@ -8010,6 +8011,7 @@ ini_open("variables.ini");
     rightPressed = ini_read_real("controls","rp",0);
     topPressed = ini_read_real("controls","tp",0);
     downPressed = ini_read_real("controls","dp",0);
+    
 ini_close();
 
 running = false;

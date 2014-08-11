@@ -2,7 +2,7 @@
 <object>
   <spriteName>spr_Changer_forest1_forest2</spriteName>
   <solid>0</solid>
-  <visible>-1</visible>
+  <visible>0</visible>
   <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
@@ -123,6 +123,7 @@ ini_open("variables.ini");
     
     ini_write_real("char","char_has_axe",Char.hasAxe);
     ini_write_real("char","char_has_boots",Char.hasBoots);
+    ini_write_real("char","lifes",Char.lifes);
     
     ini_write_real("pages","forest_room_02_pages_in_altar",obj_altar.pagesInAltar);
     ini_write_real("pages","forest_room_02_pages_collected",Char.pagesCollected);
@@ -266,6 +267,7 @@ ini_open("variables.ini");
     
     ini_write_real("char","char_has_axe",Char.hasAxe);
     ini_write_real("char","char_has_boots",Char.hasBoots);
+    ini_write_real("char","lifes",Char.lifes);
     
     ini_write_real("pages","swamp_room_03_pages_in_altar",obj_altar.pagesInAltar);
     ini_write_real("pages","swamp_room_03_pages_collected",Char.pagesCollected);
