@@ -197,6 +197,12 @@ ini_open("variables.ini");
 ini_close();
 
 audio_master_gain(volume);
+
+
+/* Pages Amounth */
+pages_room_01 = 6;
+pages_room_02 = 1;
+pages_room_03 = 4;
 </string>
           </argument>
         </arguments>

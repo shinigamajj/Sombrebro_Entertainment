@@ -92,6 +92,38 @@
       </action>
       <action>
         <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>ini_open("variables.ini");
+    paper_01 = ini_read_real("pages","tuto_room_01_pages_collected",0);
+    paper_02 = ini_read_real("pages","forest_room_02_pages_collected",0);
+    paper_03 = ini_read_real("pages","swamp_room_03_pages_collected",0);
+ini_close(); 
+
+if((paper_01 == gameController.pages_room_01) &amp;&amp; (paper_02 == gameController.pages_room_02)
+    &amp;&amp; (paper_03 == gameController.pages_room_03)) {
+        Char.isDoing = true;
+        EndGame("win");
+        exit;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>408</id>
         <kind>0</kind>
         <userelative>0</userelative>
