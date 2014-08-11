@@ -292,6 +292,8 @@
     <sprite>sprites\sprite192</sprite>
     <sprite>sprites\sprite193</sprite>
     <sprite>sprites\sprite194</sprite>
+    <sprite>sprites\sprite195</sprite>
+    <sprite>sprites\sprite196</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Base_Grass</background>
@@ -395,6 +397,8 @@
       <object>objects\RockCrystalHuge01</object>
       <object>objects\RockCrystalBig01</object>
       <object>objects\RockCrystalBig02</object>
+      <object>objects\RockPile01</object>
+      <object>objects\RockPile02</object>
     </objects>
     <objects name="Ground_Objects">
       <object>objects\Portshadow</object>
