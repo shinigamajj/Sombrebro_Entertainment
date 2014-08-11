@@ -2,10 +2,10 @@
 <sound>
   <kind>0</kind>
   <extension>.wav</extension>
-  <origname>E:\DATA\Documents\MDH\PokiSlend\Dropbox\Team-Pokeslend\Projekt\Sound\Background\++Character\Step\Steps Hohes Gras\Steps Hohes Gras_mixdown.wav</origname>
+  <origname>E:\DATA\Documents\MDH\PokiSlend\Dropbox\Team-Pokeslend\Projekt\Sound\Background\++Character\Step\Steps Hohes Gras\Steps Hohes Gras_mixdown_kurz.wav</origname>
   <effects>0</effects>
   <volume>
-    <volume>1</volume>
+    <volume>0.7</volume>
   </volume>
   <pan>0</pan>
   <bitRates>
