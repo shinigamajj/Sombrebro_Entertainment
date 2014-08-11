@@ -119,6 +119,7 @@
       <sprite>sprites\TreeSwampBig02CollisionMask</sprite>
       <sprite>sprites\Shroom_Collision</sprite>
       <sprite>sprites\Character_ColMask</sprite>
+      <sprite>sprites\Entrance_ColMaskSprite</sprite>
     </sprites>
     <sprites name="tree_sprites">
       <sprite>sprites\sprite16</sprite>
