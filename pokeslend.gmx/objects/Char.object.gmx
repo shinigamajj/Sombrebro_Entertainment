@@ -803,6 +803,25 @@ if(obj_GUI.eatMinutes &lt;= 0){
     canDestroy = false;
 } else { canDestroy = true; }
 
+
+/* Checks for distance to enemy and lifes */
+if(room_caption != "tutorial_room_01" &amp;&amp; lifes &gt; 0){
+    if(distance_to_object(enemy_parent) &lt;= 16){
+        lifes -= 1;
+        if(lifes &gt; 0){
+            ini_open("variables.ini");
+                ini_write_real("char","lifes",lifes);
+            ini_close();
+            room_restart();
+        } else {
+            isDoing = true;
+            sprite_index = spr_grave;
+            audio_play_sound(sound_char_dead,0,0);
+            alarm[8] = 30;
+            exit;
+        }
+    }
+}
 </string>
           </argument>
         </arguments>
@@ -8091,6 +8110,10 @@ alarm[7] = 25;
     } else if ( cheat = "I control the time!" ){
         obj_GUI.eatSeconds = 59;
         obj_GUI.eatMinutes = 59;
+    } else if ( cheat = "woodchopper" ){
+        hasAxe = true;
+    } else if ( cheat = "swamplord" ){
+        hasBoots = true;
     } else {
         show_message("You shall not input wrong secret keys !!");
         game_restart();
