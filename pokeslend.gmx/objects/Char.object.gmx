@@ -8003,6 +8003,9 @@ ini_open("variables.ini");
     } else if(room_caption == "swamp_room_03"){
         x = ini_read_real("positions","swamp_room_03_char_x",176);
         y = ini_read_real("positions","swamp_room_03_char_y",496);
+    } else if(room_caption == "dungeon_room_04"){
+        x = ini_read_real("positions","dungeon_room_04_char_x",336);
+        y = ini_read_real("positions","dungeon_room_04_char_y",176);
     }
     
     char_speed = ini_read_real("speeds","speed_char",2);
@@ -8024,6 +8027,8 @@ ini_open("variables.ini");
     pagesCollected = ini_read_real("pages","forest_room_02_pages_collected",0);
     } else if(room_caption == "swamp_room_03"){
     pagesCollected = ini_read_real("pages","swamp_room_03_pages_collected",0);
+    } else if(room_caption == "dungeon_room_04"){
+    pagesCollected = ini_read_real("pages","dungeon_room_04_pages_collected",0);
     }
     
     leftPressed = ini_read_real("controls","lp",0);

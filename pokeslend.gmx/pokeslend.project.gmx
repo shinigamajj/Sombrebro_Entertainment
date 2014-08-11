@@ -120,6 +120,7 @@
       <sprite>sprites\Shroom_Collision</sprite>
       <sprite>sprites\Character_ColMask</sprite>
       <sprite>sprites\Entrance_ColMaskSprite</sprite>
+      <sprite>sprites\collision_dungeon_exit</sprite>
     </sprites>
     <sprites name="tree_sprites">
       <sprite>sprites\sprite16</sprite>
@@ -288,11 +289,11 @@
       <sprite>sprites\sprite165</sprite>
       <sprite>sprites\sprite166</sprite>
       <sprite>sprites\sprite190</sprite>
+      <sprite>sprites\sprite191</sprite>
+      <sprite>sprites\sprite192</sprite>
+      <sprite>sprites\sprite193</sprite>
+      <sprite>sprites\sprite194</sprite>
     </sprites>
-    <sprite>sprites\sprite191</sprite>
-    <sprite>sprites\sprite192</sprite>
-    <sprite>sprites\sprite193</sprite>
-    <sprite>sprites\sprite194</sprite>
     <sprite>sprites\sprite195</sprite>
     <sprite>sprites\sprite196</sprite>
   </sprites>
@@ -504,6 +505,7 @@
     <object>objects\obj_Changer_forest1_forest2</object>
     <object>objects\obj_Changer_01_02</object>
     <object>objects\obj_Changer_02_03</object>
+    <object>objects\obj_Changer_03_04</object>
     <object>objects\message_erschoepft</object>
     <object>objects\message_hunger1</object>
     <object>objects\message_hunger2</object>
@@ -556,13 +558,10 @@
   <rooms name="rooms">
     <room>rooms\MENU</room>
     <room>rooms\win_lose_MENU</room>
-    <room>rooms\forest_room</room>
-    <room>rooms\forest_room02</room>
-    <room>rooms\swamp_room</room>
     <room>rooms\tutorial_room_01</room>
     <room>rooms\forest_room_02</room>
     <room>rooms\swamp_room_03</room>
-    <room>rooms\dungeon_room04</room>
+    <room>rooms\dungeon_room_04</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

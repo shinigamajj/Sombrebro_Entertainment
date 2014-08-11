@@ -471,6 +471,8 @@ ini_open("variables.ini");
         pagesInAltar = ini_read_real("pages","forest_room_02_pages_in_altar",0);
     } else if(room_caption == "swamp_room_03"){
         pagesInAltar = ini_read_real("pages","swamp_room_03_pages_in_altar",0);
+    } else if(room_caption == "dungeon_room_04"){
+        pagesInAltar = ini_read_real("pages","dungeon_room_04_pages_in_altar",0);
     }
 ini_close();
 </string>
