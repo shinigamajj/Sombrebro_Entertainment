@@ -8080,10 +8080,9 @@ alarm[7] = 25;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>cheat = get_string("Please Write your secret key","")
+            <string>cheat = get_string("Please input your secret key","")
 {
-    if ( cheat = "wallhack" )
-    {
+    if ( cheat = "wallhack" ){
         with(all){solid = false;}
     } else if ( cheat = "Speedy Gonzales" ){
         nocooldown = true;
@@ -8091,10 +8090,8 @@ alarm[7] = 25;
         obj_GUI.eatSeconds = 59;
         obj_GUI.eatMinutes = 59;
     } else {
-        with(all){solid = true;}
-        nocooldown = false;
-        obj_GUI.eatSeconds = 0;
-        obj_GUI.eatMinutes = 2;
+        show_message("You shall not input wrong secret keys !!");
+        game_restart();
     }
 }
 </string>
