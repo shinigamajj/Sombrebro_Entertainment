@@ -81,7 +81,7 @@ tutorialpages = 0;
     }    
     
     
-    /* Press Enter after reading page */
+    /* Press Enter or E after reading page */
     if(keyboard_check_pressed(vk_enter) || keyboard_check_pressed(ord('E'))){
         if(instance_exists(tutorial_page_01)){
             with(tutorial_page_01){instance_destroy();}

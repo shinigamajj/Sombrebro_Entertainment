@@ -7910,9 +7910,9 @@ if(obj_GUI.eatMinutes &lt;= 0){
           <argument>
             <kind>1</kind>
             <string>if(!runningCooldown &amp;&amp; !running &amp;&amp; !isDoing &amp;&amp; canRun){
-    runningCooldown = true;
+    if(nocooldown){ runningCooldown = false; } else { runningCooldown = true; }
     running = true;
-
+    
     alarm[1] = 60;
     alarm[2] = 180;
 }
@@ -8033,6 +8033,8 @@ steps = 0;
 isSendingMessage = false;
 
 canDestroy = true;
+
+nocooldown = false;
 </string>
           </argument>
         </arguments>
@@ -8056,6 +8058,45 @@ canDestroy = true;
             <string>shader_set(shd_loading);
 isDoing = true;
 alarm[7] = 25;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="119">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>cheat = get_string("Please Write your secret key","")
+{
+    if ( cheat = "wallhack" )
+    {
+        with(all){solid = false;}
+    } else if ( cheat = "Speedy Gonzales" ){
+        nocooldown = true;
+    } else if ( cheat = "I control the time!" ){
+        obj_GUI.eatSeconds = 59;
+        obj_GUI.eatMinutes = 59;
+    } else {
+        with(all){solid = true;}
+        nocooldown = false;
+        obj_GUI.eatSeconds = 0;
+        obj_GUI.eatMinutes = 2;
+    }
+}
 </string>
           </argument>
         </arguments>
