@@ -306,6 +306,7 @@
     <script>scripts\EndGame.gml</script>
     <script>scripts\RespawnEnemy.gml</script>
     <script>scripts\instance_nth_nearest.gml</script>
+    <script>scripts\MoveEnemy.gml</script>
     <scripts name="Pathfinding">
       <scripts name="AStar">
         <script>scripts\AStar_init.gml</script>
