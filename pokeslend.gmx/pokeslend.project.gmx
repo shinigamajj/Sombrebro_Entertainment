@@ -571,8 +571,8 @@
     <room>rooms\dungeon_room_04</room>
   </rooms>
   <constants number="2">
-    <constant name="GM_build_date">41863.3357154167</constant>
-    <constant name="GM_version">'2.0.0.1'</constant>
+    <constant name="GM_build_date">41863,344489919</constant>
+    <constant name="GM_version">'2.1.0.1386'</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>
