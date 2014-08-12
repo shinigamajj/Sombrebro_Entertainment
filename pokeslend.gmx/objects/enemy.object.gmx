@@ -196,12 +196,15 @@ if(!isMoving){
     amounth = instance_number(enemySpawner) - 1;
     rannum = irandom_range(1,amounth);
     inst = MoveEnemy(x,y,enemySpawner,rannum);
+    sprite_index = spr_enemy1;
     myPath = AStar_findPath(x, y, inst.x, inst.y, false);
     path_start(myPath,enemy_speed,0,0);
     isMoving = true;
 }
 
-alarm[0] = 8;
+if(distance_to_object(Char) &lt; range){
+    alarm[0] = 1;
+} else { alarm[0] = 8; }
 </string>
           </argument>
         </arguments>
@@ -304,7 +307,7 @@ alarm[0] = 8;
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>steps == 30</string>
+            <string>steps == 10</string>
           </argument>
         </arguments>
       </action>
@@ -338,8 +341,8 @@ alarm[0] = 8;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>RespawnEnemy();
-steps = 0;
+            <string>steps = 0;
+RespawnEnemy();
 </string>
           </argument>
         </arguments>
@@ -691,6 +694,7 @@ if(distance_to_object(TallGrass) == 0 || distance_to_object(TallGrassSwamp) == 0
     looksInGrass = true;
 } else { looksInGrass = false; }
 
+/* Regulates Enemy Range */
 
 if(Char.isInGrass == true &amp;&amp; !isFollowing){
     range = 0;
