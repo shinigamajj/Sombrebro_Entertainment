@@ -468,6 +468,7 @@
     <objects name="invisible_objects">
       <object>objects\obj_GUI</object>
       <object>objects\obj_win_lose_GUI</object>
+      <object>objects\obj_highscore</object>
       <object>objects\obj_Collider</object>
       <object>objects\obj_RockCollider</object>
       <object>objects\obj_TreeCollider</object>
@@ -571,7 +572,7 @@
     <room>rooms\dungeon_room_04</room>
   </rooms>
   <constants number="2">
-    <constant name="GM_build_date">41863.3626443403</constant>
+    <constant name="GM_build_date">41863.3988492361</constant>
     <constant name="GM_version">'2.1.0.1386'</constant>
   </constants>
   <help>

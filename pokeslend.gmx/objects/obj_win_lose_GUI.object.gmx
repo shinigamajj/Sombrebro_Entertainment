@@ -31,9 +31,10 @@
     
     pages_01 = ini_read_real("pages","tuto_room_01_pages_collected",0);
     pages_02 = ini_read_real("pages","forest_room_02_pages_collected",0);
+    pages_03 = ini_read_real("pages","swamp_room_03_pages_collected",0);
 ini_close();
 
-collected = pages_01 + pages_02;
+collected = pages_01 + pages_02 + pages_03;
 </string>
           </argument>
         </arguments>
