@@ -70,6 +70,10 @@ if(Char.hspeed != 0 || Char.vspeed != 0){
                 if(audio_is_playing(sound_char_walk_swamp)){
                     exit;
                 } else { audio_play_sound(sound_char_walk_swamp,0,0); }
+            } else if(room_caption == "dungeon_room_04"){
+                if(audio_is_playing(sound_char_walk_dungeon)){
+                    exit;
+                } else { audio_play_sound(sound_char_walk_dungeon,0,0); }
             }
         } else { /* Run */
             if(room_caption == "tutorial_room_01" || room_caption == "forest_room_02"){
@@ -80,6 +84,10 @@ if(Char.hspeed != 0 || Char.vspeed != 0){
                 if(audio_is_playing(sound_char_sprint_swamp)){
                     exit;
                 } else { audio_play_sound(sound_char_sprint_swamp,0,0); }
+            } else if(room_caption == "dungeon_room_04"){
+                if(audio_is_playing(sound_char_sprint_dungeon)){
+                    exit;
+                } else { audio_play_sound(sound_char_sprint_dungeon,0,0); }
             }
         }    
     }

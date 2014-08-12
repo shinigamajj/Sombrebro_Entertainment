@@ -66,6 +66,15 @@ AStar_setDirBlocked(x,y,3,1);
 AStar_setDirBlocked(x,y,5,1);
 AStar_setDirBlocked(x,y,7,1);
 alarm[0] = 8;
+
+
+with(obj_Collider){
+    if(instance_exists(objPathFinder)){
+        x -= x mod objPathFinder.CELL_WIDTH;
+        y -= y mod objPathFinder.CELL_HEIGHT;
+        AStar_setBlocked(x,y,1);
+    } else { alarm[0] = 8; }
+}
 </string>
           </argument>
         </arguments>
@@ -183,6 +192,7 @@ if(searchtimer &gt;= 12){
 }
 
 if(!isMoving){
+    searchtimer = 0;
     amounth = instance_number(enemySpawner) - 1;
     rannum = irandom_range(1,amounth);
     inst = MoveEnemy(x,y,enemySpawner,rannum);
@@ -622,10 +632,20 @@ steps = 0;
     if(Char.isInGrass == true){
         myPath = AStar_findPath(x, y, Char.grasID.x, Char.grasID.y, false);
         path_start(myPath,enemy_speed,0,0);
+        if(!audio_is_playing(sound_enemy_follow_char_01) &amp;&amp; !audio_is_playing(sound_enemy_follow_char_02)){
+            randNum = irandom_range(1,2);
+            if(randNum == 1) { audio_play_sound(sound_enemy_follow_char_01,0,0); }
+                else if(randNum == 2) { audio_play_sound(sound_enemy_follow_char_02,0,0); }
+        }
         alarm[3] = 35;
     } else {
         myPath = AStar_findPath(x, y, Char.x, Char.y, false);
         path_start(myPath,enemy_speed,0,0);
+        if(!audio_is_playing(sound_enemy_follow_char_01) &amp;&amp; !audio_is_playing(sound_enemy_follow_char_02)){
+            randNum = irandom_range(1,2);
+            if(randNum == 1) { audio_play_sound(sound_enemy_follow_char_01,0,0); }
+                else if(randNum == 2) { audio_play_sound(sound_enemy_follow_char_02,0,0); }
+        }
         alarm[1] = 1;
     }
     image_speed = 0.25;
@@ -636,6 +656,9 @@ steps = 0;
 } else if(looksInGrass &amp;&amp; Char.isInGrass == false &amp;&amp; distance_to_object(Char) &gt; range){ 
     myPath = AStar_findPath(x, y, Char.x, Char.y, false);
     path_start(myPath,enemy_speed,0,0);
+    if(!audio_is_playing(sound_enemy_stop_searching)){
+        audio_play_sound(sound_enemy_stop_searching,0,0);
+    }
     alarm[4] = 1;
 } else {
     alarm[2] = 16;

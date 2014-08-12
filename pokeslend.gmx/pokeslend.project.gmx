@@ -40,6 +40,7 @@
           <sound>sound\sound_char_walk_swamp</sound>
           <sound>sound\sound_char_walk_swamp_tall_grass</sound>
           <sound>sound\sound_char_walk_swamp_deep</sound>
+          <sound>sound\sound_char_walk_dungeon</sound>
         </sounds>
         <sounds name="SprintSound">
           <sound>sound\sound_char_sprint_grass</sound>
@@ -47,6 +48,7 @@
           <sound>sound\sound_char_sprint_swamp</sound>
           <sound>sound\sound_char_sprint_swamp_tall_grass</sound>
           <sound>sound\sound_char_sprint_swamp_deep</sound>
+          <sound>sound\sound_char_sprint_dungeon</sound>
         </sounds>
       </sounds>
     </sounds>
@@ -61,6 +63,11 @@
         <sound>sound\sound_BG_swamp_01</sound>
         <sound>sound\sound_BG_swamp_02</sound>
         <sound>sound\sound_BG_swamp_03</sound>
+      </sounds>
+      <sounds name="Dungeon">
+        <sound>sound\sound_BG_dungeon_01</sound>
+        <sound>sound\sound_BG_dungeon_02</sound>
+        <sound>sound\sound_BG_dungeon_03</sound>
       </sounds>
     </sounds>
   </sounds>
@@ -563,6 +570,10 @@
     <room>rooms\swamp_room_03</room>
     <room>rooms\dungeon_room_04</room>
   </rooms>
+  <constants number="2">
+    <constant name="GM_build_date">41863.3357154167</constant>
+    <constant name="GM_version">'2.0.0.1'</constant>
+  </constants>
   <help>
     <rtf>help.rtf</rtf>
   </help>

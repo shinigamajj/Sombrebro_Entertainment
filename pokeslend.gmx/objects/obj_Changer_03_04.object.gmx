@@ -148,11 +148,17 @@ ini_close();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_stop_music();
+            <string>if(audio_is_playing(sound_BG_swamp_01)){
+audio_stop_sound(sound_BG_swamp_01);
+} else if(audio_is_playing(sound_BG_swamp_02)){
+audio_stop_sound(sound_BG_swamp_02);
+} else if(audio_is_playing(sound_BG_swamp_03)){
+audio_stop_sound(sound_BG_swamp_03);
+}
 randNum = irandom_range(1,3);
-if(randNum == 1) { audio_play_music(sound_BG_swamp_01,0); }
-    else if(randNum == 2) { audio_play_music(sound_BG_swamp_02,0); }
-    else if(randNum == 3) { audio_play_music(sound_BG_swamp_03,0); }
+if(randNum == 1) { audio_play_sound(sound_BG_dungeon_01,0,0); }
+    else if(randNum == 2) { audio_play_sound(sound_BG_dungeon_02,0,0); }
+    else if(randNum == 3) { audio_play_sound(sound_BG_dungeon_03,0,0); }
 
 room_goto(dungeon_room_04);
 </string>
@@ -292,11 +298,17 @@ ini_close();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_stop_music();
+            <string>if(audio_is_playing(sound_BG_dungeon_01)){
+audio_stop_sound(sound_BG_dungeon_01);
+} else if(audio_is_playing(sound_BG_dungeon_02)){
+audio_stop_sound(sound_BG_dungeon_02);
+} else if(audio_is_playing(sound_BG_dungeon_03)){
+audio_stop_sound(sound_BG_dungeon_03);
+}
 randNum = irandom_range(1,3);
-if(randNum == 1) { audio_play_music(sound_BG_forest_01,0); }
-    else if(randNum == 2) { audio_play_music(sound_BG_forest_02,0); }
-    else if(randNum == 3) { audio_play_music(sound_BG_forest_03,0); }
+if(randNum == 1) { audio_play_sound(sound_BG_swamp_01,0,0); }
+    else if(randNum == 2) { audio_play_sound(sound_BG_swamp_02,0,0); }
+    else if(randNum == 3) { audio_play_sound(sound_BG_swamp_03,0,0); }
 
 room_goto(swamp_room_03);
 </string>
