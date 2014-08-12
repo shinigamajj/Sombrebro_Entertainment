@@ -285,22 +285,33 @@
       <sprite>sprites\spr_menu_lose</sprite>
     </sprites>
     <sprites name="HUD">
-      <sprite>sprites\spr_tutorial_page_01</sprite>
-      <sprite>sprites\spr_tutorial_page_02</sprite>
-      <sprite>sprites\spr_tutorial_page_03</sprite>
-      <sprite>sprites\spr_tutorial_page_04</sprite>
-      <sprite>sprites\spr_tutorial_page_05</sprite>
-      <sprite>sprites\spr_tutorial_page_06</sprite>
-      <sprite>sprites\spr_forest_page_01</sprite>
-      <sprite>sprites\spr_forest_page_02</sprite>
-      <sprite>sprites\spr_swamp_page_01</sprite>
-      <sprite>sprites\spr_swamp_page_02</sprite>
-      <sprite>sprites\spr_swamp_page_03</sprite>
-      <sprite>sprites\spr_swamp_page_04</sprite>
-      <sprite>sprites\spr_swamp_page_05</sprite>
-      <sprite>sprites\spr_swamp_page_06</sprite>
-      <sprite>sprites\spr_swamp_page_07</sprite>
-      <sprite>sprites\spr_swamp_page_08</sprite>
+      <sprites name="PagesSprites">
+        <sprite>sprites\spr_swamp_page_08</sprite>
+        <sprite>sprites\spr_swamp_page_07</sprite>
+        <sprite>sprites\spr_swamp_page_06</sprite>
+        <sprite>sprites\spr_swamp_page_05</sprite>
+        <sprite>sprites\spr_swamp_page_04</sprite>
+        <sprite>sprites\spr_swamp_page_03</sprite>
+        <sprite>sprites\spr_swamp_page_02</sprite>
+        <sprite>sprites\spr_swamp_page_01</sprite>
+        <sprite>sprites\spr_forest_page_02</sprite>
+        <sprite>sprites\spr_forest_page_01</sprite>
+        <sprite>sprites\spr_tutorial_page_06</sprite>
+        <sprite>sprites\spr_tutorial_page_05</sprite>
+        <sprite>sprites\spr_tutorial_page_04</sprite>
+        <sprite>sprites\spr_tutorial_page_03</sprite>
+        <sprite>sprites\spr_tutorial_page_02</sprite>
+        <sprite>sprites\spr_tutorial_page_01</sprite>
+      </sprites>
+      <sprites name="MiniBar">
+        <sprite>sprites\spr_hasAxe</sprite>
+        <sprite>sprites\spr_noAxe</sprite>
+        <sprite>sprites\spr_noHunger</sprite>
+        <sprite>sprites\spr_hunger</sprite>
+        <sprite>sprites\spr_hasPages</sprite>
+        <sprite>sprites\spr_notAllPages</sprite>
+        <sprite>sprites\spr_canRun</sprite>
+      </sprites>
     </sprites>
     <sprite>sprites\sprite169</sprite>
     <sprite>sprites\sprite170</sprite>
@@ -612,7 +623,7 @@
     <room>rooms\dungeon_room_04</room>
   </rooms>
   <constants number="2">
-    <constant name="GM_build_date">41863.5377222106</constant>
+    <constant name="GM_build_date">41863.5497328819</constant>
     <constant name="GM_version">'2.1.0.1386'</constant>
   </constants>
   <help>

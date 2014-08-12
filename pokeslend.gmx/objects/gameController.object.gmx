@@ -188,8 +188,8 @@ swamppages = 0;
             <string>/* Pages Amounth */
 
 pages_room_01 = 6;
-pages_room_02 = 1;
-pages_room_03 = 4;
+pages_room_02 = 2;
+pages_room_03 = 8;
 </string>
           </argument>
         </arguments>
