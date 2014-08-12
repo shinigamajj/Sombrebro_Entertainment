@@ -190,6 +190,24 @@ swamppages = 0;
 pages_room_01 = 6;
 pages_room_02 = 2;
 pages_room_03 = 8;
+
+if(room_caption == "tutorial_room_01"){
+    if(!instance_exists(HUD_minibar)){
+        instance_create(77.5,210,HUD_minibar)
+    }
+    if(!instance_exists(HUD_run)){
+        instance_create(188,220,HUD_run)
+    }
+    if(!instance_exists(HUD_axe)){
+        instance_create(148,220,HUD_axe)
+    }
+    if(!instance_exists(HUD_eat)){
+        instance_create(208,220,HUD_eat)
+    }
+    if(!instance_exists(HUD_collectPages)){
+        instance_create(228,220,HUD_collectPages)
+    }
+}
 </string>
           </argument>
         </arguments>

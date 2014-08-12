@@ -311,6 +311,7 @@
         <sprite>sprites\spr_hasPages</sprite>
         <sprite>sprites\spr_notAllPages</sprite>
         <sprite>sprites\spr_canRun</sprite>
+        <sprite>sprites\spr_HUD</sprite>
       </sprites>
     </sprites>
     <sprite>sprites\sprite169</sprite>
@@ -612,6 +613,11 @@
     </objects>
     <objects name="HUD_Objects">
       <object>objects\HUD_page</object>
+      <object>objects\HUD_run</object>
+      <object>objects\HUD_axe</object>
+      <object>objects\HUD_eat</object>
+      <object>objects\HUD_collectPages</object>
+      <object>objects\HUD_minibar</object>
     </objects>
   </objects>
   <rooms name="rooms">
@@ -623,7 +629,7 @@
     <room>rooms\dungeon_room_04</room>
   </rooms>
   <constants number="2">
-    <constant name="GM_build_date">41863.5497328819</constant>
+    <constant name="GM_build_date">41863.5722047917</constant>
     <constant name="GM_version">'2.1.0.1386'</constant>
   </constants>
   <help>
