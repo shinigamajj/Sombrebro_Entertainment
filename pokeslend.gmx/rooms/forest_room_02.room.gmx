@@ -1357,6 +1357,7 @@
     <instance objName="enemySpawner" x="1072" y="640" name="inst_F3352962" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="enemySpawner" x="528" y="592" name="inst_7A0F513F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="enemySpawner" x="464" y="752" name="inst_407D0C99" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_paper" x="480" y="768" name="inst_F364702B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="TilesetBase" x="672" y="960" w="16" h="16" xo="80" yo="0" id="10001234" name="inst_71B3ED20" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
