@@ -187,7 +187,7 @@ if ((y &gt; (view_yview - 32) &amp;&amp; y &lt; (view_yview+view_hview + 32) &am
         searchtimer = 0;
 } else { searchtimer += 1; }
 
-if(searchtimer &gt;= 12){
+if(searchtimer &gt;= 8){
     RespawnEnemy();
 }
 
