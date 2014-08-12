@@ -86,6 +86,16 @@
           <argument>
             <kind>1</kind>
             <string>pagesInAltar = Char.pagesCollected;
+
+ini_open("variables.ini");
+    if(room_caption = "swamp_room_03"){
+        ini_write_real("pages","swamp_room_03_pages_collected",Char.pagesCollected);
+    } else if(room_caption = "forest_room_02"){
+        ini_write_real("pages","forest_room_02_pages_collected",Char.pagesCollected);
+    } else if(room_caption = "tutorial_room_01"){
+        ini_write_real("pages","tuto_room_01_pages_collected",Char.pagesCollected);
+    }
+ini_close();
 </string>
           </argument>
         </arguments>
