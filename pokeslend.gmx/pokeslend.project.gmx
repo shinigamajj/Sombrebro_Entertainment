@@ -606,7 +606,10 @@
         <object>objects\IceCliff_WallFront</object>
         <object>objects\IceCliff_WallLeft</object>
         <object>objects\IceCliff_WallRight</object>
-        <object>objects\IceFloor</object>
+        <object>objects\IceFloor_01</object>
+        <object>objects\IceFloor_02</object>
+        <object>objects\IceFloor_03</object>
+        <object>objects\IceController</object>
         <object>objects\IceStone</object>
         <object>objects\IceCliff_Stairs</object>
       </objects>
@@ -621,16 +624,16 @@
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\dungeon_room_04</room>
     <room>rooms\MENU</room>
     <room>rooms\win_lose_MENU</room>
     <room>rooms\tutorial_room_01</room>
     <room>rooms\forest_room_02</room>
     <room>rooms\swamp_room_03</room>
-    <room>rooms\dungeon_room_04</room>
   </rooms>
   <constants number="2">
-    <constant name="GM_build_date">41863.6085571181</constant>
-    <constant name="GM_version">'2.1.0.1386'</constant>
+    <constant name="GM_build_date">41863.6324745255</constant>
+    <constant name="GM_version">'2.1.0.1387'</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>
