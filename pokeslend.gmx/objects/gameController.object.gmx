@@ -193,19 +193,19 @@ pages_room_03 = 8;
 
 if(room_caption == "tutorial_room_01"){
     if(!instance_exists(HUD_minibar)){
-        instance_create(77.5,210,HUD_minibar)
+        instance_create(view_xview[0]+77.5,view_yview[0]+210,HUD_minibar)
     }
     if(!instance_exists(HUD_run)){
-        instance_create(188,220,HUD_run)
+        instance_create(view_xview[0]+188,view_yview[0]+220,HUD_run)
     }
     if(!instance_exists(HUD_axe)){
-        instance_create(148,220,HUD_axe)
+        instance_create(view_xview[0]+148,view_yview[0]+220,HUD_axe)
     }
     if(!instance_exists(HUD_eat)){
-        instance_create(208,220,HUD_eat)
+        instance_create(view_xview[0]+208,view_yview[0]+220,HUD_eat)
     }
     if(!instance_exists(HUD_collectPages)){
-        instance_create(228,220,HUD_collectPages)
+        instance_create(view_xview[0]+228,view_yview[0]+220,HUD_collectPages)
     }
 }
 </string>
