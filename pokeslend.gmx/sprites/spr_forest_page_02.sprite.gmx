@@ -20,9 +20,9 @@
   <width>142</width>
   <height>200</height>
   <frames>
-    <frame index="0">images\spr_tutorial_page_01_0.png</frame>
+    <frame index="0">images\spr_forest_page_02_0.png</frame>
   </frames>
-  <SWFfile>images\spr_tutorial_page_01.swf</SWFfile>
+  <SWFfile>images\spr_forest_page_02.swf</SWFfile>
   <SWFnumframes>1</SWFnumframes>
   <SWFprecision>0.5</SWFprecision>
 </sprite>

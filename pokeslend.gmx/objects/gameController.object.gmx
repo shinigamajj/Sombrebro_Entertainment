@@ -28,6 +28,8 @@
             <string>texture_set_interpolation(false);
 
 tutorialpages = 0;
+forestpages = 0;
+swamppages = 0;
 </string>
           </argument>
         </arguments>
@@ -51,44 +53,115 @@ tutorialpages = 0;
           <argument>
             <kind>1</kind>
             <string>if(room_caption == "tutorial_room_01"){
-    /* Show Tutorial after page collection */
+    /* Show Tutorial-Pages after page collection */
     if(Char.pagesCollected == 0){
         exit;
     } else if (Char.pagesCollected == 1 &amp;&amp; tutorialpages == 0){
-        instance_create(view_xview[0] + 97,view_yview[0] + 19,tutorial_page_01);
+        instance_create(view_xview[0] + 97,view_yview[0] + 19,HUD_page);
         Char.isDoing = true;
         tutorialpages = 1;
     } else if (Char.pagesCollected == 2 &amp;&amp; tutorialpages == 1){
-        instance_create(view_xview[0] + 97,view_yview[0] + 19,tutorial_page_01);
+        instance_create(view_xview[0] + 97,view_yview[0] + 19,HUD_page);
         Char.isDoing = true;
         tutorialpages = 2;
     } else if (Char.pagesCollected == 3 &amp;&amp; tutorialpages == 2){
-        instance_create(view_xview[0] + 97,view_yview[0] + 19,tutorial_page_01);
+        instance_create(view_xview[0] + 97,view_yview[0] + 19,HUD_page);
         Char.isDoing = true;
         tutorialpages = 3;
     } else if (Char.pagesCollected == 4 &amp;&amp; tutorialpages == 3){
-        instance_create(view_xview[0] + 97,view_yview[0] + 19,tutorial_page_01);
+        instance_create(view_xview[0] + 97,view_yview[0] + 19,HUD_page);
         Char.isDoing = true;
         tutorialpages = 4;
     } else if (Char.pagesCollected == 5 &amp;&amp; tutorialpages == 4){
-        instance_create(view_xview[0] + 97,view_yview[0] + 19,tutorial_page_01);
+        instance_create(view_xview[0] + 97,view_yview[0] + 19,HUD_page);
         Char.isDoing = true;
         tutorialpages = 5;
     } else if (Char.pagesCollected == 6 &amp;&amp; tutorialpages == 5){
-        instance_create(view_xview[0] + 97,view_yview[0] + 19,tutorial_page_01);
+        instance_create(view_xview[0] + 97,view_yview[0] + 19,HUD_page);
         Char.isDoing = true;
         tutorialpages = 6;
     }    
-    
-    
+ 
     /* Press Enter or E after reading page */
     if(keyboard_check_pressed(vk_enter) || keyboard_check_pressed(ord('E'))){
-        if(instance_exists(tutorial_page_01)){
-            with(tutorial_page_01){instance_destroy();}
+        if(instance_exists(HUD_page)){
+            inst = instance_nearest(Char.x, Char.y, obj_paper);
+            with(inst){instance_destroy();}
+            with(HUD_page){instance_destroy();}
             Char.isDoing = false;
         }   
     }
     
+} else if(room_caption == "forest_room_02"){
+    /* Show Forest-Pages after page collection */
+    if(Char.pagesCollected == 0){
+        exit;
+    } else if (Char.pagesCollected == 1 &amp;&amp; forestpages == 0){
+        instance_create(view_xview[0] + 97,view_yview[0] + 19,HUD_page);
+        Char.isDoing = true;
+        forestpages = 1;
+    } else if (Char.pagesCollected == 2 &amp;&amp; forestpages == 1){
+        instance_create(view_xview[0] + 97,view_yview[0] + 19,HUD_page);
+        Char.isDoing = true;
+        forestpages = 2;
+    }  
+ 
+    /* Press Enter or E after reading page */
+    if(keyboard_check_pressed(vk_enter) || keyboard_check_pressed(ord('E'))){
+        if(instance_exists(HUD_page)){
+            inst = instance_nearest(Char.x, Char.y, obj_paper);
+            with(inst){instance_destroy();}
+            with(HUD_page){instance_destroy();}
+            Char.isDoing = false;
+        }   
+    }
+} else if(room_caption == "swamp_room_03"){
+    /* Show Swamp-Pages after page collection */
+    if(Char.pagesCollected == 0){
+        exit;
+    } else if (Char.pagesCollected == 1 &amp;&amp; swamppages == 0){
+        instance_create(view_xview[0] + 97,view_yview[0] + 19,HUD_page);
+        Char.isDoing = true;
+        swamppages = 1;
+    } else if (Char.pagesCollected == 2 &amp;&amp; swamppages == 1){
+        instance_create(view_xview[0] + 97,view_yview[0] + 19,HUD_page);
+        Char.isDoing = true;
+        swamppages = 2;
+    } else if (Char.pagesCollected == 3 &amp;&amp; swamppages == 2){
+        instance_create(view_xview[0] + 97,view_yview[0] + 19,HUD_page);
+        Char.isDoing = true;
+        swamppages = 3;
+    } else if (Char.pagesCollected == 4 &amp;&amp; swamppages == 3){
+        instance_create(view_xview[0] + 97,view_yview[0] + 19,HUD_page);
+        Char.isDoing = true;
+        swamppages = 4;
+    } else if (Char.pagesCollected == 5 &amp;&amp; swamppages == 4){
+        instance_create(view_xview[0] + 97,view_yview[0] + 19,HUD_page);
+        Char.isDoing = true;
+        swamppages = 5;
+    } else if (Char.pagesCollected == 6 &amp;&amp; swamppages == 5){
+        instance_create(view_xview[0] + 97,view_yview[0] + 19,HUD_page);
+        Char.isDoing = true;
+        swamppages = 6;
+    } else if (Char.pagesCollected == 7 &amp;&amp; swamppages == 6){
+        instance_create(view_xview[0] + 97,view_yview[0] + 19,HUD_page);
+        Char.isDoing = true;
+        swamppages = 7;
+    } else if (Char.pagesCollected == 8 &amp;&amp; swamppages == 7){
+        instance_create(view_xview[0] + 97,view_yview[0] + 19,HUD_page);
+        Char.isDoing = true;
+        swamppages = 8;
+    }
+ 
+    /* Press Enter or E after reading page */
+    if(keyboard_check_pressed(vk_enter) || keyboard_check_pressed(ord('E'))){
+        if(instance_exists(HUD_page)){
+            inst = instance_nearest(Char.x, Char.y, obj_paper);
+            with(inst){instance_destroy();}
+            with(HUD_page){instance_destroy();}
+            Char.isDoing = false;
+        }   
+    }
 }
 </string>
           </argument>
