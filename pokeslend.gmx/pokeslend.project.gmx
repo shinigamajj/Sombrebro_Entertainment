@@ -549,8 +549,6 @@
       <object>objects\TreeApple01</object>
       <object>objects\obj_eat_shroom</object>
     </objects>
-    <object>objects\obj_Changer_forest1_swamp</object>
-    <object>objects\obj_Changer_forest1_forest2</object>
     <object>objects\obj_Changer_01_02</object>
     <object>objects\obj_Changer_02_03</object>
     <object>objects\obj_Changer_03_04</object>
@@ -624,15 +622,15 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\dungeon_room_04</room>
     <room>rooms\MENU</room>
     <room>rooms\win_lose_MENU</room>
     <room>rooms\tutorial_room_01</room>
     <room>rooms\forest_room_02</room>
     <room>rooms\swamp_room_03</room>
+    <room>rooms\dungeon_room_04</room>
   </rooms>
   <constants number="2">
-    <constant name="GM_build_date">41863.6324745255</constant>
+    <constant name="GM_build_date">41863.644783912</constant>
     <constant name="GM_version">'2.1.0.1387'</constant>
   </constants>
   <help>

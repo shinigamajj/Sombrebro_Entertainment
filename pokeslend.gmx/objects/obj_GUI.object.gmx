@@ -238,11 +238,11 @@ ini_close();
           <argument>
             <kind>1</kind>
             <string>show_seconds=string_repeat("0", 2-string_length(string(seconds)))+string(seconds);
-draw_set_color(c_black);
+draw_set_color(c_white);
 draw_set_font(ComicSans);
 var drawstring;
 drawstring = "" + string(minutes) + ":" + string(show_seconds);
-draw_text(view_xview[0],view_yview[0]+view_hview[0]-string_height(drawstring),drawstring);
+draw_text_transformed((view_xview[0]+view_wview[0]/2)-12, view_yview[0]+view_hview[0]-5-string_height(drawstring), drawstring, 0.79, 0.99, 0);
 
 /* Eat-Timer
 show_eatSeconds=string_repeat("0", 2-string_length(string(eatSeconds)))+string(eatSeconds);
