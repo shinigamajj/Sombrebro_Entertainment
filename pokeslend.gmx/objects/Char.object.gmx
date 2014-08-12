@@ -8117,9 +8117,19 @@ alarm[7] = 25;
     } else if ( cheat = "I control the time!" ){
         obj_GUI.eatSeconds = 59;
         obj_GUI.eatMinutes = 59;
+    } else if ( cheat = "REKT!" ){
+        obj_GUI.eatSeconds = 2;
+        obj_GUI.eatMinutes = 0;
     } else if ( cheat = "woodchopper" ){
         hasAxe = true;
-    } else if ( cheat = "swamplord" ){
+    }  else if ( cheat = "swamplord" ){
+        hasBoots = true;
+    } else if ( cheat = "Ghostbuster" ){
+        with(all){solid = false;}
+        nocooldown = true;
+        obj_GUI.eatSeconds = 59;
+        obj_GUI.eatMinutes = 59;
+        hasAxe = true;
         hasBoots = true;
     } else {
         show_message("You shall not input wrong secret keys !!");
