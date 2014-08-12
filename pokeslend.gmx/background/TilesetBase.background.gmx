@@ -14,6 +14,6 @@
   </TextureGroups>
   <For3D>0</For3D>
   <width>96</width>
-  <height>272</height>
+  <height>320</height>
   <data>images\TilesetBase.png</data>
 </background>
