@@ -695,8 +695,8 @@ if(distance_to_object(TallGrass) == 0 || distance_to_object(TallGrassSwamp) == 0
 if(Char.isInGrass == true &amp;&amp; !isFollowing){
     range = 0;
 } else if(Char.isInGrass == true &amp;&amp; isFollowing){ 
-    range = 150;
-} else { range = 120; }
+    range = 180;
+} else { range = 144; }
 </string>
           </argument>
         </arguments>
