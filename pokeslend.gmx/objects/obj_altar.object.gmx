@@ -125,7 +125,9 @@ ini_close();
 if((paper_01 == gameController.pages_room_01) &amp;&amp; (paper_02 == gameController.pages_room_02)
     &amp;&amp; (paper_03 == gameController.pages_room_03)) {
         Char.isDoing = true;
-        EndGame("win");
+        Char.sprite_index = spr_char_burn
+        Char.image_speed = 0.3;
+        Char.alarm[9] = 1;
         exit;
 }
 </string>

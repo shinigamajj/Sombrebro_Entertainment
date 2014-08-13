@@ -8,6 +8,38 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>Character_ColMask</maskName>
   <events>
+    <event eventtype="2" enumb="9">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(sprite_index == spr_char_death){
+    if (image_index == 25){
+        image_speed = 0;
+    } else { alarm[9] = 1; exit; }
+} else if(sprite_index == spr_char_burn){
+    if (image_index == 6){
+        image_speed = 0;
+        alarm[8] = 10;
+    } else { alarm[9] = 1; exit; }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="2" enumb="8">
       <action>
         <libid>1</libid>
@@ -25,7 +57,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>EndGame("lose");
+            <string>if(sprite_index == spr_char_burn){
+    EndGame("win")
+} else { EndGame("lose"); }
 </string>
           </argument>
         </arguments>
@@ -210,6 +244,27 @@ else {
       </action>
     </event>
     <event eventtype="2" enumb="3">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(sprite_index == spr_char_death || sprite_index == spr_char_burn){ exit; }
+</string>
+          </argument>
+        </arguments>
+      </action>
       <action>
         <libid>1</libid>
         <id>408</id>
@@ -576,7 +631,10 @@ else {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>appleID = instance_nearest(x,y,TreeApple01);
+            <string>if(sprite_index == spr_char_death || sprite_index == spr_char_burn){ exit; }
+
+
+appleID = instance_nearest(x,y,TreeApple01);
 berryID = instance_nearest(x,y,obj_beerenbusch);
 shroomID = instance_nearest(x,y,obj_eat_shroom);
 destroID = instance_nearest(x,y,obj_destroyable);
@@ -806,21 +864,45 @@ if(obj_GUI.eatMinutes &lt;= 0){
 
 /* Checks for distance to enemy and lifes */
 if(room_caption != "tutorial_room_01" &amp;&amp; lifes &gt; 0){
-    if(distance_to_object(enemy_parent) &lt;= 16){
-        audio_play_sound(sound_enemy_catch_char,0,0);
-        lifes -= 1;
-        if(lifes &gt; 0){
-            ini_open("variables.ini");
-                ini_write_real("char","lifes",lifes);
-            ini_close();
-            room_restart();
-        } else {
-            isDoing = true;
+    if(isInGrass){
+        if(distance_to_object(enemy_parent) &lt;= 1){
             audio_play_sound(sound_enemy_catch_char,0,0);
-            sprite_index = spr_grave;
-            audio_play_sound(sound_char_dead,0,0);
-            alarm[8] = 30;
-            exit;
+            lifes -= 1;
+            if(lifes &gt; 0){
+                ini_open("variables.ini");
+                    ini_write_real("char","lifes",lifes);
+                ini_close();
+                room_restart();
+            } else {
+                isDoing = true;
+                audio_play_sound(sound_enemy_catch_char,0,0);
+                sprite_index = spr_char_death;
+                image_speed = 1.25;
+                audio_play_sound(sound_char_dead,0,0);
+                alarm[9] = 1;
+                alarm[8] = 30;
+                exit;
+            }
+        }
+    } else {
+        if(distance_to_object(enemy_parent) &lt;= 8){
+            audio_play_sound(sound_enemy_catch_char,0,0);
+            lifes -= 1;
+            if(lifes &gt; 0){
+                ini_open("variables.ini");
+                    ini_write_real("char","lifes",lifes);
+                ini_close();
+                room_restart();
+            } else {
+                isDoing = true;
+                audio_play_sound(sound_enemy_catch_char,0,0);
+                sprite_index = spr_char_death;
+                image_speed = 1.25;
+                audio_play_sound(sound_char_dead,0,0);
+                alarm[9] = 1;
+                alarm[8] = 30;
+                exit;
+            }
         }
     }
 }

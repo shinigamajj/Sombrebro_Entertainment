@@ -30,6 +30,7 @@
 tutorialpages = 0;
 forestpages = 0;
 swamppages = 0;
+dungeonpages = 0;
 </string>
           </argument>
         </arguments>
@@ -162,6 +163,25 @@ swamppages = 0;
             Char.isDoing = false;
         }   
     }
+} else if(room_caption == "dungeon_room_04"){
+    /* Show Forest-Pages after page collection */
+    if(Char.pagesCollected == 0){
+        exit;
+    } else if (Char.pagesCollected == 1 &amp;&amp; dungeonpages == 0){
+        instance_create(view_xview[0] + 97,view_yview[0] + 19,HUD_page);
+        Char.isDoing = true;
+        dungeonpages = 1;
+    }
+     
+    /* Press Enter or E after reading page */
+    if(keyboard_check_pressed(vk_enter) || keyboard_check_pressed(ord('E'))){
+        if(instance_exists(HUD_page)){
+            inst = instance_nearest(Char.x, Char.y, obj_paper);
+            with(inst){instance_destroy();}
+            with(HUD_page){instance_destroy();}
+            Char.isDoing = false;
+        }   
+    }
 }
 </string>
           </argument>
@@ -258,7 +278,9 @@ CStar_free();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/* Variables saved in INI File */
+            <string>randomize();
+
+/* Variables saved in INI File */
 
 ini_open("variables.ini");
     ini_write_real("timers","eatMin",2);

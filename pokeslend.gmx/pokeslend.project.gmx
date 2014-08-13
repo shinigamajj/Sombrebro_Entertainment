@@ -108,6 +108,8 @@
       <sprite>sprites\spr_axe_right</sprite>
       <sprite>sprites\spr_axe_left</sprite>
       <sprite>sprites\spr_axe_top</sprite>
+      <sprite>sprites\spr_char_burn</sprite>
+      <sprite>sprites\spr_char_death</sprite>
     </sprites>
     <sprites name="enemy_sprites">
       <sprite>sprites\spr_enemy1</sprite>
@@ -270,6 +272,8 @@
       <sprite>sprites\spr_menu_no</sprite>
       <sprite>sprites\spr_menu_no_selected</sprite>
       <sprite>sprites\spr_menu_background</sprite>
+      <sprite>sprites\spr_menu_background2</sprite>
+      <sprite>sprites\spr_menu_background3</sprite>
       <sprite>sprites\spr_menu_BGblack</sprite>
       <sprite>sprites\spr_menu_BGslider</sprite>
       <sprite>sprites\spr_menu_BGslider_selected</sprite>
@@ -302,6 +306,7 @@
         <sprite>sprites\spr_tutorial_page_03</sprite>
         <sprite>sprites\spr_tutorial_page_02</sprite>
         <sprite>sprites\spr_tutorial_page_01</sprite>
+        <sprite>sprites\spr_dungeon_page_01</sprite>
       </sprites>
       <sprites name="MiniBar">
         <sprite>sprites\spr_hasAxe</sprite>
@@ -629,11 +634,11 @@
     <room>rooms\win_lose_MENU</room>
     <room>rooms\tutorial_room_01</room>
     <room>rooms\forest_room_02</room>
-    <room>rooms\dungeon_room_04</room>
     <room>rooms\swamp_room_03</room>
+    <room>rooms\dungeon_room_04</room>
   </rooms>
   <constants number="2">
-    <constant name="GM_build_date">41864.3932650116</constant>
+    <constant name="GM_build_date">41864.5466697338</constant>
     <constant name="GM_version">'2.1.2.1386'</constant>
   </constants>
   <help>

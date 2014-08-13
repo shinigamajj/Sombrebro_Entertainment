@@ -68,6 +68,9 @@ if(room_caption == "tutorial_room_01"){
     } else if(inst.pagenumber == 8){
         sprite_index = spr_swamp_page_08;
     }
+} else if(room_caption == "dungeon_room_04"){
+    /* DUNGEON Room */
+    sprite_index = spr_dungeon_page_01;
 }
 </string>
           </argument>
