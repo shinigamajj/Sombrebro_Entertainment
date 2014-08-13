@@ -1590,7 +1590,7 @@
     <instance objName="RockMossSmall01" x="1344" y="752" name="inst_9910F7D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="RockMossSmall01" x="1344" y="704" name="inst_F41FE718" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="RockMossSmall01" x="1344" y="688" name="inst_E22FF337" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="RockMossyBig01" x="1344" y="656" name="inst_BC370A13" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Collider" x="1392" y="672" name="inst_FA979AA5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_movable" x="1360" y="688" name="inst_3B12D077" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_movable" x="1360" y="704" name="inst_77B45626" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_movable" x="1360" y="752" name="inst_52EB8A50" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -2533,6 +2533,9 @@
     <instance objName="obj_Collider" x="448" y="256" name="inst_C4E7FAC7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collider" x="416" y="272" name="inst_D363C14D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collider" x="432" y="272" name="inst_DE03E06D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="RockMossSmall01" x="1392" y="672" name="inst_4F809F4F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_resetter" x="1344" y="656" name="inst_673B655B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Collider" x="1360" y="656" name="inst_94026763" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="TilesetBase" x="272" y="192" w="16" h="16" xo="16" yo="96" id="10001619" name="inst_DE1B33E4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
