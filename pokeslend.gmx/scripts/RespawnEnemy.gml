@@ -13,7 +13,7 @@ if(instance_exists(enemySpawner)){
             searchtimer = 0;
             isMoving = false;
             image_speed = 0.1;
-            range = 120;
+            range = 158;
             steps = 0;
             ini_open("variables.ini");
                 enemy_speed = ini_read_real("speeds","speed_enemy",2);

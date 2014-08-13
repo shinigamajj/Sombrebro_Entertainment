@@ -34,6 +34,8 @@ looksInGrass = false;
 searchtimer = 0;
 
 isMoving = false;
+
+isChangeing = false;
 </string>
           </argument>
         </arguments>
@@ -56,7 +58,7 @@ isMoving = false;
             <kind>1</kind>
             <string>AStar_init(room_width/16, room_height/16, 16, 16, 0, 0, 0, 0, -2, -2, 0, 0);
 image_speed = 0.1;
-range = 120;
+range = 158;
 steps = 0;
 ini_open("variables.ini");
     enemy_speed = ini_read_real("speeds","speed_enemy",2);
@@ -203,6 +205,7 @@ if(!isMoving){
 }
 
 if(distance_to_object(Char) &lt; range){
+    path_end();
     alarm[0] = 1;
 } else { alarm[0] = 8; }
 </string>
@@ -630,6 +633,7 @@ RespawnEnemy();
             <kind>1</kind>
             <string>if(distance_to_point(Char.x, Char.y) &lt; range){
     searchtimer = 0;
+    isChangeing = false;
     isFollowing = true;
     sprite_index = spr_enemy1;
     if(Char.isInGrass == true){
@@ -701,6 +705,50 @@ if(Char.isInGrass == true &amp;&amp; !isFollowing){
 } else if(Char.isInGrass == true &amp;&amp; isFollowing){ 
     range = 198;
 } else { range = 158; }
+
+if(sprite_index != spr_enemy1 &amp;&amp; distance_to_object(Char) &lt; range &amp;&amp; isChangeing == false){
+    path_end();
+    alarm[0] = 1;
+    isChangeing = true;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>inst = instance_furthest(Char.x, Char.y, enemySpawner);
+
+x = inst.x;
+y = inst.y;
+depth = -(((y*100)+x)+1);
+isFollowing = false;
+looksInGrass = false;
+searchtimer = 0;
+isMoving = false;
+image_speed = 0.1;
+range = 158;
+steps = 0;
+ini_open("variables.ini");
+    enemy_speed = ini_read_real("speeds","speed_enemy",2);
+ini_close(); 
+alarm[0] = 8;
 </string>
           </argument>
         </arguments>
