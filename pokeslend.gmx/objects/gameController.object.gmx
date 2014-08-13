@@ -199,7 +199,10 @@ if(room_caption == "tutorial_room_01"){
         instance_create(view_xview[0]+188,view_yview[0]+220,HUD_run)
     }
     if(!instance_exists(HUD_axe)){
-        instance_create(view_xview[0]+148,view_yview[0]+220,HUD_axe)
+        instance_create(view_xview[0]+138,view_yview[0]+220,HUD_axe)
+    }
+    if(!instance_exists(HUD_boots)){
+        instance_create(view_xview[0]+120,view_yview[0]+220,HUD_boots)
     }
     if(!instance_exists(HUD_eat)){
         instance_create(view_xview[0]+208,view_yview[0]+220,HUD_eat)

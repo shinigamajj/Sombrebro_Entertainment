@@ -25,8 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>x = view_xview[0]+235;
-y = view_yview[0]+219;
+            <string>x = view_xview[0]+236;
+y = view_yview[0]+221;
 </string>
           </argument>
         </arguments>
@@ -111,7 +111,7 @@ y = view_yview[0]+219;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite_ext(sprite_index,image_index,view_xview[0]+235,view_yview[0]+219,image_xscale,image_yscale,image_angle,image_blend,image_alpha);
+            <string>draw_sprite_ext(sprite_index,image_index,view_xview[0]+236,view_yview[0]+221,image_xscale,image_yscale,image_angle,image_blend,image_alpha);
 </string>
           </argument>
         </arguments>

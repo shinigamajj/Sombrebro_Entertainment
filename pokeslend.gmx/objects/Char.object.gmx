@@ -764,7 +764,7 @@ if(hasBoots == 0){
 
 NearestEnemy = instance_nearest(x,y,enemy_parent);
 
-if(distance_to_object(NearestEnemy) &lt; NearestEnemy.range){
+if(distance_to_object(NearestEnemy) &lt; NearestEnemy.range - (NearestEnemy.range / 10)){
     lightsize = 1 + distance_to_object(NearestEnemy) / 16;
     lightstrength = 1;
 } else {
