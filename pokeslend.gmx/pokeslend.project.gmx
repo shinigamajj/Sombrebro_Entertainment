@@ -629,11 +629,11 @@
     <room>rooms\win_lose_MENU</room>
     <room>rooms\tutorial_room_01</room>
     <room>rooms\forest_room_02</room>
-    <room>rooms\swamp_room_03</room>
     <room>rooms\dungeon_room_04</room>
+    <room>rooms\swamp_room_03</room>
   </rooms>
   <constants number="2">
-    <constant name="GM_build_date">41864.3599232755</constant>
+    <constant name="GM_build_date">41864.3932650116</constant>
     <constant name="GM_version">'2.1.2.1386'</constant>
   </constants>
   <help>
