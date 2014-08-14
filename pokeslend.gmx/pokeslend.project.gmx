@@ -350,6 +350,8 @@
       <sprite>sprites\sprite210</sprite>
       <sprite>sprites\sprite211</sprite>
     </sprites>
+    <sprite>sprites\sprite242</sprite>
+    <sprite>sprites\sprite243</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Base_Grass</background>
@@ -539,6 +541,8 @@
       <object>objects\Brush_Swamp01</object>
       <object>objects\Swamp_Bamboo01</object>
       <object>objects\Swamp_Bamboo02</object>
+      <object>objects\Swamp_TreeStump</object>
+      <object>objects\Swamp_DeadTree</object>
     </objects>
     <objects name="Collectibles">
       <object>objects\obj_axe</object>
@@ -638,7 +642,7 @@
     <room>rooms\dungeon_room_04</room>
   </rooms>
   <constants number="2">
-    <constant name="GM_build_date">41864.5614370949</constant>
+    <constant name="GM_build_date">41865.3128663426</constant>
     <constant name="GM_version">'2.2.0.1386'</constant>
   </constants>
   <help>
