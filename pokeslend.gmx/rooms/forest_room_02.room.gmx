@@ -1310,9 +1310,9 @@
     <instance objName="obj_Collider" x="704" y="752" name="inst_93459FA1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collider" x="688" y="752" name="inst_2619C751" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collider" x="688" y="736" name="inst_3C16807F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Collider" x="672" y="736" name="inst_98E4BB2B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Collider" x="656" y="736" name="inst_B34AD397" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Collider" x="640" y="736" name="inst_CFA647A7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Collider" x="672" y="752" name="inst_98E4BB2B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Collider" x="656" y="752" name="inst_B34AD397" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Collider" x="656" y="736" name="inst_CFA647A7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collider" x="624" y="736" name="inst_39B125F9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collider" x="592" y="720" name="inst_9F9CDC38" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collider" x="608" y="720" name="inst_F95CB236" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -1358,6 +1358,8 @@
     <instance objName="enemySpawner" x="528" y="592" name="inst_7A0F513F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="enemySpawner" x="464" y="752" name="inst_407D0C99" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_paper" x="480" y="736" name="inst_F364702B" locked="0" code="pagenumber = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Collider" x="640" y="736" name="inst_D108E4AF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="HappyBrush" x="656" y="736" name="inst_596F374D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="TilesetBase" x="672" y="960" w="16" h="16" xo="80" yo="0" id="10001234" name="inst_71B3ED20" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

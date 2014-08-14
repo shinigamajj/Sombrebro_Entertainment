@@ -352,6 +352,7 @@
     </sprites>
     <sprite>sprites\sprite242</sprite>
     <sprite>sprites\sprite243</sprite>
+    <sprite>sprites\sprite244</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Base_Grass</background>
@@ -436,6 +437,7 @@
       <object>objects\TreeSwampBig01</object>
       <object>objects\TreeSwampBig02</object>
       <object>objects\TreeSmall02</object>
+      <object>objects\HappyBrush</object>
     </objects>
     <objects name="Rocks">
       <object>objects\RockBig01</object>

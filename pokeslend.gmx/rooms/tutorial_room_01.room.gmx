@@ -79,9 +79,9 @@
     <instance objName="RockSmall01" x="384" y="992" name="inst_54397ED8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="RockSmall01" x="400" y="992" name="inst_D46B9C98" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="RockSmall01" x="416" y="992" name="inst_631204F2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="RockSmall01" x="384" y="928" name="inst_E4C43AEF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="RockSmall01" x="400" y="928" name="inst_76AA22B4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="RockSmall01" x="416" y="928" name="inst_0476B7F5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="enemySpawner" x="928" y="912" name="inst_DD7429E6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_paper" x="992" y="752" name="inst_A27BD103" locked="0" code="pagenumber = 6;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_eat_shroom" x="1120" y="1248" name="inst_C76AEA90" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_resetter" x="352" y="912" name="inst_77A2C7EC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TreeBig01" x="208" y="912" name="inst_185451B3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="TreeBig02" x="240" y="896" name="inst_15FB1B60" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -533,9 +533,8 @@
     <instance objName="obj_Changer_01_02" x="992" y="688" name="inst_E39CA6EC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Changer_01_02" x="1008" y="688" name="inst_C986AB3B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Changer_01_02" x="1024" y="688" name="inst_1B500C89" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_eat_shroom" x="1120" y="1248" name="inst_C76AEA90" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_paper" x="992" y="752" name="inst_A27BD103" locked="0" code="pagenumber = 6;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="enemySpawner" x="928" y="912" name="inst_DD7429E6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="HappyBrush" x="384" y="912" name="inst_ACCC5D3A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="HappyBrush" x="704" y="656" name="inst_B118C89F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="TilesetBase" x="256" y="1024" w="16" h="16" xo="48" yo="144" id="10000924" name="inst_8C08BCC1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
