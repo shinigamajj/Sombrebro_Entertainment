@@ -101,7 +101,7 @@ y = view_yview[0]+222;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite_ext(sprite_index,image_index,view_xview[0]+211,view_yview[0]+222,image_xscale,image_yscale,image_angle,image_blend,image_alpha);
+            <string>draw_sprite_ext(sprite_index,image_index,view_xview[0]+210,view_yview[0]+221,image_xscale,image_yscale,image_angle,image_blend,image_alpha);
 </string>
           </argument>
         </arguments>
