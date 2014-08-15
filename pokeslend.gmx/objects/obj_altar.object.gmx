@@ -128,7 +128,6 @@ if((paper_01 == gameController.pages_room_01) &amp;&amp; (paper_02 == gameContro
         Char.sprite_index = spr_char_burn
         Char.image_speed = 0.3;
         Char.alarm[9] = 1;
-        exit;
 }
 </string>
           </argument>

@@ -160,7 +160,7 @@ audio_play_sound(sound_push_tree_water,0,0);
             <kind>1</kind>
             <string>depth = -((y*100)+x);
 
-if(obj_GUI.eatMinutes &lt;= 0){
+if(obj_GUI.eatMinutes &lt;= 0 &amp;&amp; obj_GUI.eatSeconds &lt;= 30){
 mov_speed = 0.5;
 } else { mov_speed = 1; }
 

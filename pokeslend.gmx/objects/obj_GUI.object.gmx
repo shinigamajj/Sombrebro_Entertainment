@@ -28,14 +28,14 @@
             <string>/*minutes = 0;
 seconds = 0;
 
-eatMinutes = 2;
+eatMinutes = 3;
 eatSeconds = 0;*/
 
 ini_open("variables.ini");
     minutes = ini_read_real("timers","min",0);
     seconds = ini_read_real("timers","secs",0);
     
-    eatMinutes = ini_read_real("timers","eatMin",2);
+    eatMinutes = ini_read_real("timers","eatMin",3);
     eatSeconds = ini_read_real("timers","eatSec",0);
 ini_close();
 
@@ -123,7 +123,11 @@ if(seconds == 60)
 if(eatSeconds == 0 &amp;&amp; eatMinutes == 0){
     dead = true;
     audio_play_sound(sound_char_dead,0,0);
-    Char.sprite_index = spr_grave;
+    with(Char){
+        sprite_index = spr_char_death;
+        image_speed = 1.25;
+        alarm[9] = 1;
+    }
     alarm[1] = 30;
     exit;
 }
@@ -188,7 +192,7 @@ if(TreeApple01.isEating == false &amp;&amp; obj_beerenbusch.isEating == false){
     minutes = ini_read_real("timers","min",0);
     seconds = ini_read_real("timers","secs",0);
     
-    eatMinutes = ini_read_real("timers","eatMin",2);
+    eatMinutes = ini_read_real("timers","eatMin",3);
     eatSeconds = ini_read_real("timers","eatSec",0);
 ini_close();
 </string>

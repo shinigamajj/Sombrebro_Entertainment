@@ -106,31 +106,10 @@ isDoing = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(obj_GUI.eatMinutes &lt;= 0){
+            <string>if(obj_GUI.eatMinutes &lt;= 0 &amp;&amp; obj_GUI.eatSeconds &lt;= 30){
     switch (obj_GUI.eatSeconds)
     {
-        case 59:
-            message_hunger1.visible = true;
-            audio_play_sound(sound_hunger_01,0,0);
-            break;        
-        case 58:
-            message_hunger1.visible = false;
-            break;
-        case 50:
-            message_hunger2.visible = true;
-            audio_play_sound(sound_hunger_02,0,0);
-            break;        
-        case 48:
-            message_hunger2.visible = false;
-            break;        
-        case 40:
-            message_hunger1.visible = true;
-            audio_play_sound(sound_hunger_01,0,0);
-            break;        
-        case 38:
-            message_hunger1.visible = false;
-            break;        
-        case 30:
+        case 29:
             message_hunger2.visible = true;
             audio_play_sound(sound_hunger_02,0,0);
             break;        
@@ -219,8 +198,10 @@ if(isInSwamp){
         }
         if(swampSeconds &gt;= 5){
             isDoing = true;
-            sprite_index = spr_grave;
+            sprite_index = spr_char_death;
+            image_speed = 1.25;
             audio_play_sound(sound_char_dead,0,0);
+            alarm[9] = 1;
             alarm[8] = 30;
             exit;
         }
@@ -799,7 +780,7 @@ if(hasBoots == 0){
             char_speed = ini_read_real("speeds","speed_char_swamp",1);
             char_speed_run = ini_read_real("speeds","speed_char_run_swamp",2);
         ini_close();
-    } else if(isInSwamp &amp;&amp; obj_GUI.eatMinutes &lt;= 0){ 
+    } else if(isInSwamp &amp;&amp; obj_GUI.eatMinutes &lt;= 0 &amp;&amp; obj_GUI.eatSeconds &lt;= 30){ 
         ini_open("variables.ini");
             char_speed = ini_read_real("speeds","speed_char_hunger",0.5);
             char_speed_run = ini_read_real("speeds","speed_char_run_hunger",1);
@@ -833,14 +814,14 @@ if(distance_to_object(NearestEnemy) &lt; NearestEnemy.range - (NearestEnemy.rang
 
 /* Checks if Character can run */
 
-if(obj_GUI.eatMinutes &lt;= 0){
+if(obj_GUI.eatMinutes &lt;= 0 &amp;&amp; obj_GUI.eatSeconds &lt;= 30){
     canRun = false;
 } else { canRun = true; }
 
 
-/* Sends Message if Hunger-Timer is under 60 seconds */
+/* Sends Message if Hunger-Timer is under 30 seconds */
 
-if(obj_GUI.eatMinutes &lt;= 0 &amp;&amp; !isSendingMessage){
+if(obj_GUI.eatMinutes &lt;= 0 &amp;&amp; obj_GUI.eatMinutes &lt;= 30 &amp;&amp; !isSendingMessage){
     isSendingMessage = true;
     alarm[6] = 1;
 }
@@ -857,7 +838,7 @@ if(appleID.isEating == true || berryID.isEating == true || shroomID.isEating == 
 
 /* Checks if Player can Destroy trees */
 
-if(obj_GUI.eatMinutes &lt;= 0){
+if(obj_GUI.eatMinutes &lt;= 0 &amp;&amp; obj_GUI.eatSeconds &lt;= 30){
     canDestroy = false;
 } else { canDestroy = true; }
 
@@ -871,6 +852,8 @@ if(room_caption != "tutorial_room_01" &amp;&amp; lifes &gt; 0){
             if(lifes &gt; 0){
                 ini_open("variables.ini");
                     ini_write_real("char","lifes",lifes);
+                    ini_write_real("timers","min",obj_GUI.minutes);
+                    ini_write_real("timers","secs",obj_GUI.seconds);
                 ini_close();
                 room_restart();
             } else {
@@ -891,6 +874,8 @@ if(room_caption != "tutorial_room_01" &amp;&amp; lifes &gt; 0){
             if(lifes &gt; 0){
                 ini_open("variables.ini");
                     ini_write_real("char","lifes",lifes);
+                    ini_write_real("timers","min",obj_GUI.minutes);
+                    ini_write_real("timers","secs",obj_GUI.seconds);
                 ini_close();
                 room_restart();
             } else {

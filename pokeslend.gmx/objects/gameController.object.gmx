@@ -283,7 +283,7 @@ CStar_free();
 /* Variables saved in INI File */
 
 ini_open("variables.ini");
-    ini_write_real("timers","eatMin",2);
+    ini_write_real("timers","eatMin",3);
     ini_write_real("timers","eatSec",0);
     ini_write_real("timers","min",0);
     ini_write_real("timers","secs",0);

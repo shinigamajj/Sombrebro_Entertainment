@@ -105,6 +105,30 @@ with(obj_Collider){
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="5">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>path_end();
+alarm[1] = 1;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="2" enumb="4">
       <action>
         <libid>1</libid>
@@ -123,10 +147,15 @@ with(obj_Collider){
           <argument>
             <kind>1</kind>
             <string>if(!looksInGrass){
-    path_end();
-    alarm[1] = 1;
+    alarm[5] = 5;
 } else {
     alarm[4] = 3;
+}
+
+if(sprite_index != spr_enemy1 &amp;&amp; distance_to_object(Char) &lt; range &amp;&amp; isChangeing == false){
+    path_end();
+    alarm[0] = 1;
+    isChangeing = true;
 }
 </string>
           </argument>
@@ -205,8 +234,14 @@ if(!isMoving){
 }
 
 if(distance_to_object(Char) &lt; range){
-    path_end();
-    alarm[0] = 1;
+    myPath = AStar_findPath(x, y, Char.x, Char.y, false);
+        path_start(myPath,enemy_speed,0,0);
+        if(!audio_is_playing(sound_enemy_follow_char_01) &amp;&amp; !audio_is_playing(sound_enemy_follow_char_02)){
+            randNum = irandom_range(1,2);
+            if(randNum == 1) { audio_play_sound(sound_enemy_follow_char_01,0,0); }
+                else if(randNum == 2) { audio_play_sound(sound_enemy_follow_char_02,0,0); }
+        }
+        alarm[1] = 1;
 } else { alarm[0] = 8; }
 </string>
           </argument>
@@ -344,8 +379,18 @@ if(distance_to_object(Char) &lt; range){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>steps = 0;
-RespawnEnemy();
+            <string>if ((y &gt; (view_yview - 32) &amp;&amp; y &lt; (view_yview+view_hview + 32) &amp;&amp; x &gt; (view_xview - 32)
+    &amp;&amp; x &lt; (view_xview + view_wview + 32))){
+        amounth = instance_number(enemySpawner) - 1;
+        rannum = irandom_range(1,amounth);
+        inst = MoveEnemy(x,y,enemySpawner,rannum);
+        sprite_index = spr_enemy1;
+        myPath = AStar_findPath(x, y, inst.x, inst.y, false);
+        path_start(myPath,enemy_speed,0,0);
+} else {
+    steps = 0;
+    RespawnEnemy();
+}
 </string>
           </argument>
         </arguments>
@@ -670,6 +715,18 @@ RespawnEnemy();
 } else {
     alarm[2] = 16;
 }
+
+if(sprite_index != spr_enemy1 &amp;&amp; distance_to_object(Char) &lt; range &amp;&amp; isChangeing == false){
+    myPath = AStar_findPath(x, y, Char.x, Char.y, false);
+        path_start(myPath,enemy_speed,0,0);
+        if(!audio_is_playing(sound_enemy_follow_char_01) &amp;&amp; !audio_is_playing(sound_enemy_follow_char_02)){
+            randNum = irandom_range(1,2);
+            if(randNum == 1) { audio_play_sound(sound_enemy_follow_char_01,0,0); }
+                else if(randNum == 2) { audio_play_sound(sound_enemy_follow_char_02,0,0); }
+        }
+        alarm[1] = 1;
+    isChangeing = true;
+}
 </string>
           </argument>
         </arguments>
@@ -707,8 +764,14 @@ if(Char.isInGrass == true &amp;&amp; !isFollowing){
 } else { range = 158; }
 
 if(sprite_index != spr_enemy1 &amp;&amp; distance_to_object(Char) &lt; range &amp;&amp; isChangeing == false){
-    path_end();
-    alarm[0] = 1;
+    myPath = AStar_findPath(x, y, Char.x, Char.y, false);
+        path_start(myPath,enemy_speed,0,0);
+        if(!audio_is_playing(sound_enemy_follow_char_01) &amp;&amp; !audio_is_playing(sound_enemy_follow_char_02)){
+            randNum = irandom_range(1,2);
+            if(randNum == 1) { audio_play_sound(sound_enemy_follow_char_01,0,0); }
+                else if(randNum == 2) { audio_play_sound(sound_enemy_follow_char_02,0,0); }
+        }
+        alarm[1] = 1;
     isChangeing = true;
 }
 </string>
@@ -742,6 +805,7 @@ isFollowing = false;
 looksInGrass = false;
 searchtimer = 0;
 isMoving = false;
+isChangeing = false;
 image_speed = 0.1;
 range = 158;
 steps = 0;
