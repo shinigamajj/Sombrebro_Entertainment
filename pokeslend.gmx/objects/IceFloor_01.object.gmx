@@ -50,6 +50,7 @@
             <kind>1</kind>
             <string>if((Char.x == x) &amp;&amp; (Char.y == y)){
     instance_create(x,y,IceFloor_02);    
+    audio_play_sound(sound_ice_cracking,0,0);
     instance_destroy();
 }
 </string>

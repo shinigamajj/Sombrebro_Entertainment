@@ -51,6 +51,10 @@
           <sound>sound\sound_char_sprint_dungeon</sound>
         </sounds>
       </sounds>
+      <sound>sound\sound_ice_cracking</sound>
+      <sound>sound\sound_ice_breaking</sound>
+      <sound>sound\sound_ice_fail</sound>
+      <sound>sound\sound_ice_success</sound>
     </sounds>
     <sounds name="BG_Music">
       <sound>sound\sound_BG_menu</sound>
@@ -636,15 +640,15 @@
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\dungeon_room_04</room>
     <room>rooms\MENU</room>
     <room>rooms\win_lose_MENU</room>
     <room>rooms\tutorial_room_01</room>
     <room>rooms\forest_room_02</room>
     <room>rooms\swamp_room_03</room>
-    <room>rooms\dungeon_room_04</room>
   </rooms>
   <constants number="2">
-    <constant name="GM_build_date">41869.2988177083</constant>
+    <constant name="GM_build_date">41869.5298170139</constant>
     <constant name="GM_version">'2.2.1.1386'</constant>
   </constants>
   <help>
