@@ -73,7 +73,7 @@ y = view_yview[0]+222;
           <argument>
             <kind>1</kind>
             <string>if(instance_exists(obj_GUI)){
-    if(obj_GUI.eatMinutes &lt; 1){
+    if(obj_GUI.eatMinutes &lt; 1 &amp;&amp; obj_GUI.eatSeconds &lt;= 30){
         sprite_index = spr_hunger
     } else if(obj_GUI.eatMinutes &gt;= 1){
         sprite_index = spr_noHunger;

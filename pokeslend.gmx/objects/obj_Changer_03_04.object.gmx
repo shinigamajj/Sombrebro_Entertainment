@@ -93,7 +93,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>Char.x += 16;
+            <string>Char.y += 16;
 Char.sprite_index = spr_down;
 running = false;
 isDoing = false;
@@ -243,7 +243,7 @@ room_goto(dungeon_room_04);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>Char.x += 16;
+            <string>Char.y += 16;
 Char.sprite_index = spr_down;
 running = false;
 isDoing = false;
