@@ -1818,7 +1818,6 @@
     <tile bgName="TilesetBase" x="560" y="496" w="16" h="16" xo="16" yo="288" id="10004062" name="inst_3D602707" depth="10000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="TilesetBase" x="576" y="528" w="16" h="16" xo="32" yo="304" id="10004068" name="inst_BE2B1D25" depth="10000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="TilesetBase" x="448" y="560" w="16" h="16" xo="64" yo="64" id="10004428" name="inst_46CC9CBB" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TilesetBase" x="464" y="560" w="16" h="16" xo="64" yo="48" id="10004429" name="inst_60D96455" depth="0" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

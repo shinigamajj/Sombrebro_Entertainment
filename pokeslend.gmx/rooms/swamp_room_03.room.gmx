@@ -2607,6 +2607,21 @@
     <instance objName="enemySpawner" x="1248" y="208" name="inst_0A0C0DC0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="enemySpawner" x="1264" y="576" name="inst_C983D467" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="enemySpawner" x="496" y="928" name="inst_FD5606B0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Swamp_Bamboo01" x="192" y="432" name="inst_BE4C203B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Swamp_Bamboo02" x="352" y="480" name="inst_89682E63" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Swamp_Bamboo02" x="304" y="560" name="inst_C3B627A7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Swamp_Bamboo02" x="432" y="592" name="inst_5CC6BC6B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Swamp_Bamboo02" x="448" y="816" name="inst_F2E36D05" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Swamp_Bamboo01" x="448" y="960" name="inst_9B711D78" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Swamp_Bamboo01" x="656" y="976" name="inst_EDBDC1FF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Swamp_Bamboo02" x="640" y="832" name="inst_425A7497" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Swamp_Bamboo02" x="912" y="848" name="inst_62D5B4A9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Swamp_Bamboo02" x="1104" y="320" name="inst_ADA0F848" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Swamp_Bamboo02" x="960" y="112" name="inst_7131FF99" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Swamp_Bamboo01" x="608" y="128" name="inst_92BA23FC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Swamp_Bamboo01" x="416" y="224" name="inst_195F1226" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Swamp_Bamboo02" x="432" y="224" name="inst_A1200F96" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Swamp_Bamboo02" x="336" y="336" name="inst_FD1C2DF8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="TilesetBase" x="272" y="192" w="16" h="16" xo="16" yo="96" id="10001619" name="inst_DE1B33E4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
