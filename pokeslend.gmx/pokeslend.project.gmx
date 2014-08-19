@@ -640,11 +640,11 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\swamp_room_03</room>
     <room>rooms\MENU</room>
     <room>rooms\win_lose_MENU</room>
     <room>rooms\tutorial_room_01</room>
     <room>rooms\forest_room_02</room>
+    <room>rooms\swamp_room_03</room>
     <room>rooms\dungeon_room_04</room>
   </rooms>
   <constants number="2">
