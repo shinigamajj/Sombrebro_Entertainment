@@ -57,8 +57,9 @@ image_speed = 0.8333;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(sprite_index == spr_menu_background &amp;&amp; image_index == 299){
+            <string>if(sprite_index == spr_menu_background &amp;&amp; image_index &gt;= 298){
     randNum = irandom_range(1,2);
+    image_index = 0;
 
     if(randNum == 1){
         sprite_index = spr_menu_background2;
@@ -66,8 +67,9 @@ image_speed = 0.8333;
         sprite_index = spr_menu_background3;
     }
     image_speed = 0.8333;
-} else if(sprite_index == spr_menu_background2 &amp;&amp; image_index == 174){
+} else if(sprite_index == spr_menu_background2 &amp;&amp; image_index &gt;= 173){
     randNum = irandom_range(1,2);
+    image_index = 0;
 
     if(randNum == 1){
         sprite_index = spr_menu_background;
@@ -75,8 +77,9 @@ image_speed = 0.8333;
         sprite_index = spr_menu_background3;
     }
     image_speed = 0.8333;
-} else if(sprite_index == spr_menu_background3 &amp;&amp; image_index == 149){
+} else if(sprite_index == spr_menu_background3 &amp;&amp; image_index &gt;= 148){
     randNum = irandom_range(1,2);
+    image_index = 0;
 
     if(randNum == 1){
         sprite_index = spr_menu_background;
