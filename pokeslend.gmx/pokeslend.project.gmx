@@ -257,6 +257,7 @@
     </sprites>
     <sprites name="MENU_Sprites">
       <sprite>sprites\spr_menu_mdh_logo</sprite>
+      <sprite>sprites\spr_menu_sombrero_logo</sprite>
       <sprite>sprites\spr_menu_exit</sprite>
       <sprite>sprites\spr_menu_exit_selected</sprite>
       <sprite>sprites\spr_menu_options</sprite>
@@ -579,6 +580,7 @@
       <object>objects\obj_menu_controller</object>
       <object>objects\obj_winlose_controller</object>
       <object>objects\menu_MDH_Logo</object>
+      <object>objects\menu_SOMBRERO_Logo</object>
       <object>objects\menu_credits</object>
       <object>objects\menu_controls</object>
       <object>objects\menu_sure</object>
@@ -648,7 +650,7 @@
     <room>rooms\dungeon_room_04</room>
   </rooms>
   <constants number="2">
-    <constant name="GM_build_date">41870.349362037</constant>
+    <constant name="GM_build_date">41870.3609618634</constant>
     <constant name="GM_version">'2.2.1.1386'</constant>
   </constants>
   <help>
