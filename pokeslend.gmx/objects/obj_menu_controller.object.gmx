@@ -8,6 +8,32 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="2" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>with(menu_SOMBRERO_Logo){instance_destroy();}
+
+instance_create(0,0,menu_POKESLEND_Logo);
+alarm[0] = 45;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="2" enumb="1">
       <action>
         <libid>1</libid>
@@ -28,7 +54,7 @@
             <string>with(menu_MDH_Logo){instance_destroy();}
 
 instance_create(0,0,menu_SOMBRERO_Logo);
-alarm[0] = 45;
+alarm[2] = 45;
 </string>
           </argument>
         </arguments>
@@ -52,7 +78,7 @@ alarm[0] = 45;
           <argument>
             <kind>1</kind>
             <string>canDo = true;
-with(menu_SOMBRERO_Logo){instance_destroy();}
+with(menu_POKESLEND_Logo){instance_destroy();}
 
 /* Create Menu */
 instance_create(0,0,menu_BG_Full);
