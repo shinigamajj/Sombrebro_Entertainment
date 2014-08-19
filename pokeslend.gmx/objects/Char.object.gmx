@@ -814,16 +814,20 @@ if(distance_to_object(NearestEnemy) &lt; NearestEnemy.range - (NearestEnemy.rang
 
 /* Checks if Character can run */
 
-if(obj_GUI.eatMinutes &lt;= 0 &amp;&amp; obj_GUI.eatSeconds &lt;= 30){
-    canRun = false;
-} else { canRun = true; }
+if(instance_exists(obj_GUI)){
+    if(obj_GUI.eatMinutes &lt;= 0 &amp;&amp; obj_GUI.eatSeconds &lt;= 30){
+        canRun = false;
+    } else { canRun = true; }
+}
 
 
 /* Sends Message if Hunger-Timer is under 30 seconds */
 
-if(obj_GUI.eatMinutes &lt;= 0 &amp;&amp; obj_GUI.eatMinutes &lt;= 30 &amp;&amp; !isSendingMessage){
-    isSendingMessage = true;
-    alarm[6] = 1;
+if(instance_exists(obj_GUI)){
+    if(obj_GUI.eatMinutes &lt;= 0 &amp;&amp; obj_GUI.eatMinutes &lt;= 30 &amp;&amp; !isSendingMessage){
+        isSendingMessage = true;
+        alarm[6] = 1;
+    }
 }
 
 appleID = instance_nearest(x,y,TreeApple01);
@@ -838,9 +842,11 @@ if(appleID.isEating == true || berryID.isEating == true || shroomID.isEating == 
 
 /* Checks if Player can Destroy trees */
 
-if(obj_GUI.eatMinutes &lt;= 0 &amp;&amp; obj_GUI.eatSeconds &lt;= 30){
-    canDestroy = false;
-} else { canDestroy = true; }
+if(instance_exists(obj_GUI)){
+    if(obj_GUI.eatMinutes &lt;= 0 &amp;&amp; obj_GUI.eatSeconds &lt;= 30){
+        canDestroy = false;
+    } else { canDestroy = true; }
+}
 
 
 /* Checks for distance to enemy and lifes */
@@ -856,6 +862,7 @@ if(room_caption != "tutorial_room_01" &amp;&amp; lifes &gt; 0){
                     ini_write_real("timers","secs",obj_GUI.seconds);
                 ini_close();
                 room_restart();
+                exit;
             } else {
                 isDoing = true;
                 audio_play_sound(sound_enemy_catch_char,0,0);
@@ -878,6 +885,7 @@ if(room_caption != "tutorial_room_01" &amp;&amp; lifes &gt; 0){
                     ini_write_real("timers","secs",obj_GUI.seconds);
                 ini_close();
                 room_restart();
+                exit;
             } else {
                 isDoing = true;
                 audio_play_sound(sound_enemy_catch_char,0,0);
@@ -8031,6 +8039,13 @@ if(room_caption != "tutorial_room_01" &amp;&amp; lifes &gt; 0){
 if(!instance_exists(audioController)){
     instance_create(0,0,audioController);
 }
+
+if(sprite_index != spr_right &amp;&amp; sprite_index != spr_left &amp;&amp; sprite_index != spr_top
+    &amp;&amp; sprite_index != spr_down){
+        sprite_index = spr_down;
+    }
+    
+if(image_speed != 0){ image_speed = 0; }
 </string>
           </argument>
         </arguments>

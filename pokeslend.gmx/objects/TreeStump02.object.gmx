@@ -160,9 +160,11 @@ audio_play_sound(sound_push_tree_water,0,0);
             <kind>1</kind>
             <string>depth = -((y*100)+x);
 
-if(obj_GUI.eatMinutes &lt;= 0 &amp;&amp; obj_GUI.eatSeconds &lt;= 30){
-mov_speed = 0.5;
-} else { mov_speed = 1; }
+if(instance_exists(obj_GUI)){
+    if(obj_GUI.eatMinutes &lt;= 0 &amp;&amp; obj_GUI.eatSeconds &lt;= 30){
+    mov_speed = 0.5;
+    } else { mov_speed = 1; }
+}
 
 if(!place_meeting(x,y-16,obj_TreeCollider)){
     instance_create(x,y,obj_TreeCollider);
@@ -177,7 +179,8 @@ if(/*distance_to_object(obj_WaterCollider)==0 &amp;&amp; */((distance_to_object(
     || distance_to_object(Swamp_Water05c) == 0) || (distance_to_object(Water02) == 0 &amp;&amp; distance_to_object(Water08) == 0) ||
     (distance_to_object(Swamp_Water02) == 0 &amp;&amp; distance_to_object(Swamp_Water08) == 0 ))){
     isMovable = false;
-    if(obj_GUI.eatMinutes &lt;= 0){
+    if(instance_exists(obj_GUI)){
+        if(obj_GUI.eatMinutes &lt;= 0){
             if(alarm1_check = 0){
                 alarm[1] = 28;
                 alarm1_check = 1;
@@ -188,6 +191,7 @@ if(/*distance_to_object(obj_WaterCollider)==0 &amp;&amp; */((distance_to_object(
                 alarm1_check = 1;
             }
         }
+    }
 } else { isMovable = true; alarm1_check = 0; }
 
 if(!isMovable){

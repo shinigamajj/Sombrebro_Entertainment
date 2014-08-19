@@ -56,27 +56,14 @@ isChangeing = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>AStar_init(room_width/16, room_height/16, 16, 16, 0, 0, 0, 0, -2, -2, 0, 0);
-image_speed = 0.1;
+            <string>image_speed = 0.1;
 range = 158;
 steps = 0;
 ini_open("variables.ini");
     enemy_speed = ini_read_real("speeds","speed_enemy",2);
 ini_close(); 
-AStar_setDirBlocked(x,y,1,1);
-AStar_setDirBlocked(x,y,3,1);
-AStar_setDirBlocked(x,y,5,1);
-AStar_setDirBlocked(x,y,7,1);
 alarm[0] = 8;
 
-
-with(obj_Collider){
-    if(instance_exists(objPathFinder)){
-        x -= x mod objPathFinder.CELL_WIDTH;
-        y -= y mod objPathFinder.CELL_HEIGHT;
-        AStar_setBlocked(x,y,1);
-    } else { alarm[0] = 8; }
-}
 </string>
           </argument>
         </arguments>
@@ -779,6 +766,29 @@ if(sprite_index != spr_enemy1 &amp;&amp; distance_to_object(Char) &lt; range &am
         </arguments>
       </action>
     </event>
+    <event eventtype="7" enumb="5">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>AStar_free();
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="7" enumb="4">
       <action>
         <libid>1</libid>
@@ -796,7 +806,22 @@ if(sprite_index != spr_enemy1 &amp;&amp; distance_to_object(Char) &lt; range &am
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>inst = instance_furthest(Char.x, Char.y, enemySpawner);
+            <string>AStar_init(room_width/16, room_height/16, 16, 16, 0, 0, 0, 0, -2, -2, 0, 0);
+
+AStar_setDirBlocked(x,y,1,1);
+AStar_setDirBlocked(x,y,3,1);
+AStar_setDirBlocked(x,y,5,1);
+AStar_setDirBlocked(x,y,7,1);
+
+with(obj_Collider){
+    if(instance_exists(objPathFinder)){
+        x -= x mod objPathFinder.CELL_WIDTH;
+        y -= y mod objPathFinder.CELL_HEIGHT;
+        AStar_setBlocked(x,y,1);
+    } else { alarm[0] = 8; }
+}
+
+inst = instance_furthest(Char.x, Char.y, enemySpawner);
 
 x = inst.x;
 y = inst.y;

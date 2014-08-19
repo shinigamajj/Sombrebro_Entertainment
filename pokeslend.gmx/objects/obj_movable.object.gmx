@@ -100,9 +100,11 @@ mov_speed = 1;
             <kind>1</kind>
             <string>depth = -((y*100)+x);
 
-if(obj_GUI.eatMinutes &lt;= 0 &amp;&amp; obj_GUI.eatSeconds &lt;= 30){
-mov_speed = 0.5;
-} else { mov_speed = 1; }
+if(instance_exists(obj_GUI)){
+    if(obj_GUI.eatMinutes &lt;= 0 &amp;&amp; obj_GUI.eatSeconds &lt;= 30){
+    mov_speed = 0.5;
+    } else { mov_speed = 1; }
+}
 
 
 if(distance_to_object(obj_RockCollider) != 0){
