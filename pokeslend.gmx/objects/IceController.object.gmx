@@ -92,7 +92,7 @@ isRestarting = false;
         Char.x = 496;
         Char.y = 320;
     } else {
-        if(!audio_is_playing(sound_ice_success) &amp;&amp; success == false;){
+        if(!audio_is_playing(sound_ice_success) &amp;&amp; success == false){
             success = true;
             audio_play_sound(sound_ice_success,0,0);
         }
