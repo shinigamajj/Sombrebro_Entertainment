@@ -31,6 +31,7 @@
 
 with(obj_win_lose_GUI){instance_destroy();}
 instance_create(0,0,obj_highscore);
+canpressenter = true;
 </string>
           </argument>
         </arguments>
@@ -191,7 +192,8 @@ alarm[1] = 150;
             <string>/* Menu Changer */
 
 if (menuState == 1) {
-    if(menu_pause_button_menu.isSelected &amp;&amp; keyboard_check_pressed(vk_enter)){
+    if(menu_pause_button_menu.isSelected &amp;&amp; keyboard_check_pressed(vk_enter)
+        &amp;&amp; canpressenter == true){
         game_restart();
     } else { exit; }
 } else { exit; }
@@ -231,7 +233,8 @@ if (menuState == 1) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>canDo = false;
+            <string>canpressenter = false;
+canDo = false;
 ini_open("variables.ini");
     didwin = ini_read_real("state","win",0);
     didlose = ini_read_real("state","lose",0);    
