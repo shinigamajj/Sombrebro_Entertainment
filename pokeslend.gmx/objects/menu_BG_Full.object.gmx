@@ -40,6 +40,56 @@ image_speed = 0.8333;
         </arguments>
       </action>
     </event>
+    <event eventtype="3" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(sprite_index == spr_menu_background &amp;&amp; image_index == 299){
+    randNum = irandom_range(1,2);
+
+    if(randNum == 1){
+        sprite_index = spr_menu_background2;
+    } else if(randNum == 2){
+        sprite_index = spr_menu_background3;
+    }
+    image_speed = 0.8333;
+} else if(sprite_index == spr_menu_background2 &amp;&amp; image_index == 174){
+    randNum = irandom_range(1,2);
+
+    if(randNum == 1){
+        sprite_index = spr_menu_background;
+    } else if(randNum == 2){
+        sprite_index = spr_menu_background3;
+    }
+    image_speed = 0.8333;
+} else if(sprite_index == spr_menu_background3 &amp;&amp; image_index == 149){
+    randNum = irandom_range(1,2);
+
+    if(randNum == 1){
+        sprite_index = spr_menu_background;
+    } else if(randNum == 2){
+        sprite_index = spr_menu_background2;
+    }
+    image_speed = 0.8333;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
   </events>
   <PhysicsObject>0</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
