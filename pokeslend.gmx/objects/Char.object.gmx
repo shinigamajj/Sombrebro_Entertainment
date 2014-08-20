@@ -84,7 +84,53 @@
             <kind>1</kind>
             <string>shader_reset();
 isDoing = false;
+
+if(char_speed == 0 || char_speed_run == 0){
+    char_speed = 2;
+    char_speed_run = 4;
+}
+
+if(leftPressed == 1 || rightPressed == 1 || topPressed == 1 || downPressed == 1){
+    leftPressed = 0;
+    rightPressed = 0;
+    topPressed = 0;
+    downPressed = 0;
+}
+
+if(canmove = false){ canmove = true; }
+
+if(image_speed != 0) { image_speed = 0; }
+
+if( sprite_index != spr_down &amp;&amp; sprite_index != spr_top &amp;&amp;
+    sprite_index != spr_right &amp;&amp; sprite_index != spr_left){
+    sprite_index = spr_down;
+    }
+
 </string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>117</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_snap</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>16</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>16</string>
           </argument>
         </arguments>
       </action>
@@ -8039,13 +8085,6 @@ if(room_caption != "tutorial_room_01" &amp;&amp; lifes &gt; 0){
 if(!instance_exists(audioController)){
     instance_create(0,0,audioController);
 }
-
-if(sprite_index != spr_right &amp;&amp; sprite_index != spr_left &amp;&amp; sprite_index != spr_top
-    &amp;&amp; sprite_index != spr_down){
-        sprite_index = spr_down;
-    }
-    
-if(image_speed != 0){ image_speed = 0; }
 </string>
           </argument>
         </arguments>
@@ -8069,16 +8108,7 @@ if(image_speed != 0){ image_speed = 0; }
             <string>/* Character Variables */
 
 ini_open("variables.ini");
-    if(room_caption == "forest_room"){
-        x = ini_read_real("positions","forest_room_char_x", 464);
-        y = ini_read_real("positions","forest_room_char_y",304);
-    } else if(room_caption == "swamp_room"){
-        x = ini_read_real("positions","swamp_room_char_x",208);
-        y = ini_read_real("positions","swamp_room_char_y",96);
-    } else if(room_caption == "forest_room2"){
-        x = ini_read_real("positions","forest_room2_char_x",496);
-        y = ini_read_real("positions","forest_room2_char_y",704);
-    } else if(room_caption == "tutorial_room_01"){
+    if(room_caption == "tutorial_room_01"){
         x = ini_read_real("positions","tuto_room_01_char_x",240);
         y = ini_read_real("positions","tuto_room_01_char_y",1088);
     } else if(room_caption == "forest_room_02"){
@@ -8099,13 +8129,7 @@ ini_open("variables.ini");
     hasBoots = ini_read_real("char","char_has_boots",0);
     lifes = ini_read_real("char","lifes",2);
         
-    if(room_caption == "forest_room"){
-    pagesCollected = ini_read_real("pages","forest_room_pages_collected",0);
-    } else if(room_caption == "swamp_room"){
-    pagesCollected = ini_read_real("pages","swamp_room_pages_collected",0);    
-    } else if(room_caption == "forest_room2"){
-    pagesCollected = ini_read_real("pages","forest_room2_pages_collected",0);    
-    } else if(room_caption == "tutorial_room_01"){
+    if(room_caption == "tutorial_room_01"){
     pagesCollected = ini_read_real("pages","tuto_room_01_pages_collected",0);
     } else if(room_caption == "forest_room_02"){
     pagesCollected = ini_read_real("pages","forest_room_02_pages_collected",0);
