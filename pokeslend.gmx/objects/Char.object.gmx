@@ -152,35 +152,37 @@ if( sprite_index != spr_down &amp;&amp; sprite_index != spr_top &amp;&amp;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(obj_GUI.eatMinutes &lt;= 0 &amp;&amp; obj_GUI.eatSeconds &lt;= 30){
-    switch (obj_GUI.eatSeconds)
-    {
-        case 29:
-            message_hunger2.visible = true;
-            audio_play_sound(sound_hunger_02,0,0);
-            break;        
-        case 28:
-            message_hunger2.visible = false;
-            break;        
-        case 20:
-            message_hunger1.visible = true;
-            audio_play_sound(sound_hunger_01,0,0);
-            break;        
-        case 18:
-            message_hunger1.visible = false;
-            break;        
-        case 10:
-            message_hunger2.visible = true;
-            audio_play_sound(sound_hunger_02,0,0);
-            break;        
-        case 8:
-            message_hunger2.visible = false;
-            break;        
-        default:
-            break;
-    }
-    alarm[6] = 30;
-} else { isSendingMessage = false; }
+            <string>if(instance_exists(obj_GUI)){
+    if(obj_GUI.eatMinutes &lt;= 0 &amp;&amp; obj_GUI.eatSeconds &lt;= 30){
+        switch (obj_GUI.eatSeconds)
+        {
+            case 29:
+                message_hunger2.visible = true;
+                audio_play_sound(sound_hunger_02,0,0);
+                break;        
+            case 28:
+                message_hunger2.visible = false;
+                break;        
+            case 20:
+                message_hunger1.visible = true;
+                audio_play_sound(sound_hunger_01,0,0);
+                break;        
+            case 18:
+                message_hunger1.visible = false;
+                break;        
+            case 10:
+                message_hunger2.visible = true;
+                audio_play_sound(sound_hunger_02,0,0);
+                break;        
+            case 8:
+                message_hunger2.visible = false;
+                break;        
+            default:
+                break;
+        }
+        alarm[6] = 30;
+    } else { isSendingMessage = false; }
+} else { alarm[6] = 1; }
 </string>
           </argument>
         </arguments>
